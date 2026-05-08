@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # notification.sh: Send a desktop notification for available updates
-# https://github.com/Antiz96/arch-update
+# https://github.com/Antiz96/genesi-update
 # SPDX-License-Identifier: GPL-3.0-or-later
 
 # Declare necessary parameters for translations
@@ -13,16 +13,16 @@
 if [ "${update_number}" -eq 1 ]; then
 	if [ -z "${last_notif_id}" ]; then
 		# shellcheck disable=SC2154
-		notify-send -p -a "Cachy-Update" -n "cachy-update_updates-available-${tray_icon_style}${colorblind_mode}" "Cachy-Update" "$(eval_gettext "\${update_number} update available")" -A "run=$(eval_gettext "Run Cachy-Update")" -A "close=$(eval_gettext "Close")" > "${tmpdir}/notif_param"
+		notify-send -p -a "Genesi-Update" -n "genesi-update_updates-available-${tray_icon_style}${colorblind_mode}" "Genesi-Update" "$(eval_gettext "\${update_number} update available")" -A "run=$(eval_gettext "Run Genesi-Update")" -A "close=$(eval_gettext "Close")" > "${tmpdir}/notif_param"
 	else
 		# shellcheck disable=SC2154
-		notify-send -p -r "${last_notif_id}" -a "Cachy-Update" -n "cachy-update_updates-available-${tray_icon_style}${colorblind_mode}" "Cachy-Update" "$(eval_gettext "\${update_number} update available")" -A "run=$(eval_gettext "Run Cachy-Update")" -A "close=$(eval_gettext "Close")" > "${tmpdir}/notif_param"
+		notify-send -p -r "${last_notif_id}" -a "Genesi-Update" -n "genesi-update_updates-available-${tray_icon_style}${colorblind_mode}" "Genesi-Update" "$(eval_gettext "\${update_number} update available")" -A "run=$(eval_gettext "Run Genesi-Update")" -A "close=$(eval_gettext "Close")" > "${tmpdir}/notif_param"
 	fi
 else
 	if [ -z "${last_notif_id}" ]; then
-		notify-send -p -a "Cachy-Update" -n "cachy-update_updates-available-${tray_icon_style}${colorblind_mode}" "Cachy-Update" "$(eval_gettext "\${update_number} updates available")" -A "run=$(eval_gettext "Run Cachy-Update")" -A "close=$(eval_gettext "Close")" > "${tmpdir}/notif_param"
+		notify-send -p -a "Genesi-Update" -n "genesi-update_updates-available-${tray_icon_style}${colorblind_mode}" "Genesi-Update" "$(eval_gettext "\${update_number} updates available")" -A "run=$(eval_gettext "Run Genesi-Update")" -A "close=$(eval_gettext "Close")" > "${tmpdir}/notif_param"
 	else
-		notify-send -p -r "${last_notif_id}" -a "Cachy-Update" -n "cachy-update_updates-available-${tray_icon_style}${colorblind_mode}" "Cachy-Update" "$(eval_gettext "\${update_number} updates available")" -A "run=$(eval_gettext "Run Cachy-Update")" -A "close=$(eval_gettext "Close")" > "${tmpdir}/notif_param"
+		notify-send -p -r "${last_notif_id}" -a "Genesi-Update" -n "genesi-update_updates-available-${tray_icon_style}${colorblind_mode}" "Genesi-Update" "$(eval_gettext "\${update_number} updates available")" -A "run=$(eval_gettext "Run Genesi-Update")" -A "close=$(eval_gettext "Close")" > "${tmpdir}/notif_param"
 	fi
 fi
 

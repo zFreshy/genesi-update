@@ -1,0 +1,14 @@
+[Desktop Entry]
+Name=Genesi-Update Systray Applet
+Comment=Systray applet for Genesi-Update
+Comment[de]=Genesi-Update-Minianwendung für den Benachrichtigungsbereich
+Comment[eu]=Genesi-Updaterako systray applet-a
+Comment[fr]=Applet systray pour Genesi-Update
+Comment[ja]=Genesi-Update 用のシステムトレイアプレット
+Comment[ka]=Genesi-Update-ის აპლეტი სისტემურ საათთან
+Comment[nb]=Miniprogam for å legge Genesi-Update i systemkurven
+Comment[be]=Аплет сістэмнага трэя для Genesi-Update
+Icon=genesi-update_updates-available-blue
+Type=Application
+Exec=genesi-update --tray
+Categories=Utility

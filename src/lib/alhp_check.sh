@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # alhp_check.sh: Check ALHP status for outdated mirrors or packages in the build queue.
-# https://github.com/Antiz96/arch-update
+# https://github.com/Antiz96/genesi-update
 # SPDX-License-Identifier: GPL-3.0-or-later
 
 alhp_utils_output="$(alhp.utils -m 2>&1)"

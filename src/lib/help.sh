@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # help.sh: Display the help message
-# https://github.com/Antiz96/arch-update
+# https://github.com/Antiz96/genesi-update
 # SPDX-License-Identifier: GPL-3.0-or-later
 
 cat <<EOF

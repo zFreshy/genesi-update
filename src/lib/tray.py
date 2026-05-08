@@ -1,10 +1,10 @@
 #!/usr/bin/env python3
 
-# arch-update-tray: A systray applet for Arch-Update
-# https://github.com/Antiz96/arch-update
+# genesi-update-tray: A systray applet for Genesi-Update
+# https://github.com/Antiz96/genesi-update
 # SPDX-License-Identifier: GPL-3.0-or-later
 
-"""Arch-Update System Tray"""
+"""Genesi-Update System Tray"""
 import gettext
 import logging
 import os
@@ -25,10 +25,10 @@ ICON_STATEFILE = None
 
 if 'XDG_STATE_HOME' in os.environ:
     ICON_STATEFILE = os.path.join(
-        os.environ['XDG_STATE_HOME'], 'arch-update', 'tray_icon')
+        os.environ['XDG_STATE_HOME'], 'genesi-update', 'tray_icon')
 elif 'HOME' in os.environ:
     ICON_STATEFILE = os.path.join(
-        os.environ['HOME'], '.local', 'state', 'arch-update', 'tray_icon')
+        os.environ['HOME'], '.local', 'state', 'genesi-update', 'tray_icon')
 if not os.path.isfile(ICON_STATEFILE):
     log.error("State icon file does not exist: %s", ICON_STATEFILE)
     sys.exit(1)
@@ -41,22 +41,22 @@ UPDATES_STATEFILE_FLATPAK = None
 
 if 'XDG_STATE_HOME' in os.environ:
     UPDATES_STATEFILE = os.path.join(
-        os.environ['XDG_STATE_HOME'], 'arch-update', 'last_updates_check')
+        os.environ['XDG_STATE_HOME'], 'genesi-update', 'last_updates_check')
     UPDATES_STATEFILE_PACKAGES = os.path.join(
-        os.environ['XDG_STATE_HOME'], 'arch-update', 'last_updates_check_packages')
+        os.environ['XDG_STATE_HOME'], 'genesi-update', 'last_updates_check_packages')
     UPDATES_STATEFILE_AUR = os.path.join(
-        os.environ['XDG_STATE_HOME'], 'arch-update', 'last_updates_check_aur')
+        os.environ['XDG_STATE_HOME'], 'genesi-update', 'last_updates_check_aur')
     UPDATES_STATEFILE_FLATPAK = os.path.join(
-        os.environ['XDG_STATE_HOME'], 'arch-update', 'last_updates_check_flatpak')
+        os.environ['XDG_STATE_HOME'], 'genesi-update', 'last_updates_check_flatpak')
 elif 'HOME' in os.environ:
     UPDATES_STATEFILE = os.path.join(
-        os.environ['HOME'], '.local', 'state', 'arch-update', 'last_updates_check')
+        os.environ['HOME'], '.local', 'state', 'genesi-update', 'last_updates_check')
     UPDATES_STATEFILE_PACKAGES = os.path.join(
-        os.environ['HOME'], '.local', 'state', 'arch-update', 'last_updates_check_packages')
+        os.environ['HOME'], '.local', 'state', 'genesi-update', 'last_updates_check_packages')
     UPDATES_STATEFILE_AUR = os.path.join(
-        os.environ['HOME'], '.local', 'state', 'arch-update', 'last_updates_check_aur')
+        os.environ['HOME'], '.local', 'state', 'genesi-update', 'last_updates_check_aur')
     UPDATES_STATEFILE_FLATPAK = os.path.join(
-        os.environ['HOME'], '.local', 'state', 'arch-update', 'last_updates_check_flatpak')
+        os.environ['HOME'], '.local', 'state', 'genesi-update', 'last_updates_check_flatpak')
 if not os.path.isfile(UPDATES_STATEFILE):
     log.error("State updates file does not exist: %s", UPDATES_STATEFILE)
 
@@ -75,36 +75,36 @@ _ = None
 
 for path in i18n_paths:
     translation_file = os.path.join(
-        path, "locale", "fr", "LC_MESSAGES", "Arch-Update.mo")
+        path, "locale", "fr", "LC_MESSAGES", "Genesi-Update.mo")
     if os.path.isfile(translation_file):
         path = os.path.join(path, 'locale')
-        t = gettext.translation('Arch-Update', localedir=path, fallback=True)
+        t = gettext.translation('Genesi-Update', localedir=path, fallback=True)
         _ = t.gettext
         break
 if not _:
-    t = gettext.translation('Arch-Update', fallback=True)
+    t = gettext.translation('Genesi-Update', fallback=True)
     _ = t.gettext
     log.error("No translation found")
 
-# Launch arch-update with desktop file
+# Launch genesi-update with desktop file
 def arch_update():
     """Launch with desktop file"""
     DESKTOP_FILE = None
     if 'XDG_DATA_HOME' in os.environ:
         DESKTOP_FILE = os.path.join(
-            os.environ['XDG_DATA_HOME'], 'applications', 'arch-update.desktop')
+            os.environ['XDG_DATA_HOME'], 'applications', 'genesi-update.desktop')
     if not DESKTOP_FILE or not os.path.isfile(DESKTOP_FILE):
         if 'HOME' in os.environ:
             DESKTOP_FILE = os.path.join(
-                os.environ['HOME'], '.local', 'share', 'applications', 'arch-update.desktop')
+                os.environ['HOME'], '.local', 'share', 'applications', 'genesi-update.desktop')
     if not DESKTOP_FILE or not os.path.isfile(DESKTOP_FILE):
         if 'XDG_DATA_DIRS' in os.environ:
             DESKTOP_FILE = os.path.join(
-                os.environ['XDG_DATA_DIRS'], 'applications', 'arch-update.desktop')
+                os.environ['XDG_DATA_DIRS'], 'applications', 'genesi-update.desktop')
     if not DESKTOP_FILE or not os.path.isfile(DESKTOP_FILE):
-        DESKTOP_FILE = "/usr/local/share/applications/arch-update.desktop"
+        DESKTOP_FILE = "/usr/local/share/applications/genesi-update.desktop"
     if not os.path.isfile(DESKTOP_FILE):
-        DESKTOP_FILE = "/usr/share/applications/arch-update.desktop"
+        DESKTOP_FILE = "/usr/share/applications/genesi-update.desktop"
     subprocess.run(["gio", "launch", DESKTOP_FILE], check=False)
 
 # Helper function to extract human-readable duration from systemctl JSON output
@@ -156,7 +156,7 @@ class ArchUpdateQt6:
             log.error("Statefile Missing")
             sys.exit(1)
 
-        if contents.startswith("cachy-update"):
+        if contents.startswith("genesi-update"):
             icon = QIcon.fromTheme(contents)
             self.tray.setIcon(icon)
 
@@ -258,7 +258,7 @@ class ArchUpdateQt6:
 
         # Update next check timestamp (always False to not pull unwanted attention)
         timer_left = subprocess.run(
-            "/usr/bin/systemctl --user list-timers arch-update.timer -o json",
+            "/usr/bin/systemctl --user list-timers genesi-update.timer -o json",
             check=False,
             shell=True,
             capture_output=True,
@@ -338,14 +338,14 @@ class ArchUpdateQt6:
 
     # Action to run the arch_update function
     def run(self, reason):
-        """Run arch-update"""
+        """Run genesi-update"""
         if reason in (QSystemTrayIcon.ActivationReason.Trigger, QSystemTrayIcon.ActivationReason.MiddleClick, "menu_click_action"):
             arch_update()
 
-    # Action to run `arch-update --check`
+    # Action to run `genesi-update --check`
     def check(self):
         """Run check for updates"""
-        subprocess.run(["arch-update", "--check"], check=False)
+        subprocess.run(["genesi-update", "--check"], check=False)
 
     # Action to exit the systray
     def exit(self):
@@ -365,7 +365,7 @@ class ArchUpdateQt6:
         self.watcher = None
 
         # General application parameters
-        app = QApplication(["Arch-Update"])
+        app = QApplication(["Genesi-Update"])
         app.setQuitOnLastWindowClosed(False)
 
         # Icon
@@ -374,15 +374,15 @@ class ArchUpdateQt6:
         self.tray.activated.connect(self.run)
 
         # Tooltip
-        tooltip = _("Cachy-Update")
+        tooltip = _("Genesi-Update")
         self.tray.setToolTip(tooltip)
 
         # Definition of menus titles
         self.menu = QMenu()
-        self.menu_count = QAction(_("Arch-Update"))
+        self.menu_count = QAction(_("Genesi-Update"))
         self.menu_last_check = QAction(_("Last check"))
         self.menu_next_check = QAction(_("Next check"))
-        self.menu_launch = QAction(_("Run Cachy-Update"))
+        self.menu_launch = QAction(_("Run Genesi-Update"))
         self.menu_check = QAction(_("Check for updates"))
         self.menu_exit = QAction(_("Exit"))
 

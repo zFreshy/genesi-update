@@ -2,1263 +2,1263 @@
 
 All notable changes to this project will be documented in this file.
 
-## [v3.19.4](https://github.com/Antiz96/arch-update/releases/tag/v3.19.4) - 2026-05-07
+## [v3.19.4](https://github.com/Antiz96/genesi-update/releases/tag/v3.19.4) - 2026-05-07
 
 ### Features
 
-- *(i18n)* Add Belarusian translation ([#594](https://github.com/Antiz96/arch-update/pull/594)) - ([3937ee9](https://github.com/Antiz96/arch-update/commit/3937ee9c4b4ffbc4e512adc7c4e5f314397fd7a6)) by @lasaczka
+- *(i18n)* Add Belarusian translation ([#594](https://github.com/Antiz96/genesi-update/pull/594)) - ([3937ee9](https://github.com/Antiz96/genesi-update/commit/3937ee9c4b4ffbc4e512adc7c4e5f314397fd7a6)) by @lasaczka
 
-## [v3.19.3](https://github.com/Antiz96/arch-update/releases/tag/v3.19.3) - 2026-04-26
+## [v3.19.3](https://github.com/Antiz96/genesi-update/releases/tag/v3.19.3) - 2026-04-26
 
 ### Fixes
 
-- *(orphans)* Additionally check for orphans packages before AUR package updates ([#587](https://github.com/Antiz96/arch-update/pull/587)) - ([af74954](https://github.com/Antiz96/arch-update/commit/af7495449f56c36c9344ca287829918a2b9de391)) by @Antiz96
-- *(restart services)* Move condition logic outside of the library script ([#589](https://github.com/Antiz96/arch-update/pull/589)) - ([2c42319](https://github.com/Antiz96/arch-update/commit/2c42319a7b8bafcb9f9e604df67885cff635b6e6)) by @Antiz96
-- *(state)* Update global update state files after each update processes ([#590](https://github.com/Antiz96/arch-update/pull/590)) - ([8d3ee00](https://github.com/Antiz96/arch-update/commit/8d3ee0098257e69434fad216bae16924113073d7)) by @Antiz96
-- Update state files updating logic to match changes added in #583 ([#584](https://github.com/Antiz96/arch-update/pull/584)) - ([3fe9e14](https://github.com/Antiz96/arch-update/commit/3fe9e14735d6dff8b76649b59167f9f4c9a94fae)) by @Antiz96
-- Treat issues during AUR and Flatpak packages updates as warning ([#583](https://github.com/Antiz96/arch-update/pull/583)) - ([bf5c825](https://github.com/Antiz96/arch-update/commit/bf5c825c849050688ddc5adee733549e115ea11f)) by @Antiz96
+- *(orphans)* Additionally check for orphans packages before AUR package updates ([#587](https://github.com/Antiz96/genesi-update/pull/587)) - ([af74954](https://github.com/Antiz96/genesi-update/commit/af7495449f56c36c9344ca287829918a2b9de391)) by @Antiz96
+- *(restart services)* Move condition logic outside of the library script ([#589](https://github.com/Antiz96/genesi-update/pull/589)) - ([2c42319](https://github.com/Antiz96/genesi-update/commit/2c42319a7b8bafcb9f9e604df67885cff635b6e6)) by @Antiz96
+- *(state)* Update global update state files after each update processes ([#590](https://github.com/Antiz96/genesi-update/pull/590)) - ([8d3ee00](https://github.com/Antiz96/genesi-update/commit/8d3ee0098257e69434fad216bae16924113073d7)) by @Antiz96
+- Update state files updating logic to match changes added in #583 ([#584](https://github.com/Antiz96/genesi-update/pull/584)) - ([3fe9e14](https://github.com/Antiz96/genesi-update/commit/3fe9e14735d6dff8b76649b59167f9f4c9a94fae)) by @Antiz96
+- Treat issues during AUR and Flatpak packages updates as warning ([#583](https://github.com/Antiz96/genesi-update/pull/583)) - ([bf5c825](https://github.com/Antiz96/genesi-update/commit/bf5c825c849050688ddc5adee733549e115ea11f)) by @Antiz96
 
 ### Styling
 
-- Add missing line break in Flatpak warning message ([#586](https://github.com/Antiz96/arch-update/pull/586)) - ([ba08c8e](https://github.com/Antiz96/arch-update/commit/ba08c8e612e7d9df9136e76b77b986c570e68bd8)) by @Antiz96
+- Add missing line break in Flatpak warning message ([#586](https://github.com/Antiz96/genesi-update/pull/586)) - ([ba08c8e](https://github.com/Antiz96/genesi-update/commit/ba08c8e612e7d9df9136e76b77b986c570e68bd8)) by @Antiz96
 
 ### Miscellaneous
 
-- *(i18n)* Update translation files ([#591](https://github.com/Antiz96/arch-update/pull/591)) - ([32b56bf](https://github.com/Antiz96/arch-update/commit/32b56bf4abf2ac12dedc53af4bd6754a9414b07f)) by @Antiz96
-- *(icon)* Remove useless update calls ([#585](https://github.com/Antiz96/arch-update/pull/585)) - ([ca5a3af](https://github.com/Antiz96/arch-update/commit/ca5a3af58dbf8c499e2f565d044711da1befac30)) by @Antiz96
-- Add execution bit to the flatpak_unused_packages library script ([#588](https://github.com/Antiz96/arch-update/pull/588)) - ([ceefadb](https://github.com/Antiz96/arch-update/commit/ceefadbbcac87e4c542e862f5999f0983989b330)) by @Antiz96
+- *(i18n)* Update translation files ([#591](https://github.com/Antiz96/genesi-update/pull/591)) - ([32b56bf](https://github.com/Antiz96/genesi-update/commit/32b56bf4abf2ac12dedc53af4bd6754a9414b07f)) by @Antiz96
+- *(icon)* Remove useless update calls ([#585](https://github.com/Antiz96/genesi-update/pull/585)) - ([ca5a3af](https://github.com/Antiz96/genesi-update/commit/ca5a3af58dbf8c499e2f565d044711da1befac30)) by @Antiz96
+- Add execution bit to the flatpak_unused_packages library script ([#588](https://github.com/Antiz96/genesi-update/pull/588)) - ([ceefadb](https://github.com/Antiz96/genesi-update/commit/ceefadbbcac87e4c542e862f5999f0983989b330)) by @Antiz96
 
-## [v3.19.2](https://github.com/Antiz96/arch-update/releases/tag/v3.19.2) - 2026-04-14
+## [v3.19.2](https://github.com/Antiz96/genesi-update/releases/tag/v3.19.2) - 2026-04-14
 
 ### Fixes
 
-- *(flatpak)* Fix interactive polkit authentications handling in TTY / SSH environment ([#578](https://github.com/Antiz96/arch-update/pull/578)) - ([7d3e893](https://github.com/Antiz96/arch-update/commit/7d3e893c321ecb5ab21a2456c5c9723f53314f28)) by @FineWolf
+- *(flatpak)* Fix interactive polkit authentications handling in TTY / SSH environment ([#578](https://github.com/Antiz96/genesi-update/pull/578)) - ([7d3e893](https://github.com/Antiz96/genesi-update/commit/7d3e893c321ecb5ab21a2456c5c9723f53314f28)) by @FineWolf
 
 ### Miscellaneous
 
-- *(i18n)* Update translation files ([#580](https://github.com/Antiz96/arch-update/pull/580)) - ([524828f](https://github.com/Antiz96/arch-update/commit/524828ff7cf6b80ff86294d5ca60c2d95116d0f5)) by @Antiz96
-- Update contributing guidelines regarding derivatives ([#579](https://github.com/Antiz96/arch-update/pull/579)) - ([2fa6720](https://github.com/Antiz96/arch-update/commit/2fa67207b2ab4d493b539478e8c0d597baf87287)) by @Antiz96
+- *(i18n)* Update translation files ([#580](https://github.com/Antiz96/genesi-update/pull/580)) - ([524828f](https://github.com/Antiz96/genesi-update/commit/524828ff7cf6b80ff86294d5ca60c2d95116d0f5)) by @Antiz96
+- Update contributing guidelines regarding derivatives ([#579](https://github.com/Antiz96/genesi-update/pull/579)) - ([2fa6720](https://github.com/Antiz96/genesi-update/commit/2fa67207b2ab4d493b539478e8c0d597baf87287)) by @Antiz96
 
-## [v3.19.1](https://github.com/Antiz96/arch-update/releases/tag/v3.19.1) - 2026-04-05
+## [v3.19.1](https://github.com/Antiz96/genesi-update/releases/tag/v3.19.1) - 2026-04-05
 
 ### Fixes
 
-- Syntax fix in zsh completion ([#572](https://github.com/Antiz96/arch-update/pull/572)) - ([00c86ef](https://github.com/Antiz96/arch-update/commit/00c86eff71a221f7064ce3d9dcaf19d359ccf9a4)) by @balki
+- Syntax fix in zsh completion ([#572](https://github.com/Antiz96/genesi-update/pull/572)) - ([00c86ef](https://github.com/Antiz96/genesi-update/commit/00c86eff71a221f7064ce3d9dcaf19d359ccf9a4)) by @balki
 
 ### Miscellaneous
 
-- *(i18n)* Update Brazilian Portuguese and Spanish translation ([#571](https://github.com/Antiz96/arch-update/pull/571)) - ([d857385](https://github.com/Antiz96/arch-update/commit/d857385bdf2ed3d62c8272b96e746a51da378c65)) by @diegons490
+- *(i18n)* Update Brazilian Portuguese and Spanish translation ([#571](https://github.com/Antiz96/genesi-update/pull/571)) - ([d857385](https://github.com/Antiz96/genesi-update/commit/d857385bdf2ed3d62c8272b96e746a51da378c65)) by @diegons490
 
-## [v3.19.0](https://github.com/Antiz96/arch-update/releases/tag/v3.19.0) - 2026-03-27
+## [v3.19.0](https://github.com/Antiz96/genesi-update/releases/tag/v3.19.0) - 2026-03-27
 
 ### Features
 
-- *(i18n)* Add Basque translation ([#545](https://github.com/Antiz96/arch-update/pull/545)) - ([93c2663](https://github.com/Antiz96/arch-update/commit/93c26635c276c5203a1feaafa6b2906170bb0dd8)) by @bingenm
-- Add a default timeout for update check requests ([#554](https://github.com/Antiz96/arch-update/pull/554)) - ([28d7d4e](https://github.com/Antiz96/arch-update/commit/28d7d4ebdccc93c8c7cb733be3c4c76ad5dc692a)) by @Antiz96
-- Disable flatpak support if no flatpak package is installed ([#552](https://github.com/Antiz96/arch-update/pull/552)) - ([e45185a](https://github.com/Antiz96/arch-update/commit/e45185a70b0747530be0d7a0bb43a784cb405af4)) by @Antiz96
-- Add support for ALHP utils package check ([#539](https://github.com/Antiz96/arch-update/pull/539)) - ([30551c4](https://github.com/Antiz96/arch-update/commit/30551c49f883e861bc86d65df22922d021ae96ca)) by @kescherCode
+- *(i18n)* Add Basque translation ([#545](https://github.com/Antiz96/genesi-update/pull/545)) - ([93c2663](https://github.com/Antiz96/genesi-update/commit/93c26635c276c5203a1feaafa6b2906170bb0dd8)) by @bingenm
+- Add a default timeout for update check requests ([#554](https://github.com/Antiz96/genesi-update/pull/554)) - ([28d7d4e](https://github.com/Antiz96/genesi-update/commit/28d7d4ebdccc93c8c7cb733be3c4c76ad5dc692a)) by @Antiz96
+- Disable flatpak support if no flatpak package is installed ([#552](https://github.com/Antiz96/genesi-update/pull/552)) - ([e45185a](https://github.com/Antiz96/genesi-update/commit/e45185a70b0747530be0d7a0bb43a784cb405af4)) by @Antiz96
+- Add support for ALHP utils package check ([#539](https://github.com/Antiz96/genesi-update/pull/539)) - ([30551c4](https://github.com/Antiz96/genesi-update/commit/30551c49f883e861bc86d65df22922d021ae96ca)) by @kescherCode
 
 ### Styling
 
-- Add line breaks in alhp check warning messages ([#555](https://github.com/Antiz96/arch-update/pull/555)) - ([a215705](https://github.com/Antiz96/arch-update/commit/a2157054c4bb0266ea710f2050a479bb77160483)) by @Antiz96
-- Formatting fixes ([#540](https://github.com/Antiz96/arch-update/pull/540)) - ([c9eb9fd](https://github.com/Antiz96/arch-update/commit/c9eb9fd6a1ac6f395d6fed3a0b254effcab77650)) by @Antiz96
+- Add line breaks in alhp check warning messages ([#555](https://github.com/Antiz96/genesi-update/pull/555)) - ([a215705](https://github.com/Antiz96/genesi-update/commit/a2157054c4bb0266ea710f2050a479bb77160483)) by @Antiz96
+- Formatting fixes ([#540](https://github.com/Antiz96/genesi-update/pull/540)) - ([c9eb9fd](https://github.com/Antiz96/genesi-update/commit/c9eb9fd6a1ac6f395d6fed3a0b254effcab77650)) by @Antiz96
 
 ### Miscellaneous
 
-- *(i18n)* Update Norwegian translation ([#568](https://github.com/Antiz96/arch-update/pull/568)) - ([0693b93](https://github.com/Antiz96/arch-update/commit/0693b93b30189c5015d4e136f5237229a389839d)) by @Kjodleiken
-- *(i18n)* Update Russian translation ([#567](https://github.com/Antiz96/arch-update/pull/567)) - ([efe973a](https://github.com/Antiz96/arch-update/commit/efe973a7509396a58d7b748fdd6cb875a7b40607)) by @DrWeb56
-- *(i18n)* Update Swedish translation ([#566](https://github.com/Antiz96/arch-update/pull/566)) - ([5d99328](https://github.com/Antiz96/arch-update/commit/5d99328c614ae4f3c43b78f62be3ff8b59de66a2)) by @bittin
-- *(i18n)* Update Japanese translation ([#565](https://github.com/Antiz96/arch-update/pull/565)) - ([4a8bb5f](https://github.com/Antiz96/arch-update/commit/4a8bb5fd16a39f388602081d0138564033165c44)) by @MintJapan
-- *(i18n)* Update Basque translation ([#564](https://github.com/Antiz96/arch-update/pull/564)) - ([88a7823](https://github.com/Antiz96/arch-update/commit/88a782326d280bd1cd6d159e45d9a066e307b77b)) by @bingenm
-- *(i18n)* Update Dutch translation ([#562](https://github.com/Antiz96/arch-update/pull/562)) - ([6f84d21](https://github.com/Antiz96/arch-update/commit/6f84d218808e679c63f7755afc53fbaa29be0955)) by @Vistaus
-- *(i18n)* Update Portuguese translation ([#561](https://github.com/Antiz96/arch-update/pull/561)) - ([79a12a8](https://github.com/Antiz96/arch-update/commit/79a12a8a6430a2f9d6a190fcf08c65f1a68abc32)) by @NyaPuma
-- *(i18n)* Update German translation ([#560](https://github.com/Antiz96/arch-update/pull/560)) - ([e26faaf](https://github.com/Antiz96/arch-update/commit/e26faafa0f424aadabc373ab2719e36915d1f2af)) by @DeN-AlB
-- *(i18n)* Update French translation ([#559](https://github.com/Antiz96/arch-update/pull/559)) - ([ba88d45](https://github.com/Antiz96/arch-update/commit/ba88d45410f386f649e95aeb4cd03e941a479fec)) by @Antiz96
-- *(i18n)* Update translation files ([#557](https://github.com/Antiz96/arch-update/pull/557)) - ([e021f57](https://github.com/Antiz96/arch-update/commit/e021f57a49972ec90d7944406cd3658957bbe4cf)) by @Antiz96
-- *(i18n)* Update translation files ([#553](https://github.com/Antiz96/arch-update/pull/553)) - ([e4751a1](https://github.com/Antiz96/arch-update/commit/e4751a156a906542e03b7afaa547386160739e33)) by @Antiz96
-- *(i18n)* Update Portuguese translation ([#549](https://github.com/Antiz96/arch-update/pull/549)) - ([edf6d8a](https://github.com/Antiz96/arch-update/commit/edf6d8aa00b51cdb622712bcc62c404172fa908d)) by @NyaPuma
-- *(i18n)* Update Norwegian bokmål translation ([#548](https://github.com/Antiz96/arch-update/pull/548)) - ([ca07134](https://github.com/Antiz96/arch-update/commit/ca071349c66bbcbac83324e29215609d96475ea7)) by @Kjodleiken
-- *(i18n)* Update Swedish translation ([#547](https://github.com/Antiz96/arch-update/pull/547)) - ([c9c950c](https://github.com/Antiz96/arch-update/commit/c9c950c3410abaaa358f7fb9ac5540306bcfcce4)) by @bittin
-- *(i18n)* Update Japanese translation ([#546](https://github.com/Antiz96/arch-update/pull/546)) - ([bac749f](https://github.com/Antiz96/arch-update/commit/bac749fb457881bd40f4953694ce27ade7658f20)) by @MintJapan
-- *(i18n)* Update German translation ([#544](https://github.com/Antiz96/arch-update/pull/544)) - ([a6334c8](https://github.com/Antiz96/arch-update/commit/a6334c8bce3853991a728364166feb736d5b00c1)) by @DeN-AlB
-- *(i18n)* Update Dutch translation ([#543](https://github.com/Antiz96/arch-update/pull/543)) - ([adbcf63](https://github.com/Antiz96/arch-update/commit/adbcf6340342dc762e626cbb1ab9c82251359315)) by @Vistaus
-- *(i18n)* Update French translation ([#542](https://github.com/Antiz96/arch-update/pull/542)) - ([c9f0121](https://github.com/Antiz96/arch-update/commit/c9f012144ca36a62192719369a81031442855421)) by @Antiz96
-- *(i18n)* Update translation files ([#541](https://github.com/Antiz96/arch-update/pull/541)) - ([ab99ec6](https://github.com/Antiz96/arch-update/commit/ab99ec6b30489606ecbf31e9b986fc0f0e53287e)) by @Antiz96
-- Add execution permission bit to alhp_check.sh ([#556](https://github.com/Antiz96/arch-update/pull/556)) - ([3525cbd](https://github.com/Antiz96/arch-update/commit/3525cbd9fc9e2de48ea412d18804be7a144de599)) by @Antiz96
+- *(i18n)* Update Norwegian translation ([#568](https://github.com/Antiz96/genesi-update/pull/568)) - ([0693b93](https://github.com/Antiz96/genesi-update/commit/0693b93b30189c5015d4e136f5237229a389839d)) by @Kjodleiken
+- *(i18n)* Update Russian translation ([#567](https://github.com/Antiz96/genesi-update/pull/567)) - ([efe973a](https://github.com/Antiz96/genesi-update/commit/efe973a7509396a58d7b748fdd6cb875a7b40607)) by @DrWeb56
+- *(i18n)* Update Swedish translation ([#566](https://github.com/Antiz96/genesi-update/pull/566)) - ([5d99328](https://github.com/Antiz96/genesi-update/commit/5d99328c614ae4f3c43b78f62be3ff8b59de66a2)) by @bittin
+- *(i18n)* Update Japanese translation ([#565](https://github.com/Antiz96/genesi-update/pull/565)) - ([4a8bb5f](https://github.com/Antiz96/genesi-update/commit/4a8bb5fd16a39f388602081d0138564033165c44)) by @MintJapan
+- *(i18n)* Update Basque translation ([#564](https://github.com/Antiz96/genesi-update/pull/564)) - ([88a7823](https://github.com/Antiz96/genesi-update/commit/88a782326d280bd1cd6d159e45d9a066e307b77b)) by @bingenm
+- *(i18n)* Update Dutch translation ([#562](https://github.com/Antiz96/genesi-update/pull/562)) - ([6f84d21](https://github.com/Antiz96/genesi-update/commit/6f84d218808e679c63f7755afc53fbaa29be0955)) by @Vistaus
+- *(i18n)* Update Portuguese translation ([#561](https://github.com/Antiz96/genesi-update/pull/561)) - ([79a12a8](https://github.com/Antiz96/genesi-update/commit/79a12a8a6430a2f9d6a190fcf08c65f1a68abc32)) by @NyaPuma
+- *(i18n)* Update German translation ([#560](https://github.com/Antiz96/genesi-update/pull/560)) - ([e26faaf](https://github.com/Antiz96/genesi-update/commit/e26faafa0f424aadabc373ab2719e36915d1f2af)) by @DeN-AlB
+- *(i18n)* Update French translation ([#559](https://github.com/Antiz96/genesi-update/pull/559)) - ([ba88d45](https://github.com/Antiz96/genesi-update/commit/ba88d45410f386f649e95aeb4cd03e941a479fec)) by @Antiz96
+- *(i18n)* Update translation files ([#557](https://github.com/Antiz96/genesi-update/pull/557)) - ([e021f57](https://github.com/Antiz96/genesi-update/commit/e021f57a49972ec90d7944406cd3658957bbe4cf)) by @Antiz96
+- *(i18n)* Update translation files ([#553](https://github.com/Antiz96/genesi-update/pull/553)) - ([e4751a1](https://github.com/Antiz96/genesi-update/commit/e4751a156a906542e03b7afaa547386160739e33)) by @Antiz96
+- *(i18n)* Update Portuguese translation ([#549](https://github.com/Antiz96/genesi-update/pull/549)) - ([edf6d8a](https://github.com/Antiz96/genesi-update/commit/edf6d8aa00b51cdb622712bcc62c404172fa908d)) by @NyaPuma
+- *(i18n)* Update Norwegian bokmål translation ([#548](https://github.com/Antiz96/genesi-update/pull/548)) - ([ca07134](https://github.com/Antiz96/genesi-update/commit/ca071349c66bbcbac83324e29215609d96475ea7)) by @Kjodleiken
+- *(i18n)* Update Swedish translation ([#547](https://github.com/Antiz96/genesi-update/pull/547)) - ([c9c950c](https://github.com/Antiz96/genesi-update/commit/c9c950c3410abaaa358f7fb9ac5540306bcfcce4)) by @bittin
+- *(i18n)* Update Japanese translation ([#546](https://github.com/Antiz96/genesi-update/pull/546)) - ([bac749f](https://github.com/Antiz96/genesi-update/commit/bac749fb457881bd40f4953694ce27ade7658f20)) by @MintJapan
+- *(i18n)* Update German translation ([#544](https://github.com/Antiz96/genesi-update/pull/544)) - ([a6334c8](https://github.com/Antiz96/genesi-update/commit/a6334c8bce3853991a728364166feb736d5b00c1)) by @DeN-AlB
+- *(i18n)* Update Dutch translation ([#543](https://github.com/Antiz96/genesi-update/pull/543)) - ([adbcf63](https://github.com/Antiz96/genesi-update/commit/adbcf6340342dc762e626cbb1ab9c82251359315)) by @Vistaus
+- *(i18n)* Update French translation ([#542](https://github.com/Antiz96/genesi-update/pull/542)) - ([c9f0121](https://github.com/Antiz96/genesi-update/commit/c9f012144ca36a62192719369a81031442855421)) by @Antiz96
+- *(i18n)* Update translation files ([#541](https://github.com/Antiz96/genesi-update/pull/541)) - ([ab99ec6](https://github.com/Antiz96/genesi-update/commit/ab99ec6b30489606ecbf31e9b986fc0f0e53287e)) by @Antiz96
+- Add execution permission bit to alhp_check.sh ([#556](https://github.com/Antiz96/genesi-update/pull/556)) - ([3525cbd](https://github.com/Antiz96/genesi-update/commit/3525cbd9fc9e2de48ea412d18804be7a144de599)) by @Antiz96
 
-## [v3.18.1](https://github.com/Antiz96/arch-update/releases/tag/v3.18.1) - 2026-03-21
+## [v3.18.1](https://github.com/Antiz96/genesi-update/releases/tag/v3.18.1) - 2026-03-21
 
 ### Features
 
-- *(i18n)* Add Georgian translation ([#537](https://github.com/Antiz96/arch-update/pull/537)) - ([9086f4b](https://github.com/Antiz96/arch-update/commit/9086f4bb4c02164a9529628dbccc97c0f80e2054)) by @EkaterinePapava
-- *(i18n)* Add Japanese translation ([#532](https://github.com/Antiz96/arch-update/pull/532)) - ([618c22b](https://github.com/Antiz96/arch-update/commit/618c22bd1b6ee2d15ddd13bfefafb3fc69366414)) by @MintJapan
-- *(kernel_reboot)* Use a more elegant and robust mechanism to check for pending kernel update ([#525](https://github.com/Antiz96/arch-update/pull/525)) - ([c7635cb](https://github.com/Antiz96/arch-update/commit/c7635cb3e1af33e412755ccc3c2e6d16fb31ad0d)) by @Antiz96
+- *(i18n)* Add Georgian translation ([#537](https://github.com/Antiz96/genesi-update/pull/537)) - ([9086f4b](https://github.com/Antiz96/genesi-update/commit/9086f4bb4c02164a9529628dbccc97c0f80e2054)) by @EkaterinePapava
+- *(i18n)* Add Japanese translation ([#532](https://github.com/Antiz96/genesi-update/pull/532)) - ([618c22b](https://github.com/Antiz96/genesi-update/commit/618c22bd1b6ee2d15ddd13bfefafb3fc69366414)) by @MintJapan
+- *(kernel_reboot)* Use a more elegant and robust mechanism to check for pending kernel update ([#525](https://github.com/Antiz96/genesi-update/pull/525)) - ([c7635cb](https://github.com/Antiz96/genesi-update/commit/c7635cb3e1af33e412755ccc3c2e6d16fb31ad0d)) by @Antiz96
 
 ### Miscellaneous
 
-- *(doc)* Explicitly state that Arch-Update is an interactive tool ([#516](https://github.com/Antiz96/arch-update/pull/516)) - ([cc93b52](https://github.com/Antiz96/arch-update/commit/cc93b52054a7f8f10f05ed7c02a410ba1ad713fd)) by @Antiz96
-- *(i18n)* Add Norwegian translation to `.desktop` files ([#534](https://github.com/Antiz96/arch-update/pull/534)) - ([6166d04](https://github.com/Antiz96/arch-update/commit/6166d04bfd2fb89cee905d2d29ff69ce069de875)) by @Kjodleiken
-- *(i18n)* Add German translations for `.desktop` file comments ([#536](https://github.com/Antiz96/arch-update/pull/536)) - ([8c0db46](https://github.com/Antiz96/arch-update/commit/8c0db4624990c86fa743a60f6fb66bf96b895faa)) by @m2u-84
-- *(i18n)* Restore French translation for `.desktop` files ([#533](https://github.com/Antiz96/arch-update/pull/533)) - ([9a5043f](https://github.com/Antiz96/arch-update/commit/9a5043f5f4b87a53fade87d71f8874b7cc1028ce)) by @Antiz96
-- *(i18n)* Drop French translation for "side" resources ([#531](https://github.com/Antiz96/arch-update/pull/531)) - ([602c546](https://github.com/Antiz96/arch-update/commit/602c54625fcdeff6edf43bb1b4446753be47c5a3)) by @Antiz96
-- *(i18n)* Update Brazilian portuguese translation ([#530](https://github.com/Antiz96/arch-update/pull/530)) - ([a9529dd](https://github.com/Antiz96/arch-update/commit/a9529dd2a66a19511ae0ec067eef4479e1458679)) by @RyukiBando
-- *(i18n)* Update Swedish translation ([#527](https://github.com/Antiz96/arch-update/pull/527)) - ([e2c3888](https://github.com/Antiz96/arch-update/commit/e2c3888f210fbe890c760bafdb388730dc45be40)) by @bittin
-- *(i18n)* Update portuguese (Portugal) translation ([#524](https://github.com/Antiz96/arch-update/pull/524)) - ([59ad482](https://github.com/Antiz96/arch-update/commit/59ad4827a212df1d168afee5d5e753709bb050cd)) by @NyaPuma
-- *(i18n)* Update format and re-add fuzzy ([#523](https://github.com/Antiz96/arch-update/pull/523)) - ([2f09f5e](https://github.com/Antiz96/arch-update/commit/2f09f5e3d6a961a62db4d8e93f149c45334d6055)) by @Antiz96
-- *(i18n)* Update Norwegian translation ([#522](https://github.com/Antiz96/arch-update/pull/522)) - ([4ebd094](https://github.com/Antiz96/arch-update/commit/4ebd094406e863e7ce9a14cb40c5548005ebf5e6)) by @Kjodleiken
-- *(i18n)* Update Dutch translation ([#520](https://github.com/Antiz96/arch-update/pull/520)) - ([9e0d6fa](https://github.com/Antiz96/arch-update/commit/9e0d6fa3ae8e6cfb169ebb4e7a969b758267d9d9)) by @Vistaus
-- *(i18n)* Update German translation ([#519](https://github.com/Antiz96/arch-update/pull/519)) - ([6cf917b](https://github.com/Antiz96/arch-update/commit/6cf917b0e89c2a54b6de0ff058378b12e6b1c018)) by @mgruberb
-- *(i18n)* Update French translation ([#518](https://github.com/Antiz96/arch-update/pull/518)) - ([bfb2fb5](https://github.com/Antiz96/arch-update/commit/bfb2fb53eb3c69fe251af159db22cbddfc686445)) by @Antiz96
-- *(i18n)* Update translation files ([#517](https://github.com/Antiz96/arch-update/pull/517)) - ([4fc943e](https://github.com/Antiz96/arch-update/commit/4fc943ebc6a4c18feb604ec22bd6682ce53f60a8)) by @Antiz96
-- Improve wording in MAINTAINERS.md ([#538](https://github.com/Antiz96/arch-update/pull/538)) - ([bbdde07](https://github.com/Antiz96/arch-update/commit/bbdde07241e372d6e514431fd43d0448a5ef981e)) by @Antiz96
-- Makefile rework ([#535](https://github.com/Antiz96/arch-update/pull/535)) - ([44d3636](https://github.com/Antiz96/arch-update/commit/44d3636b70ada04802a492f242b17e364cb89ec1)) by @Antiz96
+- *(doc)* Explicitly state that Genesi-Update is an interactive tool ([#516](https://github.com/Antiz96/genesi-update/pull/516)) - ([cc93b52](https://github.com/Antiz96/genesi-update/commit/cc93b52054a7f8f10f05ed7c02a410ba1ad713fd)) by @Antiz96
+- *(i18n)* Add Norwegian translation to `.desktop` files ([#534](https://github.com/Antiz96/genesi-update/pull/534)) - ([6166d04](https://github.com/Antiz96/genesi-update/commit/6166d04bfd2fb89cee905d2d29ff69ce069de875)) by @Kjodleiken
+- *(i18n)* Add German translations for `.desktop` file comments ([#536](https://github.com/Antiz96/genesi-update/pull/536)) - ([8c0db46](https://github.com/Antiz96/genesi-update/commit/8c0db4624990c86fa743a60f6fb66bf96b895faa)) by @m2u-84
+- *(i18n)* Restore French translation for `.desktop` files ([#533](https://github.com/Antiz96/genesi-update/pull/533)) - ([9a5043f](https://github.com/Antiz96/genesi-update/commit/9a5043f5f4b87a53fade87d71f8874b7cc1028ce)) by @Antiz96
+- *(i18n)* Drop French translation for "side" resources ([#531](https://github.com/Antiz96/genesi-update/pull/531)) - ([602c546](https://github.com/Antiz96/genesi-update/commit/602c54625fcdeff6edf43bb1b4446753be47c5a3)) by @Antiz96
+- *(i18n)* Update Brazilian portuguese translation ([#530](https://github.com/Antiz96/genesi-update/pull/530)) - ([a9529dd](https://github.com/Antiz96/genesi-update/commit/a9529dd2a66a19511ae0ec067eef4479e1458679)) by @RyukiBando
+- *(i18n)* Update Swedish translation ([#527](https://github.com/Antiz96/genesi-update/pull/527)) - ([e2c3888](https://github.com/Antiz96/genesi-update/commit/e2c3888f210fbe890c760bafdb388730dc45be40)) by @bittin
+- *(i18n)* Update portuguese (Portugal) translation ([#524](https://github.com/Antiz96/genesi-update/pull/524)) - ([59ad482](https://github.com/Antiz96/genesi-update/commit/59ad4827a212df1d168afee5d5e753709bb050cd)) by @NyaPuma
+- *(i18n)* Update format and re-add fuzzy ([#523](https://github.com/Antiz96/genesi-update/pull/523)) - ([2f09f5e](https://github.com/Antiz96/genesi-update/commit/2f09f5e3d6a961a62db4d8e93f149c45334d6055)) by @Antiz96
+- *(i18n)* Update Norwegian translation ([#522](https://github.com/Antiz96/genesi-update/pull/522)) - ([4ebd094](https://github.com/Antiz96/genesi-update/commit/4ebd094406e863e7ce9a14cb40c5548005ebf5e6)) by @Kjodleiken
+- *(i18n)* Update Dutch translation ([#520](https://github.com/Antiz96/genesi-update/pull/520)) - ([9e0d6fa](https://github.com/Antiz96/genesi-update/commit/9e0d6fa3ae8e6cfb169ebb4e7a969b758267d9d9)) by @Vistaus
+- *(i18n)* Update German translation ([#519](https://github.com/Antiz96/genesi-update/pull/519)) - ([6cf917b](https://github.com/Antiz96/genesi-update/commit/6cf917b0e89c2a54b6de0ff058378b12e6b1c018)) by @mgruberb
+- *(i18n)* Update French translation ([#518](https://github.com/Antiz96/genesi-update/pull/518)) - ([bfb2fb5](https://github.com/Antiz96/genesi-update/commit/bfb2fb53eb3c69fe251af159db22cbddfc686445)) by @Antiz96
+- *(i18n)* Update translation files ([#517](https://github.com/Antiz96/genesi-update/pull/517)) - ([4fc943e](https://github.com/Antiz96/genesi-update/commit/4fc943ebc6a4c18feb604ec22bd6682ce53f60a8)) by @Antiz96
+- Improve wording in MAINTAINERS.md ([#538](https://github.com/Antiz96/genesi-update/pull/538)) - ([bbdde07](https://github.com/Antiz96/genesi-update/commit/bbdde07241e372d6e514431fd43d0448a5ef981e)) by @Antiz96
+- Makefile rework ([#535](https://github.com/Antiz96/genesi-update/pull/535)) - ([44d3636](https://github.com/Antiz96/genesi-update/commit/44d3636b70ada04802a492f242b17e364cb89ec1)) by @Antiz96
 
-## [v3.18.0](https://github.com/Antiz96/arch-update/releases/tag/v3.18.0) - 2026-02-21
+## [v3.18.0](https://github.com/Antiz96/genesi-update/releases/tag/v3.18.0) - 2026-02-21
 
 ### Features
 
-- *(icons)* Add colorblind-friendly icons variants ([#511](https://github.com/Antiz96/arch-update/pull/511)) - ([6356495](https://github.com/Antiz96/arch-update/commit/6356495d4b1cb9180103065e5051d72847e376b4)) by @s-pappous
+- *(icons)* Add colorblind-friendly icons variants ([#511](https://github.com/Antiz96/genesi-update/pull/511)) - ([6356495](https://github.com/Antiz96/genesi-update/commit/6356495d4b1cb9180103065e5051d72847e376b4)) by @s-pappous
 
 ### Miscellaneous
 
-- *(changelog)* Update contributor name for the Dutch translation in changelog ([#506](https://github.com/Antiz96/arch-update/pull/506)) - ([904e3d2](https://github.com/Antiz96/arch-update/commit/904e3d2b599324ff079bbb30767f217c2ec78c46)) by @Antiz96
-- *(i18n)* Update pt_PT.po ([#512](https://github.com/Antiz96/arch-update/pull/512)) - ([3ebc4ff](https://github.com/Antiz96/arch-update/commit/3ebc4ff76554e7e4f841fba7e4b82d981130dbd2)) by @NyaPuma
+- *(changelog)* Update contributor name for the Dutch translation in changelog ([#506](https://github.com/Antiz96/genesi-update/pull/506)) - ([904e3d2](https://github.com/Antiz96/genesi-update/commit/904e3d2b599324ff079bbb30767f217c2ec78c46)) by @Antiz96
+- *(i18n)* Update pt_PT.po ([#512](https://github.com/Antiz96/genesi-update/pull/512)) - ([3ebc4ff](https://github.com/Antiz96/genesi-update/commit/3ebc4ff76554e7e4f841fba7e4b82d981130dbd2)) by @NyaPuma
 
-## [v3.17.11](https://github.com/Antiz96/arch-update/releases/tag/v3.17.11) - 2026-02-09
+## [v3.17.11](https://github.com/Antiz96/genesi-update/releases/tag/v3.17.11) - 2026-02-09
 
 ### Features
 
-- *(i18n)* Add Portuguese translation ([#505](https://github.com/Antiz96/arch-update/pull/505)) - ([2d3bc2b](https://github.com/Antiz96/arch-update/commit/2d3bc2bcd064f2dfbc0b00cbd113bbf1b321fd0c)) by @NyaPuma
+- *(i18n)* Add Portuguese translation ([#505](https://github.com/Antiz96/genesi-update/pull/505)) - ([2d3bc2b](https://github.com/Antiz96/genesi-update/commit/2d3bc2bcd064f2dfbc0b00cbd113bbf1b321fd0c)) by @NyaPuma
 
-## [v3.17.10](https://github.com/Antiz96/arch-update/releases/tag/v3.17.10) - 2026-02-08
-
-### Features
-
-- *(i18n)* Add Dutch translation ([#503](https://github.com/Antiz96/arch-update/pull/503)) - ([54a7d14](https://github.com/Antiz96/arch-update/commit/54a7d14468b2710f6691c512aa1e368c1a9c5c24)) by @Vistaus
-- *(i18n)* Add Norwegian bokmål translation ([#502](https://github.com/Antiz96/arch-update/pull/502)) - ([6955921](https://github.com/Antiz96/arch-update/commit/6955921d4e08f5408b00f9aa55112a167c93573a)) by @Kjodleiken
-
-### Miscellaneous
-
-- *(issues)* Update labels ([#501](https://github.com/Antiz96/arch-update/pull/501)) - ([73ab2cc](https://github.com/Antiz96/arch-update/commit/73ab2ccfa27c5dca4c8be1821b404a86c048ac30)) by @Antiz96
-
-## [v3.17.9](https://github.com/Antiz96/arch-update/releases/tag/v3.17.9) - 2026-02-01
-
-### Miscellaneous
-
-- *(i18n)* Fix various typos in German translation file ([#498](https://github.com/Antiz96/arch-update/pull/498)) - ([8046a7b](https://github.com/Antiz96/arch-update/commit/8046a7bea20405d027e15d793b0737cdb8ca8060)) by @m2u-84
-
-## [v3.17.8](https://github.com/Antiz96/arch-update/releases/tag/v3.17.8) - 2026-01-30
-
-### Fixes
-
-- Add `plasmalogin.service` to the list of ignored services when restarting services - ([0706c6f](https://github.com/Antiz96/arch-update/commit/0706c6f596237fa1fddf0f7d19b0d8ef87e29d5b)) by @hunabku94
-
-## [v3.17.7](https://github.com/Antiz96/arch-update/releases/tag/v3.17.7) - 2026-01-12
-
-### Fixes
-
-- *(notification)* Set app icon with the new libnotify `-n / --app-name` option ([#492](https://github.com/Antiz96/arch-update/pull/492)) - ([b463cb8](https://github.com/Antiz96/arch-update/commit/b463cb8a53c58e4c8fa76aed41b38c4a1370eafc)) by @Antiz96
-
-## [v3.17.6](https://github.com/Antiz96/arch-update/releases/tag/v3.17.6) - 2026-01-11
-
-### Fixes
-
-- *(flatpak)* Make masked patterns detection logic more robust ([#490](https://github.com/Antiz96/arch-update/pull/490)) - ([1d50275](https://github.com/Antiz96/arch-update/commit/1d50275e10df94da220a339a4c837b15d7122f7b)) by @Antiz96
-
-### Miscellaneous
-
-- *(i18n)* Update translation files ([#491](https://github.com/Antiz96/arch-update/pull/491)) - ([8ca1e95](https://github.com/Antiz96/arch-update/commit/8ca1e95ccfa7f6a7d28d5de695c419f7f768963b)) by @Antiz96
-
-## [v3.17.5](https://github.com/Antiz96/arch-update/releases/tag/v3.17.5) - 2026-01-09
+## [v3.17.10](https://github.com/Antiz96/genesi-update/releases/tag/v3.17.10) - 2026-02-08
 
 ### Features
 
-- *(news)* Request compressed curl response ([#488](https://github.com/Antiz96/arch-update/pull/488)) - ([28aeb74](https://github.com/Antiz96/arch-update/commit/28aeb742d18034cbd9393482c621c01e2408b229)) by @Antiz96
-
-### Fixes
-
-- *(news)* Remove the preliminary curl request ([#487](https://github.com/Antiz96/arch-update/pull/487)) - ([a5be500](https://github.com/Antiz96/arch-update/commit/a5be5002b18a94853dcae383703a6d5fd24b2286)) by @Antiz96
+- *(i18n)* Add Dutch translation ([#503](https://github.com/Antiz96/genesi-update/pull/503)) - ([54a7d14](https://github.com/Antiz96/genesi-update/commit/54a7d14468b2710f6691c512aa1e368c1a9c5c24)) by @Vistaus
+- *(i18n)* Add Norwegian bokmål translation ([#502](https://github.com/Antiz96/genesi-update/pull/502)) - ([6955921](https://github.com/Antiz96/genesi-update/commit/6955921d4e08f5408b00f9aa55112a167c93573a)) by @Kjodleiken
 
 ### Miscellaneous
 
-- *(deps)* Update actions/checkout action to v6 ([#484](https://github.com/Antiz96/arch-update/pull/484)) - ([b38c6d9](https://github.com/Antiz96/arch-update/commit/b38c6d920afff1bf4e2ce3da87acf5dca66472a2)) by @renovate[bot]
-- *(renovate)* Add assignees ([#485](https://github.com/Antiz96/arch-update/pull/485)) - ([e71c99b](https://github.com/Antiz96/arch-update/commit/e71c99b34f6267fcdd7959401b595d215f6b2e40)) by @Antiz96
-- Configure Renovate ([#483](https://github.com/Antiz96/arch-update/pull/483)) - ([b722817](https://github.com/Antiz96/arch-update/commit/b722817157adb74bdb50dd7de27f4cdb577ead6e)) by @renovate[bot]
+- *(issues)* Update labels ([#501](https://github.com/Antiz96/genesi-update/pull/501)) - ([73ab2cc](https://github.com/Antiz96/genesi-update/commit/73ab2ccfa27c5dca4c8be1821b404a86c048ac30)) by @Antiz96
 
-## [v3.17.4](https://github.com/Antiz96/arch-update/releases/tag/v3.17.4) - 2025-12-13
+## [v3.17.9](https://github.com/Antiz96/genesi-update/releases/tag/v3.17.9) - 2026-02-01
+
+### Miscellaneous
+
+- *(i18n)* Fix various typos in German translation file ([#498](https://github.com/Antiz96/genesi-update/pull/498)) - ([8046a7b](https://github.com/Antiz96/genesi-update/commit/8046a7bea20405d027e15d793b0737cdb8ca8060)) by @m2u-84
+
+## [v3.17.8](https://github.com/Antiz96/genesi-update/releases/tag/v3.17.8) - 2026-01-30
 
 ### Fixes
 
-- *(pacnew)* Honor `$DIFFPROG` properly ([#480](https://github.com/Antiz96/arch-update/pull/480)) - ([8e01fa9](https://github.com/Antiz96/arch-update/commit/8e01fa924091f59baac758567cec253145cd969e)) by @Antiz96
+- Add `plasmalogin.service` to the list of ignored services when restarting services - ([0706c6f](https://github.com/Antiz96/genesi-update/commit/0706c6f596237fa1fddf0f7d19b0d8ef87e29d5b)) by @hunabku94
+
+## [v3.17.7](https://github.com/Antiz96/genesi-update/releases/tag/v3.17.7) - 2026-01-12
+
+### Fixes
+
+- *(notification)* Set app icon with the new libnotify `-n / --app-name` option ([#492](https://github.com/Antiz96/genesi-update/pull/492)) - ([b463cb8](https://github.com/Antiz96/genesi-update/commit/b463cb8a53c58e4c8fa76aed41b38c4a1370eafc)) by @Antiz96
+
+## [v3.17.6](https://github.com/Antiz96/genesi-update/releases/tag/v3.17.6) - 2026-01-11
+
+### Fixes
+
+- *(flatpak)* Make masked patterns detection logic more robust ([#490](https://github.com/Antiz96/genesi-update/pull/490)) - ([1d50275](https://github.com/Antiz96/genesi-update/commit/1d50275e10df94da220a339a4c837b15d7122f7b)) by @Antiz96
+
+### Miscellaneous
+
+- *(i18n)* Update translation files ([#491](https://github.com/Antiz96/genesi-update/pull/491)) - ([8ca1e95](https://github.com/Antiz96/genesi-update/commit/8ca1e95ccfa7f6a7d28d5de695c419f7f768963b)) by @Antiz96
+
+## [v3.17.5](https://github.com/Antiz96/genesi-update/releases/tag/v3.17.5) - 2026-01-09
+
+### Features
+
+- *(news)* Request compressed curl response ([#488](https://github.com/Antiz96/genesi-update/pull/488)) - ([28aeb74](https://github.com/Antiz96/genesi-update/commit/28aeb742d18034cbd9393482c621c01e2408b229)) by @Antiz96
+
+### Fixes
+
+- *(news)* Remove the preliminary curl request ([#487](https://github.com/Antiz96/genesi-update/pull/487)) - ([a5be500](https://github.com/Antiz96/genesi-update/commit/a5be5002b18a94853dcae383703a6d5fd24b2286)) by @Antiz96
+
+### Miscellaneous
+
+- *(deps)* Update actions/checkout action to v6 ([#484](https://github.com/Antiz96/genesi-update/pull/484)) - ([b38c6d9](https://github.com/Antiz96/genesi-update/commit/b38c6d920afff1bf4e2ce3da87acf5dca66472a2)) by @renovate[bot]
+- *(renovate)* Add assignees ([#485](https://github.com/Antiz96/genesi-update/pull/485)) - ([e71c99b](https://github.com/Antiz96/genesi-update/commit/e71c99b34f6267fcdd7959401b595d215f6b2e40)) by @Antiz96
+- Configure Renovate ([#483](https://github.com/Antiz96/genesi-update/pull/483)) - ([b722817](https://github.com/Antiz96/genesi-update/commit/b722817157adb74bdb50dd7de27f4cdb577ead6e)) by @renovate[bot]
+
+## [v3.17.4](https://github.com/Antiz96/genesi-update/releases/tag/v3.17.4) - 2025-12-13
+
+### Fixes
+
+- *(pacnew)* Honor `$DIFFPROG` properly ([#480](https://github.com/Antiz96/genesi-update/pull/480)) - ([8e01fa9](https://github.com/Antiz96/genesi-update/commit/8e01fa924091f59baac758567cec253145cd969e)) by @Antiz96
 
 ### Documentation
 
-- *(man)* Mention `arch-update --edit-config` in arch-update.conf(5) man page ([#475](https://github.com/Antiz96/arch-update/pull/475)) - ([71aa8a7](https://github.com/Antiz96/arch-update/commit/71aa8a75a23851cf49667f07ce410b619f38e258)) by @Antiz96
+- *(man)* Mention `genesi-update --edit-config` in genesi-update.conf(5) man page ([#475](https://github.com/Antiz96/genesi-update/pull/475)) - ([71aa8a7](https://github.com/Antiz96/genesi-update/commit/71aa8a75a23851cf49667f07ce410b619f38e258)) by @Antiz96
 
 ### Styling
 
-- Fix spacing and indentation ([#474](https://github.com/Antiz96/arch-update/pull/474)) - ([a01c508](https://github.com/Antiz96/arch-update/commit/a01c5088e37dfc0398926e85fc90619e74afd788)) by @Antiz96
+- Fix spacing and indentation ([#474](https://github.com/Antiz96/genesi-update/pull/474)) - ([a01c508](https://github.com/Antiz96/genesi-update/commit/a01c5088e37dfc0398926e85fc90619e74afd788)) by @Antiz96
 
 ### Miscellaneous
 
-- *(i18n)* Update translation files ([#481](https://github.com/Antiz96/arch-update/pull/481)) - ([1eeeb70](https://github.com/Antiz96/arch-update/commit/1eeeb70bcc84ceea7f82a79cfcc4c5988ed11ebd)) by @Antiz96
+- *(i18n)* Update translation files ([#481](https://github.com/Antiz96/genesi-update/pull/481)) - ([1eeeb70](https://github.com/Antiz96/genesi-update/commit/1eeeb70bcc84ceea7f82a79cfcc4c5988ed11ebd)) by @Antiz96
 
-## [v3.17.3](https://github.com/Antiz96/arch-update/releases/tag/v3.17.3) - 2025-12-02
-
-### Miscellaneous
-
-- *(i18n)* Update Chinese (simplified) translation ([#471](https://github.com/Antiz96/arch-update/pull/471)) - ([16b8f32](https://github.com/Antiz96/arch-update/commit/16b8f3201cfdeceb71fb11b721c20fd8fe8bbd72)) by @Carlson24
-
-## [v3.17.2](https://github.com/Antiz96/arch-update/releases/tag/v3.17.2) - 2025-11-30
+## [v3.17.3](https://github.com/Antiz96/genesi-update/releases/tag/v3.17.3) - 2025-12-02
 
 ### Miscellaneous
 
-- *(i18n)* Update Brazilian Portuguese translation ([#468](https://github.com/Antiz96/arch-update/pull/468)) - ([02a26be](https://github.com/Antiz96/arch-update/commit/02a26befdad7dc120b7eb313d782b88938082267)) by @diegons490
-- *(release)* Fix substitution pattern in release script ([#470](https://github.com/Antiz96/arch-update/pull/470)) - ([aae731a](https://github.com/Antiz96/arch-update/commit/aae731a738af013ecf5376dd758c320b10c5dba6)) by @Antiz96
-- *(style)* Add line break in release script ([#469](https://github.com/Antiz96/arch-update/pull/469)) - ([51346e3](https://github.com/Antiz96/arch-update/commit/51346e38fdf99913a9fcc40aa05e5212ba9a1aa0)) by @Antiz96
+- *(i18n)* Update Chinese (simplified) translation ([#471](https://github.com/Antiz96/genesi-update/pull/471)) - ([16b8f32](https://github.com/Antiz96/genesi-update/commit/16b8f3201cfdeceb71fb11b721c20fd8fe8bbd72)) by @Carlson24
 
-## [v3.17.1](https://github.com/Antiz96/arch-update/releases/tag/v3.17.1) - 2025-11-23
+## [v3.17.2](https://github.com/Antiz96/genesi-update/releases/tag/v3.17.2) - 2025-11-30
+
+### Miscellaneous
+
+- *(i18n)* Update Brazilian Portuguese translation ([#468](https://github.com/Antiz96/genesi-update/pull/468)) - ([02a26be](https://github.com/Antiz96/genesi-update/commit/02a26befdad7dc120b7eb313d782b88938082267)) by @diegons490
+- *(release)* Fix substitution pattern in release script ([#470](https://github.com/Antiz96/genesi-update/pull/470)) - ([aae731a](https://github.com/Antiz96/genesi-update/commit/aae731a738af013ecf5376dd758c320b10c5dba6)) by @Antiz96
+- *(style)* Add line break in release script ([#469](https://github.com/Antiz96/genesi-update/pull/469)) - ([51346e3](https://github.com/Antiz96/genesi-update/commit/51346e38fdf99913a9fcc40aa05e5212ba9a1aa0)) by @Antiz96
+
+## [v3.17.1](https://github.com/Antiz96/genesi-update/releases/tag/v3.17.1) - 2025-11-23
 
 ### Fixes
 
-- *(flatpak)* Honor masked patterns ([#466](https://github.com/Antiz96/arch-update/pull/466)) - ([0ec4e52](https://github.com/Antiz96/arch-update/commit/0ec4e52d12c1d82b52cf70ac8443628730e8dd62)) by @Antiz96
+- *(flatpak)* Honor masked patterns ([#466](https://github.com/Antiz96/genesi-update/pull/466)) - ([0ec4e52](https://github.com/Antiz96/genesi-update/commit/0ec4e52d12c1d82b52cf70ac8443628730e8dd62)) by @Antiz96
 
 ### Documentation
 
-- *(README)* Add a note about the appindicator GNOME extension ([#465](https://github.com/Antiz96/arch-update/pull/465)) - ([0036543](https://github.com/Antiz96/arch-update/commit/00365434967f7a0a7b0bc242bb26d81ac29ee28e)) by @Antiz96
+- *(README)* Add a note about the appindicator GNOME extension ([#465](https://github.com/Antiz96/genesi-update/pull/465)) - ([0036543](https://github.com/Antiz96/genesi-update/commit/00365434967f7a0a7b0bc242bb26d81ac29ee28e)) by @Antiz96
 
 ### Miscellaneous
 
-- *(i18n)* Update translation files ([#467](https://github.com/Antiz96/arch-update/pull/467)) - ([3e83299](https://github.com/Antiz96/arch-update/commit/3e832995f92e331f151a8bd81f46f5e509c75080)) by @Antiz96
-- *(i18n)* Update Hungarian translation ([#463](https://github.com/Antiz96/arch-update/pull/463)) - ([5afb1ee](https://github.com/Antiz96/arch-update/commit/5afb1ee75e1692f62a0ee2e2b5c6005027d17669)) by @summoner001
+- *(i18n)* Update translation files ([#467](https://github.com/Antiz96/genesi-update/pull/467)) - ([3e83299](https://github.com/Antiz96/genesi-update/commit/3e832995f92e331f151a8bd81f46f5e509c75080)) by @Antiz96
+- *(i18n)* Update Hungarian translation ([#463](https://github.com/Antiz96/genesi-update/pull/463)) - ([5afb1ee](https://github.com/Antiz96/genesi-update/commit/5afb1ee75e1692f62a0ee2e2b5c6005027d17669)) by @summoner001
 
-## [v3.17.0](https://github.com/Antiz96/arch-update/releases/tag/v3.17.0) - 2025-11-21
+## [v3.17.0](https://github.com/Antiz96/genesi-update/releases/tag/v3.17.0) - 2025-11-21
 
 ### Features
 
-- *(flatpak)* Improve overall support & integration ([#459](https://github.com/Antiz96/arch-update/pull/459)) - ([522a602](https://github.com/Antiz96/arch-update/commit/522a60237df13d79571575f7099108a81eff33cf)) by @Antiz96
+- *(flatpak)* Improve overall support & integration ([#459](https://github.com/Antiz96/genesi-update/pull/459)) - ([522a602](https://github.com/Antiz96/genesi-update/commit/522a60237df13d79571575f7099108a81eff33cf)) by @Antiz96
 
 ### Styling
 
-- *(flatpak)* Add missing line break in unused removal script ([#460](https://github.com/Antiz96/arch-update/pull/460)) - ([dc055cf](https://github.com/Antiz96/arch-update/commit/dc055cfd3be505c41ec57142b6a7c74b4481907d)) by @Antiz96
+- *(flatpak)* Add missing line break in unused removal script ([#460](https://github.com/Antiz96/genesi-update/pull/460)) - ([dc055cf](https://github.com/Antiz96/genesi-update/commit/dc055cfd3be505c41ec57142b6a7c74b4481907d)) by @Antiz96
 
 ### Miscellaneous
 
-- *(i18n)* Update translation files ([#461](https://github.com/Antiz96/arch-update/pull/461)) - ([d465cbf](https://github.com/Antiz96/arch-update/commit/d465cbf9beb72f5426b51e60f88abc0ea9d08a67)) by @Antiz96
+- *(i18n)* Update translation files ([#461](https://github.com/Antiz96/genesi-update/pull/461)) - ([d465cbf](https://github.com/Antiz96/genesi-update/commit/d465cbf9beb72f5426b51e60f88abc0ea9d08a67)) by @Antiz96
 
-## [v3.16.1](https://github.com/Antiz96/arch-update/releases/tag/v3.16.1) - 2025-11-20
+## [v3.16.1](https://github.com/Antiz96/genesi-update/releases/tag/v3.16.1) - 2025-11-20
 
 ### Features
 
-- *(i18n)* Add Russian translation ([#451](https://github.com/Antiz96/arch-update/pull/451)) - ([b80ff61](https://github.com/Antiz96/arch-update/commit/b80ff612d5df990cb81179debfd0c285a71d37ac)) by @DrWeb56
+- *(i18n)* Add Russian translation ([#451](https://github.com/Antiz96/genesi-update/pull/451)) - ([b80ff61](https://github.com/Antiz96/genesi-update/commit/b80ff612d5df990cb81179debfd0c285a71d37ac)) by @DrWeb56
 
 ### Fixes
 
-- Fix orphan packages removal with `sudo-rs` & `run0` ([#456](https://github.com/Antiz96/arch-update/pull/456)) - ([8955754](https://github.com/Antiz96/arch-update/commit/89557541d0558b99a09ad1785a1dd0b0fde0d0cd)) by @Antiz96
+- Fix orphan packages removal with `sudo-rs` & `run0` ([#456](https://github.com/Antiz96/genesi-update/pull/456)) - ([8955754](https://github.com/Antiz96/genesi-update/commit/89557541d0558b99a09ad1785a1dd0b0fde0d0cd)) by @Antiz96
 
 ### Documentation
 
-- *(README)* Update screenshots with the new update check timestamps report ([#452](https://github.com/Antiz96/arch-update/pull/452)) - ([b8a614e](https://github.com/Antiz96/arch-update/commit/b8a614eab1ca0a22b1c3b5a158c8b1e8bcf240a2)) by @Antiz96
+- *(README)* Update screenshots with the new update check timestamps report ([#452](https://github.com/Antiz96/genesi-update/pull/452)) - ([b8a614e](https://github.com/Antiz96/genesi-update/commit/b8a614eab1ca0a22b1c3b5a158c8b1e8bcf240a2)) by @Antiz96
 
 ### Styling
 
-- *(i18n)* Update ru translation file formatting ([#457](https://github.com/Antiz96/arch-update/pull/457)) - ([cab07de](https://github.com/Antiz96/arch-update/commit/cab07deade795afe7d0da186f143e8522c1c042f)) by @Antiz96
-- Remove blank line from the release script ([#453](https://github.com/Antiz96/arch-update/pull/453)) - ([e292b8f](https://github.com/Antiz96/arch-update/commit/e292b8fd3ad56651a8a98bc100a1b7b41603e215)) by @Antiz96
+- *(i18n)* Update ru translation file formatting ([#457](https://github.com/Antiz96/genesi-update/pull/457)) - ([cab07de](https://github.com/Antiz96/genesi-update/commit/cab07deade795afe7d0da186f143e8522c1c042f)) by @Antiz96
+- Remove blank line from the release script ([#453](https://github.com/Antiz96/genesi-update/pull/453)) - ([e292b8f](https://github.com/Antiz96/genesi-update/commit/e292b8fd3ad56651a8a98bc100a1b7b41603e215)) by @Antiz96
 
 ### Miscellaneous
 
-- *(release)* Add release title to the release script ([#449](https://github.com/Antiz96/arch-update/pull/449)) - ([9b66623](https://github.com/Antiz96/arch-update/commit/9b66623b189b414cfb3799cfe4a02e2f98612825)) by @Antiz96
+- *(release)* Add release title to the release script ([#449](https://github.com/Antiz96/genesi-update/pull/449)) - ([9b66623](https://github.com/Antiz96/genesi-update/commit/9b66623b189b414cfb3799cfe4a02e2f98612825)) by @Antiz96
 
-## [v3.16.0](https://github.com/Antiz96/arch-update/releases/tag/v3.16.0) - 2025-11-19
+## [v3.16.0](https://github.com/Antiz96/genesi-update/releases/tag/v3.16.0) - 2025-11-19
 
 ### Features
 
-- *(i18n)* Add Chinese (traditional) translation ([#445](https://github.com/Antiz96/arch-update/pull/445)) - ([34efa7d](https://github.com/Antiz96/arch-update/commit/34efa7d669bee9a93e6f941128d5632334803fb1)) by @Capricornus007
-- *(tray)* Add "Last check" and "Next check" timestamps report ([#435](https://github.com/Antiz96/arch-update/pull/435)) - ([757dc02](https://github.com/Antiz96/arch-update/commit/757dc02aa4bf3aeae8ff5b565fc559a19cccded8)) by @mgruberb
+- *(i18n)* Add Chinese (traditional) translation ([#445](https://github.com/Antiz96/genesi-update/pull/445)) - ([34efa7d](https://github.com/Antiz96/genesi-update/commit/34efa7d669bee9a93e6f941128d5632334803fb1)) by @Capricornus007
+- *(tray)* Add "Last check" and "Next check" timestamps report ([#435](https://github.com/Antiz96/genesi-update/pull/435)) - ([757dc02](https://github.com/Antiz96/genesi-update/commit/757dc02aa4bf3aeae8ff5b565fc559a19cccded8)) by @mgruberb
 
 ### Fixes
 
-- *(i18n)* Fix string format for "Next check" report in tray ([#440](https://github.com/Antiz96/arch-update/pull/440)) - ([2dbf421](https://github.com/Antiz96/arch-update/commit/2dbf4210c521c22d24dc373a1ff911bb7ec9b3ac)) by @Antiz96
-- *(tray)* Add trigger conditions based on activation reasons to prevent unexpected arch-update run ([#433](https://github.com/Antiz96/arch-update/pull/433)) - ([16ba4db](https://github.com/Antiz96/arch-update/commit/16ba4db0876a7b743d4310241fb63fedca4547c7)) by @KarlMHanson
-- Allow reboot on remote / headless machine (for pending kernel upgrade) ([#448](https://github.com/Antiz96/arch-update/pull/448)) - ([6d6b116](https://github.com/Antiz96/arch-update/commit/6d6b1166ccd3aa1b22e5d493426e6abaee044281)) by @Antiz96
+- *(i18n)* Fix string format for "Next check" report in tray ([#440](https://github.com/Antiz96/genesi-update/pull/440)) - ([2dbf421](https://github.com/Antiz96/genesi-update/commit/2dbf4210c521c22d24dc373a1ff911bb7ec9b3ac)) by @Antiz96
+- *(tray)* Add trigger conditions based on activation reasons to prevent unexpected genesi-update run ([#433](https://github.com/Antiz96/genesi-update/pull/433)) - ([16ba4db](https://github.com/Antiz96/genesi-update/commit/16ba4db0876a7b743d4310241fb63fedca4547c7)) by @KarlMHanson
+- Allow reboot on remote / headless machine (for pending kernel upgrade) ([#448](https://github.com/Antiz96/genesi-update/pull/448)) - ([6d6b116](https://github.com/Antiz96/genesi-update/commit/6d6b1166ccd3aa1b22e5d493426e6abaee044281)) by @Antiz96
 
 ### Styling
 
-- Use consistent indentation ([#430](https://github.com/Antiz96/arch-update/pull/430)) - ([60600c8](https://github.com/Antiz96/arch-update/commit/60600c865554aaa7d49bcf64c89b472f83e7df05)) by @Antiz96
+- Use consistent indentation ([#430](https://github.com/Antiz96/genesi-update/pull/430)) - ([60600c8](https://github.com/Antiz96/genesi-update/commit/60600c865554aaa7d49bcf64c89b472f83e7df05)) by @Antiz96
 
 ### Miscellaneous
 
-- *(i18n)* Update Hungarian translation ([#446](https://github.com/Antiz96/arch-update/pull/446)) - ([b20b843](https://github.com/Antiz96/arch-update/commit/b20b843bc3f562a3db85c1a43a2bcd63d3e94fe0)) by @Impostor0729
-- *(i18n)* Update Swedish translation ([#447](https://github.com/Antiz96/arch-update/pull/447)) - ([75756ed](https://github.com/Antiz96/arch-update/commit/75756ed096d7a98bc7c65d148ee8a87b5be85a76)) by @bittin
-- *(i18n)* Update German translation ([#443](https://github.com/Antiz96/arch-update/pull/443)) - ([8be658a](https://github.com/Antiz96/arch-update/commit/8be658ae0848790fe5107d74a32ed65bcc0b1111)) by @mgruberb
-- *(i18n)* Update Spanish translation ([#442](https://github.com/Antiz96/arch-update/pull/442)) - ([4b02188](https://github.com/Antiz96/arch-update/commit/4b02188bc744c63b25a33ad8dc30cfdd7df16649)) by @djgs01
-- *(i18n)* Update French translation ([#441](https://github.com/Antiz96/arch-update/pull/441)) - ([0ee143b](https://github.com/Antiz96/arch-update/commit/0ee143b15b20b07486f0c1ee37ac8d693246c3f1)) by @Antiz96
-- *(i18n)* Update translation files ([#439](https://github.com/Antiz96/arch-update/pull/439)) - ([822e2ea](https://github.com/Antiz96/arch-update/commit/822e2ea9d622763a5e47c2a8ce51dc6838145185)) by @Antiz96
-- *(i18n)* Ease translation maintenance and contributions ([#438](https://github.com/Antiz96/arch-update/pull/438)) - ([c275bea](https://github.com/Antiz96/arch-update/commit/c275bea0c22e81ff1073a59b314621892612d291)) by @Antiz96
-- *(release)* Improve the release process ([#444](https://github.com/Antiz96/arch-update/pull/444)) - ([2523d16](https://github.com/Antiz96/arch-update/commit/2523d16a6f7b82a25fce430c66dccc82f0facf8a)) by @Antiz96
+- *(i18n)* Update Hungarian translation ([#446](https://github.com/Antiz96/genesi-update/pull/446)) - ([b20b843](https://github.com/Antiz96/genesi-update/commit/b20b843bc3f562a3db85c1a43a2bcd63d3e94fe0)) by @Impostor0729
+- *(i18n)* Update Swedish translation ([#447](https://github.com/Antiz96/genesi-update/pull/447)) - ([75756ed](https://github.com/Antiz96/genesi-update/commit/75756ed096d7a98bc7c65d148ee8a87b5be85a76)) by @bittin
+- *(i18n)* Update German translation ([#443](https://github.com/Antiz96/genesi-update/pull/443)) - ([8be658a](https://github.com/Antiz96/genesi-update/commit/8be658ae0848790fe5107d74a32ed65bcc0b1111)) by @mgruberb
+- *(i18n)* Update Spanish translation ([#442](https://github.com/Antiz96/genesi-update/pull/442)) - ([4b02188](https://github.com/Antiz96/genesi-update/commit/4b02188bc744c63b25a33ad8dc30cfdd7df16649)) by @djgs01
+- *(i18n)* Update French translation ([#441](https://github.com/Antiz96/genesi-update/pull/441)) - ([0ee143b](https://github.com/Antiz96/genesi-update/commit/0ee143b15b20b07486f0c1ee37ac8d693246c3f1)) by @Antiz96
+- *(i18n)* Update translation files ([#439](https://github.com/Antiz96/genesi-update/pull/439)) - ([822e2ea](https://github.com/Antiz96/genesi-update/commit/822e2ea9d622763a5e47c2a8ce51dc6838145185)) by @Antiz96
+- *(i18n)* Ease translation maintenance and contributions ([#438](https://github.com/Antiz96/genesi-update/pull/438)) - ([c275bea](https://github.com/Antiz96/genesi-update/commit/c275bea0c22e81ff1073a59b314621892612d291)) by @Antiz96
+- *(release)* Improve the release process ([#444](https://github.com/Antiz96/genesi-update/pull/444)) - ([2523d16](https://github.com/Antiz96/genesi-update/commit/2523d16a6f7b82a25fce430c66dccc82f0facf8a)) by @Antiz96
 
-## [v3.15.8](https://github.com/Antiz96/arch-update/releases/tag/v3.15.8) - 2025-11-09
+## [v3.15.8](https://github.com/Antiz96/genesi-update/releases/tag/v3.15.8) - 2025-11-09
 
 ### Fixes
 
-- *(tray)* Add basic validation of package URL format ([#427](https://github.com/Antiz96/arch-update/pull/427)) - ([50b0f30](https://github.com/Antiz96/arch-update/commit/50b0f3010551683abc61be118cd1c89978a86080)) by @mgruberb
+- *(tray)* Add basic validation of package URL format ([#427](https://github.com/Antiz96/genesi-update/pull/427)) - ([50b0f30](https://github.com/Antiz96/genesi-update/commit/50b0f3010551683abc61be118cd1c89978a86080)) by @mgruberb
 
 ### Documentation
 
-- *(optdepends)* Remove mentions of qt6-wayland ([#425](https://github.com/Antiz96/arch-update/pull/425)) - ([7323154](https://github.com/Antiz96/arch-update/commit/7323154c04b5c87a3c35b6d76833c4887f1cc98f)) by @Antiz96
+- *(optdepends)* Remove mentions of qt6-wayland ([#425](https://github.com/Antiz96/genesi-update/pull/425)) - ([7323154](https://github.com/Antiz96/genesi-update/commit/7323154c04b5c87a3c35b6d76833c4887f1cc98f)) by @Antiz96
 
 ### Miscellaneous
 
-- *(i18n)* Update translation files ([#429](https://github.com/Antiz96/arch-update/pull/429)) - ([8186685](https://github.com/Antiz96/arch-update/commit/818668561d1ef2e090758f64774851570ba0bff8)) by @Antiz96
-- Add security concerns reporting guidelines ([#428](https://github.com/Antiz96/arch-update/pull/428)) - ([ccbc39a](https://github.com/Antiz96/arch-update/commit/ccbc39a2a7ffe9319349e9f1b749dba898da3ffa)) by @Antiz96
+- *(i18n)* Update translation files ([#429](https://github.com/Antiz96/genesi-update/pull/429)) - ([8186685](https://github.com/Antiz96/genesi-update/commit/818668561d1ef2e090758f64774851570ba0bff8)) by @Antiz96
+- Add security concerns reporting guidelines ([#428](https://github.com/Antiz96/genesi-update/pull/428)) - ([ccbc39a](https://github.com/Antiz96/genesi-update/commit/ccbc39a2a7ffe9319349e9f1b749dba898da3ffa)) by @Antiz96
 
-## [v3.15.7](https://github.com/Antiz96/arch-update/releases/tag/v3.15.7) - 2025-09-29
+## [v3.15.7](https://github.com/Antiz96/genesi-update/releases/tag/v3.15.7) - 2025-09-29
 
 ### Fixes
 
-- *(i18n)* Add missing line return in German translation ([#423](https://github.com/Antiz96/arch-update/pull/423)) - ([2acb654](https://github.com/Antiz96/arch-update/commit/2acb65412e1e3b0d591fb36faef01244194f384a)) by @bermeitinger-b
+- *(i18n)* Add missing line return in German translation ([#423](https://github.com/Antiz96/genesi-update/pull/423)) - ([2acb654](https://github.com/Antiz96/genesi-update/commit/2acb65412e1e3b0d591fb36faef01244194f384a)) by @bermeitinger-b
 
-## [v3.15.6](https://github.com/Antiz96/arch-update/releases/tag/v3.15.6) - 2025-09-11
+## [v3.15.6](https://github.com/Antiz96/genesi-update/releases/tag/v3.15.6) - 2025-09-11
 
 ### Miscellaneous
 
-- *(i18n)* Add Spanish translation ([#421](https://github.com/Antiz96/arch-update/pull/421)) - ([120d80b](https://github.com/Antiz96/arch-update/commit/120d80b2f7c1cac9e60ced6c264f8922ae407d72)) by @djgs01
+- *(i18n)* Add Spanish translation ([#421](https://github.com/Antiz96/genesi-update/pull/421)) - ([120d80b](https://github.com/Antiz96/genesi-update/commit/120d80b2f7c1cac9e60ced6c264f8922ae407d72)) by @djgs01
 
-## [v3.15.5](https://github.com/Antiz96/arch-update/releases/tag/v3.15.5) - 2025-09-07
+## [v3.15.5](https://github.com/Antiz96/genesi-update/releases/tag/v3.15.5) - 2025-09-07
 
 ### Miscellaneous
 
-- *(i18n)* Add Brazilian Portuguese translation ([#419](https://github.com/Antiz96/arch-update/pull/419)) - ([97fa938](https://github.com/Antiz96/arch-update/commit/97fa93833d15bc32d1c9cebdc6a01b6d0ea915c1)) by @diegons490
+- *(i18n)* Add Brazilian Portuguese translation ([#419](https://github.com/Antiz96/genesi-update/pull/419)) - ([97fa938](https://github.com/Antiz96/genesi-update/commit/97fa93833d15bc32d1c9cebdc6a01b6d0ea915c1)) by @diegons490
 
-## [v3.15.4](https://github.com/Antiz96/arch-update/releases/tag/v3.15.4) - 2025-08-27
-
-### Fixes
-
-- *(notification)* Fix "Run Arch-Update" click action ([#417](https://github.com/Antiz96/arch-update/pull/417)) - ([28a6a8b](https://github.com/Antiz96/arch-update/commit/28a6a8b0c350525494860d1cd844751de8f10294)) by @Antiz96
-
-## [v3.15.3](https://github.com/Antiz96/arch-update/releases/tag/v3.15.3) - 2025-08-26
+## [v3.15.4](https://github.com/Antiz96/genesi-update/releases/tag/v3.15.4) - 2025-08-27
 
 ### Fixes
 
-- *(news)* Add default timeout to the initial connection request ([#416](https://github.com/Antiz96/arch-update/pull/416)) - ([660d4dc](https://github.com/Antiz96/arch-update/commit/660d4dc4eee5808a8b0c9be49278f2f15dcbfab4)) by @Antiz96
+- *(notification)* Fix "Run Genesi-Update" click action ([#417](https://github.com/Antiz96/genesi-update/pull/417)) - ([28a6a8b](https://github.com/Antiz96/genesi-update/commit/28a6a8b0c350525494860d1cd844751de8f10294)) by @Antiz96
 
-## [v3.15.2](https://github.com/Antiz96/arch-update/releases/tag/v3.15.2) - 2025-08-26
-
-### Fixes
-
-- Make lockfiles logic more robust ([#415](https://github.com/Antiz96/arch-update/pull/415)) - ([3454d97](https://github.com/Antiz96/arch-update/commit/3454d97cfd2b206f6d5342066a95cdee008ec033)) by @Antiz96
-
-## [v3.15.1](https://github.com/Antiz96/arch-update/releases/tag/v3.15.1) - 2025-08-25
+## [v3.15.3](https://github.com/Antiz96/genesi-update/releases/tag/v3.15.3) - 2025-08-26
 
 ### Fixes
 
-- *(news)* Add a workaround for the current Arch Linux service outages ([#414](https://github.com/Antiz96/arch-update/pull/414)) - ([f8241f4](https://github.com/Antiz96/arch-update/commit/f8241f422ec7a34061923956fe35ab57be0177d3)) by @Antiz96
+- *(news)* Add default timeout to the initial connection request ([#416](https://github.com/Antiz96/genesi-update/pull/416)) - ([660d4dc](https://github.com/Antiz96/genesi-update/commit/660d4dc4eee5808a8b0c9be49278f2f15dcbfab4)) by @Antiz96
+
+## [v3.15.2](https://github.com/Antiz96/genesi-update/releases/tag/v3.15.2) - 2025-08-26
+
+### Fixes
+
+- Make lockfiles logic more robust ([#415](https://github.com/Antiz96/genesi-update/pull/415)) - ([3454d97](https://github.com/Antiz96/genesi-update/commit/3454d97cfd2b206f6d5342066a95cdee008ec033)) by @Antiz96
+
+## [v3.15.1](https://github.com/Antiz96/genesi-update/releases/tag/v3.15.1) - 2025-08-25
+
+### Fixes
+
+- *(news)* Add a workaround for the current Arch Linux service outages ([#414](https://github.com/Antiz96/genesi-update/pull/414)) - ([f8241f4](https://github.com/Antiz96/genesi-update/commit/f8241f422ec7a34061923956fe35ab57be0177d3)) by @Antiz96
 
 ### Documentation
 
-- *(deps)* Correct invalid link to extra repository for sudo-rs ([#409](https://github.com/Antiz96/arch-update/pull/409)) - ([4808155](https://github.com/Antiz96/arch-update/commit/480815523dc151758062b79fbca178707303f740)) by @Frestein
-- Update Tips & Tricks section to advise for "/bin/sh" rather than "sh" ([#412](https://github.com/Antiz96/arch-update/pull/412)) - ([06a2f81](https://github.com/Antiz96/arch-update/commit/06a2f8171076e1d0caf427ae697827ffa446d400)) by @Antiz96
+- *(deps)* Correct invalid link to extra repository for sudo-rs ([#409](https://github.com/Antiz96/genesi-update/pull/409)) - ([4808155](https://github.com/Antiz96/genesi-update/commit/480815523dc151758062b79fbca178707303f740)) by @Frestein
+- Update Tips & Tricks section to advise for "/bin/sh" rather than "sh" ([#412](https://github.com/Antiz96/genesi-update/pull/412)) - ([06a2f81](https://github.com/Antiz96/genesi-update/commit/06a2f8171076e1d0caf427ae697827ffa446d400)) by @Antiz96
 
-## [v3.15.0](https://github.com/Antiz96/arch-update/releases/tag/v3.15.0) - 2025-08-15
+## [v3.15.0](https://github.com/Antiz96/genesi-update/releases/tag/v3.15.0) - 2025-08-15
 
 ### Features
 
-- Add support for sudo-rs ([#408](https://github.com/Antiz96/arch-update/pull/408)) - ([221fdbb](https://github.com/Antiz96/arch-update/commit/221fdbb96d37823efe796dbadfea19e4f98aa9e0)) by @Antiz96
+- Add support for sudo-rs ([#408](https://github.com/Antiz96/genesi-update/pull/408)) - ([221fdbb](https://github.com/Antiz96/genesi-update/commit/221fdbb96d37823efe796dbadfea19e4f98aa9e0)) by @Antiz96
 
-## [v3.14.1](https://github.com/Antiz96/arch-update/releases/tag/v3.14.1) - 2025-08-04
+## [v3.14.1](https://github.com/Antiz96/genesi-update/releases/tag/v3.14.1) - 2025-08-04
 
 ### Fixes
 
-- *(news)* Make URL path parsing more robust ([#406](https://github.com/Antiz96/arch-update/pull/406)) - ([19fae5a](https://github.com/Antiz96/arch-update/commit/19fae5a7e9afa39522ca525cb1666e17a1ccdaf9)) by @Antiz96
+- *(news)* Make URL path parsing more robust ([#406](https://github.com/Antiz96/genesi-update/pull/406)) - ([19fae5a](https://github.com/Antiz96/genesi-update/commit/19fae5a7e9afa39522ca525cb1666e17a1ccdaf9)) by @Antiz96
 
-## [v3.14.0](https://github.com/Antiz96/arch-update/releases/tag/v3.14.0) - 2025-07-31
+## [v3.14.0](https://github.com/Antiz96/genesi-update/releases/tag/v3.14.0) - 2025-07-31
 
 ### Features
 
-- *(systray)* Open upstream project URL in web browser when clicking on a package update entry ([#404](https://github.com/Antiz96/arch-update/pull/404)) - ([cb69c24](https://github.com/Antiz96/arch-update/commit/cb69c24497234524bbf3596c5ff5fe88d7844135)) by @ckorn
+- *(systray)* Open upstream project URL in web browser when clicking on a package update entry ([#404](https://github.com/Antiz96/genesi-update/pull/404)) - ([cb69c24](https://github.com/Antiz96/genesi-update/commit/cb69c24497234524bbf3596c5ff5fe88d7844135)) by @ckorn
 
-## [v3.13.3](https://github.com/Antiz96/arch-update/releases/tag/v3.13.3) - 2025-07-24
+## [v3.13.3](https://github.com/Antiz96/genesi-update/releases/tag/v3.13.3) - 2025-07-24
 
 ### Miscellaneous
 
-- Popularize the usage of the $name var ([#402](https://github.com/Antiz96/arch-update/pull/402)) - ([7dcae52](https://github.com/Antiz96/arch-update/commit/7dcae52d7a0f1f2629be2632055834763b78809d)) by @Antiz96
+- Popularize the usage of the $name var ([#402](https://github.com/Antiz96/genesi-update/pull/402)) - ([7dcae52](https://github.com/Antiz96/genesi-update/commit/7dcae52d7a0f1f2629be2632055834763b78809d)) by @Antiz96
 
-## [v3.13.2](https://github.com/Antiz96/arch-update/releases/tag/v3.13.2) - 2025-07-18
-
-### Fixes
-
-- *(notification)* Switch to `systemd-run` to detach desktop notifications processes ([#401](https://github.com/Antiz96/arch-update/pull/401)) - ([4299cff](https://github.com/Antiz96/arch-update/commit/4299cff92457ea6b4d9f640e0eac32c97ad6e7de)) by @Antiz96
-
-## [v3.13.1](https://github.com/Antiz96/arch-update/releases/tag/v3.13.1) - 2025-07-17
+## [v3.13.2](https://github.com/Antiz96/genesi-update/releases/tag/v3.13.2) - 2025-07-18
 
 ### Fixes
 
-- *(notification)* Fix updates count ([#399](https://github.com/Antiz96/arch-update/pull/399)) - ([a884b09](https://github.com/Antiz96/arch-update/commit/a884b09183ec908b4b12ff14fc544b94e01da841)) by @Antiz96
+- *(notification)* Switch to `systemd-run` to detach desktop notifications processes ([#401](https://github.com/Antiz96/genesi-update/pull/401)) - ([4299cff](https://github.com/Antiz96/genesi-update/commit/4299cff92457ea6b4d9f640e0eac32c97ad6e7de)) by @Antiz96
 
-## [v3.13.0](https://github.com/Antiz96/arch-update/releases/tag/v3.13.0) - 2025-07-16
+## [v3.13.1](https://github.com/Antiz96/genesi-update/releases/tag/v3.13.1) - 2025-07-17
+
+### Fixes
+
+- *(notification)* Fix updates count ([#399](https://github.com/Antiz96/genesi-update/pull/399)) - ([a884b09](https://github.com/Antiz96/genesi-update/commit/a884b09183ec908b4b12ff14fc544b94e01da841)) by @Antiz96
+
+## [v3.13.0](https://github.com/Antiz96/genesi-update/releases/tag/v3.13.0) - 2025-07-16
 
 ### Features
 
-- *(notification)* Add click actions to run Arch-Update and dismiss notifications ([#398](https://github.com/Antiz96/arch-update/pull/398)) - ([8164c27](https://github.com/Antiz96/arch-update/commit/8164c27d1b04e1e940bb42dfaa8b1da87670264d)) by @Antiz96
+- *(notification)* Add click actions to run Genesi-Update and dismiss notifications ([#398](https://github.com/Antiz96/genesi-update/pull/398)) - ([8164c27](https://github.com/Antiz96/genesi-update/commit/8164c27d1b04e1e940bb42dfaa8b1da87670264d)) by @Antiz96
 
-## [v3.12.8](https://github.com/Antiz96/arch-update/releases/tag/v3.12.8) - 2025-07-13
-
-### Fixes
-
-- Skip kernel upgrade check if the kernel-modules-hook package is installed ([#397](https://github.com/Antiz96/arch-update/pull/397)) - ([15503b0](https://github.com/Antiz96/arch-update/commit/15503b0c76fcb2bceeae43b90e6544b36c04bc46)) by @ChrisTX
-
-## [v3.12.7](https://github.com/Antiz96/arch-update/releases/tag/v3.12.7) - 2025-07-05
+## [v3.12.8](https://github.com/Antiz96/genesi-update/releases/tag/v3.12.8) - 2025-07-13
 
 ### Fixes
 
-- *(DiffProg)* Fix command parsing ([#392](https://github.com/Antiz96/arch-update/pull/392)) - ([47736ef](https://github.com/Antiz96/arch-update/commit/47736efb1bdd7cd0ea08eed5992cd5434901cd32)) by @Antiz96
-- *(DiffProg)* Fix value parsing ([#391](https://github.com/Antiz96/arch-update/pull/391)) - ([2685d81](https://github.com/Antiz96/arch-update/commit/2685d816df0b3f55b02c5a4c006f66521b363816)) by @Antiz96
-- *(kernel upgrade detection)* Expand skip condition to containers ([#390](https://github.com/Antiz96/arch-update/pull/390)) - ([d972461](https://github.com/Antiz96/arch-update/commit/d9724613e317f4f9913b73262494e18457fa728c)) by @Antiz96
-- Relax requirement checks ([#393](https://github.com/Antiz96/arch-update/pull/393)) - ([d06254e](https://github.com/Antiz96/arch-update/commit/d06254e36f197d13fbaba1f9527e11d34ac99f5c)) by @Antiz96
+- Skip kernel upgrade check if the kernel-modules-hook package is installed ([#397](https://github.com/Antiz96/genesi-update/pull/397)) - ([15503b0](https://github.com/Antiz96/genesi-update/commit/15503b0c76fcb2bceeae43b90e6544b36c04bc46)) by @ChrisTX
+
+## [v3.12.7](https://github.com/Antiz96/genesi-update/releases/tag/v3.12.7) - 2025-07-05
+
+### Fixes
+
+- *(DiffProg)* Fix command parsing ([#392](https://github.com/Antiz96/genesi-update/pull/392)) - ([47736ef](https://github.com/Antiz96/genesi-update/commit/47736efb1bdd7cd0ea08eed5992cd5434901cd32)) by @Antiz96
+- *(DiffProg)* Fix value parsing ([#391](https://github.com/Antiz96/genesi-update/pull/391)) - ([2685d81](https://github.com/Antiz96/genesi-update/commit/2685d816df0b3f55b02c5a4c006f66521b363816)) by @Antiz96
+- *(kernel upgrade detection)* Expand skip condition to containers ([#390](https://github.com/Antiz96/genesi-update/pull/390)) - ([d972461](https://github.com/Antiz96/genesi-update/commit/d9724613e317f4f9913b73262494e18457fa728c)) by @Antiz96
+- Relax requirement checks ([#393](https://github.com/Antiz96/genesi-update/pull/393)) - ([d06254e](https://github.com/Antiz96/genesi-update/commit/d06254e36f197d13fbaba1f9527e11d34ac99f5c)) by @Antiz96
 
 ### Miscellaneous
 
-- *(i18n)* Update translation files ([#394](https://github.com/Antiz96/arch-update/pull/394)) - ([efc67d5](https://github.com/Antiz96/arch-update/commit/efc67d5131f7abb53a6fa2350d8b0444bb949586)) by @Antiz96
+- *(i18n)* Update translation files ([#394](https://github.com/Antiz96/genesi-update/pull/394)) - ([efc67d5](https://github.com/Antiz96/genesi-update/commit/efc67d5131f7abb53a6fa2350d8b0444bb949586)) by @Antiz96
 
-## [v3.12.6](https://github.com/Antiz96/arch-update/releases/tag/v3.12.6) - 2025-06-10
+## [v3.12.6](https://github.com/Antiz96/genesi-update/releases/tag/v3.12.6) - 2025-06-10
 
 ### Documentation
 
-- *(deps)* Rename `doas` to `opendoas` ([#388](https://github.com/Antiz96/arch-update/pull/388)) - ([7baf6c1](https://github.com/Antiz96/arch-update/commit/7baf6c10fa554aa11eb23c221dd0987b8d15fa20)) by @Antiz96
-- *(deps)* Update dependencies list ([#387](https://github.com/Antiz96/arch-update/pull/387)) - ([8597eef](https://github.com/Antiz96/arch-update/commit/8597eef83a30321912ef7d6424c7f9118310a990)) by @Antiz96
+- *(deps)* Rename `doas` to `opendoas` ([#388](https://github.com/Antiz96/genesi-update/pull/388)) - ([7baf6c1](https://github.com/Antiz96/genesi-update/commit/7baf6c10fa554aa11eb23c221dd0987b8d15fa20)) by @Antiz96
+- *(deps)* Update dependencies list ([#387](https://github.com/Antiz96/genesi-update/pull/387)) - ([8597eef](https://github.com/Antiz96/genesi-update/commit/8597eef83a30321912ef7d6424c7f9118310a990)) by @Antiz96
 
-## [v3.12.5](https://github.com/Antiz96/arch-update/releases/tag/v3.12.5) - 2025-05-20
-
-### Fixes
-
-- *(check)* Ensure state files exist before being processed ([#385](https://github.com/Antiz96/arch-update/pull/385)) - ([97f7747](https://github.com/Antiz96/arch-update/commit/97f7747c7a2b617004737fa8ee1ac9184ebe984f)) by @Antiz96
-
-## [v3.12.4](https://github.com/Antiz96/arch-update/releases/tag/v3.12.4) - 2025-05-05
+## [v3.12.5](https://github.com/Antiz96/genesi-update/releases/tag/v3.12.5) - 2025-05-20
 
 ### Fixes
 
-- *(systray)* Allow systray applet to run for multiple users ([#383](https://github.com/Antiz96/arch-update/pull/383)) - ([3b48326](https://github.com/Antiz96/arch-update/commit/3b483266a8cbd897c83674b8165828fd15a2e532)) by @Antiz96
+- *(check)* Ensure state files exist before being processed ([#385](https://github.com/Antiz96/genesi-update/pull/385)) - ([97f7747](https://github.com/Antiz96/genesi-update/commit/97f7747c7a2b617004737fa8ee1ac9184ebe984f)) by @Antiz96
 
-## [v3.12.3](https://github.com/Antiz96/arch-update/releases/tag/v3.12.3) - 2025-04-24
+## [v3.12.4](https://github.com/Antiz96/genesi-update/releases/tag/v3.12.4) - 2025-05-05
 
 ### Fixes
 
-- Avoid collisions during parallel updates checks ([#381](https://github.com/Antiz96/arch-update/pull/381)) - ([6aa4e7c](https://github.com/Antiz96/arch-update/commit/6aa4e7c067283dcd086a259ab154e2e80c056444)) by @Antiz96
+- *(systray)* Allow systray applet to run for multiple users ([#383](https://github.com/Antiz96/genesi-update/pull/383)) - ([3b48326](https://github.com/Antiz96/genesi-update/commit/3b483266a8cbd897c83674b8165828fd15a2e532)) by @Antiz96
+
+## [v3.12.3](https://github.com/Antiz96/genesi-update/releases/tag/v3.12.3) - 2025-04-24
+
+### Fixes
+
+- Avoid collisions during parallel updates checks ([#381](https://github.com/Antiz96/genesi-update/pull/381)) - ([6aa4e7c](https://github.com/Antiz96/genesi-update/commit/6aa4e7c067283dcd086a259ab154e2e80c056444)) by @Antiz96
 
 ### Miscellaneous
 
-- *(i18n)* Update translation files ([#382](https://github.com/Antiz96/arch-update/pull/382)) - ([0ee11b4](https://github.com/Antiz96/arch-update/commit/0ee11b44dfc63b223371975e91ccf989176ad476)) by @Antiz96
+- *(i18n)* Update translation files ([#382](https://github.com/Antiz96/genesi-update/pull/382)) - ([0ee11b4](https://github.com/Antiz96/genesi-update/commit/0ee11b44dfc63b223371975e91ccf989176ad476)) by @Antiz96
 
-## [v3.12.2](https://github.com/Antiz96/arch-update/releases/tag/v3.12.2) - 2025-04-22
+## [v3.12.2](https://github.com/Antiz96/genesi-update/releases/tag/v3.12.2) - 2025-04-22
 
 ### Documentation
 
-- *(README)* Remove unnecessary sudo mentions ([#378](https://github.com/Antiz96/arch-update/pull/378)) - ([3ff6dc2](https://github.com/Antiz96/arch-update/commit/3ff6dc2d1f1c7fd1ae84c2da7159312b4fcefe29)) by @Integral-Tech
-- *(README-fr)* Remove unnecessary sudo mentions ([#379](https://github.com/Antiz96/arch-update/pull/379)) - ([fb9c61d](https://github.com/Antiz96/arch-update/commit/fb9c61dc41ea2a4c8d808ff5fcf3137e8446b642)) by @Antiz96
+- *(README)* Remove unnecessary sudo mentions ([#378](https://github.com/Antiz96/genesi-update/pull/378)) - ([3ff6dc2](https://github.com/Antiz96/genesi-update/commit/3ff6dc2d1f1c7fd1ae84c2da7159312b4fcefe29)) by @Integral-Tech
+- *(README-fr)* Remove unnecessary sudo mentions ([#379](https://github.com/Antiz96/genesi-update/pull/379)) - ([fb9c61d](https://github.com/Antiz96/genesi-update/commit/fb9c61dc41ea2a4c8d808ff5fcf3137e8446b642)) by @Antiz96
 
-## [v3.12.1](https://github.com/Antiz96/arch-update/releases/tag/v3.12.1) - 2025-04-22
-
-### Features
-
-- Add a lock file to avoid multiple parallel runs ([#377](https://github.com/Antiz96/arch-update/pull/377)) - ([a765374](https://github.com/Antiz96/arch-update/commit/a7653740be2a749bc4ea02350fadc196d0a8f08f)) by @Antiz96
-
-## [v3.12.0](https://github.com/Antiz96/arch-update/releases/tag/v3.12.0) - 2025-04-20
+## [v3.12.1](https://github.com/Antiz96/genesi-update/releases/tag/v3.12.1) - 2025-04-22
 
 ### Features
 
-- Add the `-s / --services` option flag to check for services requiring a post upgrade restart ([#369](https://github.com/Antiz96/arch-update/pull/369)) - ([c3b7a9f](https://github.com/Antiz96/arch-update/commit/c3b7a9f39d37e1fccdbfe39b08db5ffe1afc853c)) by @Antiz96
+- Add a lock file to avoid multiple parallel runs ([#377](https://github.com/Antiz96/genesi-update/pull/377)) - ([a765374](https://github.com/Antiz96/genesi-update/commit/a7653740be2a749bc4ea02350fadc196d0a8f08f)) by @Antiz96
+
+## [v3.12.0](https://github.com/Antiz96/genesi-update/releases/tag/v3.12.0) - 2025-04-20
+
+### Features
+
+- Add the `-s / --services` option flag to check for services requiring a post upgrade restart ([#369](https://github.com/Antiz96/genesi-update/pull/369)) - ([c3b7a9f](https://github.com/Antiz96/genesi-update/commit/c3b7a9f39d37e1fccdbfe39b08db5ffe1afc853c)) by @Antiz96
 
 ### Styling
 
-- *(man)* Add missing hyphen in options list ([#368](https://github.com/Antiz96/arch-update/pull/368)) - ([e4be478](https://github.com/Antiz96/arch-update/commit/e4be478a15f759e7c0f0170f885a159972bb1126)) by @Antiz96
+- *(man)* Add missing hyphen in options list ([#368](https://github.com/Antiz96/genesi-update/pull/368)) - ([e4be478](https://github.com/Antiz96/genesi-update/commit/e4be478a15f759e7c0f0170f885a159972bb1126)) by @Antiz96
 
 ### Miscellaneous
 
-- *(i18n)* Update Swedish translation ([#375](https://github.com/Antiz96/arch-update/pull/375)) - ([10ac455](https://github.com/Antiz96/arch-update/commit/10ac4555f2457c5dced3343ff08508205247748a)) by @bittin
-- *(i18n)* Update German translation ([#374](https://github.com/Antiz96/arch-update/pull/374)) - ([5cd83ef](https://github.com/Antiz96/arch-update/commit/5cd83efc57fb5efcbc45749aa1be170511006734)) by @DeN-AlB
-- *(i18n)* Update Hungarian translation ([#373](https://github.com/Antiz96/arch-update/pull/373)) - ([f19d71f](https://github.com/Antiz96/arch-update/commit/f19d71fb815a50c64c908fa1151a8fea818bff89)) by @summoner001
-- *(i18n)* Update Chinese (simplified) translation ([#372](https://github.com/Antiz96/arch-update/pull/372)) - ([e329bcd](https://github.com/Antiz96/arch-update/commit/e329bcd2e803620da2a2e1a41a235a6320d0e198)) by @Carlson24
-- *(i18n)* Update French translation ([#370](https://github.com/Antiz96/arch-update/pull/370)) - ([5499ac4](https://github.com/Antiz96/arch-update/commit/5499ac41a538de1dc0df376ec4b18a047e669c8d)) by @Antiz96
+- *(i18n)* Update Swedish translation ([#375](https://github.com/Antiz96/genesi-update/pull/375)) - ([10ac455](https://github.com/Antiz96/genesi-update/commit/10ac4555f2457c5dced3343ff08508205247748a)) by @bittin
+- *(i18n)* Update German translation ([#374](https://github.com/Antiz96/genesi-update/pull/374)) - ([5cd83ef](https://github.com/Antiz96/genesi-update/commit/5cd83efc57fb5efcbc45749aa1be170511006734)) by @DeN-AlB
+- *(i18n)* Update Hungarian translation ([#373](https://github.com/Antiz96/genesi-update/pull/373)) - ([f19d71f](https://github.com/Antiz96/genesi-update/commit/f19d71fb815a50c64c908fa1151a8fea818bff89)) by @summoner001
+- *(i18n)* Update Chinese (simplified) translation ([#372](https://github.com/Antiz96/genesi-update/pull/372)) - ([e329bcd](https://github.com/Antiz96/genesi-update/commit/e329bcd2e803620da2a2e1a41a235a6320d0e198)) by @Carlson24
+- *(i18n)* Update French translation ([#370](https://github.com/Antiz96/genesi-update/pull/370)) - ([5499ac4](https://github.com/Antiz96/genesi-update/commit/5499ac41a538de1dc0df376ec4b18a047e669c8d)) by @Antiz96
 
-## [v3.11.0](https://github.com/Antiz96/arch-update/releases/tag/v3.11.0) - 2025-04-10
+## [v3.11.0](https://github.com/Antiz96/genesi-update/releases/tag/v3.11.0) - 2025-04-10
 
 ### Features
 
-- *(notification)* Use the "updates available" icon ([#364](https://github.com/Antiz96/arch-update/pull/364)) - ([2e93a6c](https://github.com/Antiz96/arch-update/commit/2e93a6c41060c8309f58e71810fb50f53bb41abf)) by @Antiz96
-- *(systray)* New icon set ([#363](https://github.com/Antiz96/arch-update/pull/363)) - ([76f3cda](https://github.com/Antiz96/arch-update/commit/76f3cda39f26c6119922fef740df39383f7295b6)) by @PiafJaune
+- *(notification)* Use the "updates available" icon ([#364](https://github.com/Antiz96/genesi-update/pull/364)) - ([2e93a6c](https://github.com/Antiz96/genesi-update/commit/2e93a6c41060c8309f58e71810fb50f53bb41abf)) by @Antiz96
+- *(systray)* New icon set ([#363](https://github.com/Antiz96/genesi-update/pull/363)) - ([76f3cda](https://github.com/Antiz96/genesi-update/commit/76f3cda39f26c6119922fef740df39383f7295b6)) by @PiafJaune
 
 ### Documentation
 
-- *(README)* Update screenshots ([#365](https://github.com/Antiz96/arch-update/pull/365)) - ([7790b14](https://github.com/Antiz96/arch-update/commit/7790b14ad57bb5a996aa07790b8fbfe99a77f81d)) by @Antiz96
+- *(README)* Update screenshots ([#365](https://github.com/Antiz96/genesi-update/pull/365)) - ([7790b14](https://github.com/Antiz96/genesi-update/commit/7790b14ad57bb5a996aa07790b8fbfe99a77f81d)) by @Antiz96
 
-## [v3.10.0](https://github.com/Antiz96/arch-update/releases/tag/v3.10.0) - 2025-04-09
+## [v3.10.0](https://github.com/Antiz96/genesi-update/releases/tag/v3.10.0) - 2025-04-09
 
 ### Features
 
-- Make the blue systray icon the default ([#362](https://github.com/Antiz96/arch-update/pull/362)) - ([8485cd1](https://github.com/Antiz96/arch-update/commit/8485cd11b48ed123b697ce53447d68f0f9e31675)) by @Antiz96
+- Make the blue systray icon the default ([#362](https://github.com/Antiz96/genesi-update/pull/362)) - ([8485cd1](https://github.com/Antiz96/genesi-update/commit/8485cd11b48ed123b697ce53447d68f0f9e31675)) by @Antiz96
 
-## [v3.9.2](https://github.com/Antiz96/arch-update/releases/tag/v3.9.2) - 2025-04-02
+## [v3.9.2](https://github.com/Antiz96/genesi-update/releases/tag/v3.9.2) - 2025-04-02
 
 ### Fixes
 
-- *(systray)* Fix crash when the 'updates' state file does not exist ([#361](https://github.com/Antiz96/arch-update/pull/361)) - ([c729881](https://github.com/Antiz96/arch-update/commit/c7298817de247b9fd2dd43cc107bfa54f95e176e)) by @Antiz96
+- *(systray)* Fix crash when the 'updates' state file does not exist ([#361](https://github.com/Antiz96/genesi-update/pull/361)) - ([c729881](https://github.com/Antiz96/genesi-update/commit/c7298817de247b9fd2dd43cc107bfa54f95e176e)) by @Antiz96
 
 ### Documentation
 
-- *(README)* Update screenshots ([#360](https://github.com/Antiz96/arch-update/pull/360)) - ([6841213](https://github.com/Antiz96/arch-update/commit/684121362794b17d8659aaa7a11cc15507563384)) by @Antiz96
+- *(README)* Update screenshots ([#360](https://github.com/Antiz96/genesi-update/pull/360)) - ([6841213](https://github.com/Antiz96/genesi-update/commit/684121362794b17d8659aaa7a11cc15507563384)) by @Antiz96
 
-## [v3.9.1](https://github.com/Antiz96/arch-update/releases/tag/v3.9.1) - 2025-03-31
+## [v3.9.1](https://github.com/Antiz96/genesi-update/releases/tag/v3.9.1) - 2025-03-31
 
 ### Features
 
-- *(systray)* Run arch-update when clicking on the "X update(s) available" menu entry ([#357](https://github.com/Antiz96/arch-update/pull/357)) - ([07a3aa2](https://github.com/Antiz96/arch-update/commit/07a3aa2fe67b4efa52e014c00e8b1aa46093d1f1)) by @Antiz96
+- *(systray)* Run genesi-update when clicking on the "X update(s) available" menu entry ([#357](https://github.com/Antiz96/genesi-update/pull/357)) - ([07a3aa2](https://github.com/Antiz96/genesi-update/commit/07a3aa2fe67b4efa52e014c00e8b1aa46093d1f1)) by @Antiz96
 
 ### Fixes
 
-- *(systray)* Drop sub-menus for update sources in favor of "top level" dropdown menus ([#355](https://github.com/Antiz96/arch-update/pull/355)) - ([532e1f3](https://github.com/Antiz96/arch-update/commit/532e1f35a9d73faf0c6b6b8c8dc6593b7c0b9b87)) by @Antiz96
+- *(systray)* Drop sub-menus for update sources in favor of "top level" dropdown menus ([#355](https://github.com/Antiz96/genesi-update/pull/355)) - ([532e1f3](https://github.com/Antiz96/genesi-update/commit/532e1f35a9d73faf0c6b6b8c8dc6593b7c0b9b87)) by @Antiz96
 
 ### Documentation
 
-- *(README)* Update screenshots ([#359](https://github.com/Antiz96/arch-update/pull/359)) - ([d4e9eaa](https://github.com/Antiz96/arch-update/commit/d4e9eaa5bb18c3126cee0c808ca5d59cc574591e)) by @Antiz96
+- *(README)* Update screenshots ([#359](https://github.com/Antiz96/genesi-update/pull/359)) - ([d4e9eaa](https://github.com/Antiz96/genesi-update/commit/d4e9eaa5bb18c3126cee0c808ca5d59cc574591e)) by @Antiz96
 
 ### Styling
 
-- *(CHANGELOG)* Typo fix ([#356](https://github.com/Antiz96/arch-update/pull/356)) - ([d349fa9](https://github.com/Antiz96/arch-update/commit/d349fa92e3db0ab8316658d07ad3cbb91d889e0d)) by @Antiz96
+- *(CHANGELOG)* Typo fix ([#356](https://github.com/Antiz96/genesi-update/pull/356)) - ([d349fa9](https://github.com/Antiz96/genesi-update/commit/d349fa92e3db0ab8316658d07ad3cbb91d889e0d)) by @Antiz96
 
 ### Miscellaneous
 
-- *(i18n)* Update translation files ([#358](https://github.com/Antiz96/arch-update/pull/358)) - ([ff5518e](https://github.com/Antiz96/arch-update/commit/ff5518e439a9114d40561cee0327f8a9bb2cbae8)) by @Antiz96
+- *(i18n)* Update translation files ([#358](https://github.com/Antiz96/genesi-update/pull/358)) - ([ff5518e](https://github.com/Antiz96/genesi-update/commit/ff5518e439a9114d40561cee0327f8a9bb2cbae8)) by @Antiz96
 
-## [v3.9.0](https://github.com/Antiz96/arch-update/releases/tag/v3.9.0) - 2025-03-29
+## [v3.9.0](https://github.com/Antiz96/genesi-update/releases/tag/v3.9.0) - 2025-03-29
 
 ### Features
 
-- *(i18n)* Add German translation ([#346](https://github.com/Antiz96/arch-update/pull/346)) - ([5224d8a](https://github.com/Antiz96/arch-update/commit/5224d8a3c76811dd44bcec3bbbf84c2f958d66c5)) by @DeN-AlB
-- *(systray)* Add dropdown sub-menus for each sources of available updates ([#348](https://github.com/Antiz96/arch-update/pull/348)) - ([75e2239](https://github.com/Antiz96/arch-update/commit/75e2239216a12dc2032831e15152653642bbc0d6)) by @Antiz96
+- *(i18n)* Add German translation ([#346](https://github.com/Antiz96/genesi-update/pull/346)) - ([5224d8a](https://github.com/Antiz96/genesi-update/commit/5224d8a3c76811dd44bcec3bbbf84c2f958d66c5)) by @DeN-AlB
+- *(systray)* Add dropdown sub-menus for each sources of available updates ([#348](https://github.com/Antiz96/genesi-update/pull/348)) - ([75e2239](https://github.com/Antiz96/genesi-update/commit/75e2239216a12dc2032831e15152653642bbc0d6)) by @Antiz96
 
 ### Fixes
 
-- *(check)* Fix state files names ([#349](https://github.com/Antiz96/arch-update/pull/349)) - ([277ba96](https://github.com/Antiz96/arch-update/commit/277ba962c4e439f280ce81b7dffffaf49fbac8d3)) by @Antiz96
-- *(systray)* Fix 'Packages' sub-menu name ([#350](https://github.com/Antiz96/arch-update/pull/350)) - ([68b26f2](https://github.com/Antiz96/arch-update/commit/68b26f2451622ea37c1690763e884f3ab6f469f7)) by @Antiz96
+- *(check)* Fix state files names ([#349](https://github.com/Antiz96/genesi-update/pull/349)) - ([277ba96](https://github.com/Antiz96/genesi-update/commit/277ba962c4e439f280ce81b7dffffaf49fbac8d3)) by @Antiz96
+- *(systray)* Fix 'Packages' sub-menu name ([#350](https://github.com/Antiz96/genesi-update/pull/350)) - ([68b26f2](https://github.com/Antiz96/genesi-update/commit/68b26f2451622ea37c1690763e884f3ab6f469f7)) by @Antiz96
 
 ### Documentation
 
-- *(README)* Update screenshots ([#352](https://github.com/Antiz96/arch-update/pull/352)) - ([818d298](https://github.com/Antiz96/arch-update/commit/818d2988efd1eee22155464b384fefcafe09ee39)) by @Antiz96
+- *(README)* Update screenshots ([#352](https://github.com/Antiz96/genesi-update/pull/352)) - ([818d298](https://github.com/Antiz96/genesi-update/commit/818d2988efd1eee22155464b384fefcafe09ee39)) by @Antiz96
 
 ### Styling
 
-- *(changelog)* Remove unnecessary space ([#345](https://github.com/Antiz96/arch-update/pull/345)) - ([71782fe](https://github.com/Antiz96/arch-update/commit/71782fe08176862c5b97ef37fb3e73ad45cf5843)) by @Antiz96
-- *(i18n)* Fix a word in Hungarian translation ([#344](https://github.com/Antiz96/arch-update/pull/344)) - ([f1aa1bb](https://github.com/Antiz96/arch-update/commit/f1aa1bb7e4f4eaaa4729f990294a34564cdb74de)) by @Antiz96
+- *(changelog)* Remove unnecessary space ([#345](https://github.com/Antiz96/genesi-update/pull/345)) - ([71782fe](https://github.com/Antiz96/genesi-update/commit/71782fe08176862c5b97ef37fb3e73ad45cf5843)) by @Antiz96
+- *(i18n)* Fix a word in Hungarian translation ([#344](https://github.com/Antiz96/genesi-update/pull/344)) - ([f1aa1bb](https://github.com/Antiz96/genesi-update/commit/f1aa1bb7e4f4eaaa4729f990294a34564cdb74de)) by @Antiz96
 
 ### Miscellaneous
 
-- *(i18n)* Update translations ([#353](https://github.com/Antiz96/arch-update/pull/353)) - ([4148709](https://github.com/Antiz96/arch-update/commit/414870977cf214359e171b247a22afd536749a42)) by @Antiz96
-- *(i18n)* Update French translation ([#351](https://github.com/Antiz96/arch-update/pull/351)) - ([2a9b104](https://github.com/Antiz96/arch-update/commit/2a9b104aa236bb6ab9d26d7bdf70583459d2a869)) by @Antiz96
+- *(i18n)* Update translations ([#353](https://github.com/Antiz96/genesi-update/pull/353)) - ([4148709](https://github.com/Antiz96/genesi-update/commit/414870977cf214359e171b247a22afd536749a42)) by @Antiz96
+- *(i18n)* Update French translation ([#351](https://github.com/Antiz96/genesi-update/pull/351)) - ([2a9b104](https://github.com/Antiz96/genesi-update/commit/2a9b104aa236bb6ab9d26d7bdf70583459d2a869)) by @Antiz96
 
-## [v3.8.1](https://github.com/Antiz96/arch-update/releases/tag/v3.8.1) - 2025-03-21
+## [v3.8.1](https://github.com/Antiz96/genesi-update/releases/tag/v3.8.1) - 2025-03-21
 
 ### Features
 
-- feat(i18n): add Hungarian translation ([#340](https://github.com/Antiz96/arch-update/pull/340)) - ([a297dfd](https://github.com/Antiz96/arch-update/commit/a297dfdfe696f31f8f5bb6878b2998d45038cea3)) by @Impostor0729
+- feat(i18n): add Hungarian translation ([#340](https://github.com/Antiz96/genesi-update/pull/340)) - ([a297dfd](https://github.com/Antiz96/genesi-update/commit/a297dfdfe696f31f8f5bb6878b2998d45038cea3)) by @Impostor0729
 
 ### Miscellaneous
 
-- *(i18n)* Update the logic to set the path to translation files ([#342](https://github.com/Antiz96/arch-update/pull/342)) - ([b0c301a](https://github.com/Antiz96/arch-update/commit/b0c301ae9d5451514fc64636d05aa7cc28f219ba)) by @Antiz96
+- *(i18n)* Update the logic to set the path to translation files ([#342](https://github.com/Antiz96/genesi-update/pull/342)) - ([b0c301a](https://github.com/Antiz96/genesi-update/commit/b0c301ae9d5451514fc64636d05aa7cc28f219ba)) by @Antiz96
 
-## [v3.8.0](https://github.com/Antiz96/arch-update/releases/tag/v3.8.0) - 2025-03-18
+## [v3.8.0](https://github.com/Antiz96/genesi-update/releases/tag/v3.8.0) - 2025-03-18
 
 ### Features
 
-- *(news)* Set a more reasonable default for Arch news requests timeout and allow to customize it via the NewsTimeout option in the config file ([#335](https://github.com/Antiz96/arch-update/pull/335)) - ([666575c](https://github.com/Antiz96/arch-update/commit/666575c2619c11ae31c6c0478ebc26bb161f09fd)) by @Antiz96
+- *(news)* Set a more reasonable default for Arch news requests timeout and allow to customize it via the NewsTimeout option in the config file ([#335](https://github.com/Antiz96/genesi-update/pull/335)) - ([666575c](https://github.com/Antiz96/genesi-update/commit/666575c2619c11ae31c6c0478ebc26bb161f09fd)) by @Antiz96
 
 ### Styling
 
-- Fix some typos and outdated comments in Makefile ([#338](https://github.com/Antiz96/arch-update/pull/338)) - ([02eff54](https://github.com/Antiz96/arch-update/commit/02eff54952803e960fe9e1119dfd6d1fc2d9df66)) by @Antiz96
-- Slight style improvements in man page ([#336](https://github.com/Antiz96/arch-update/pull/336)) - ([ca3ae12](https://github.com/Antiz96/arch-update/commit/ca3ae120ea3c06979c07fad8131b30253934c927)) by @Antiz96
+- Fix some typos and outdated comments in Makefile ([#338](https://github.com/Antiz96/genesi-update/pull/338)) - ([02eff54](https://github.com/Antiz96/genesi-update/commit/02eff54952803e960fe9e1119dfd6d1fc2d9df66)) by @Antiz96
+- Slight style improvements in man page ([#336](https://github.com/Antiz96/genesi-update/pull/336)) - ([ca3ae12](https://github.com/Antiz96/genesi-update/commit/ca3ae120ea3c06979c07fad8131b30253934c927)) by @Antiz96
 
 ### Miscellaneous
 
-- *(i18n)* Update lines in translation files ([#337](https://github.com/Antiz96/arch-update/pull/337)) - ([e6ef2cf](https://github.com/Antiz96/arch-update/commit/e6ef2cfd3b5fde4f11c7c061b1c3f5a29ffa7c25)) by @Antiz96
-- Add .gitignore ([#339](https://github.com/Antiz96/arch-update/pull/339)) - ([1ce8ca5](https://github.com/Antiz96/arch-update/commit/1ce8ca531c02bf99540a2e952f5ec0e8708dad17)) by @Antiz96
+- *(i18n)* Update lines in translation files ([#337](https://github.com/Antiz96/genesi-update/pull/337)) - ([e6ef2cf](https://github.com/Antiz96/genesi-update/commit/e6ef2cfd3b5fde4f11c7c061b1c3f5a29ffa7c25)) by @Antiz96
+- Add .gitignore ([#339](https://github.com/Antiz96/genesi-update/pull/339)) - ([1ce8ca5](https://github.com/Antiz96/genesi-update/commit/1ce8ca531c02bf99540a2e952f5ec0e8708dad17)) by @Antiz96
 
-## [v3.7.6](https://github.com/Antiz96/arch-update/releases/tag/v3.7.6) - 2025-03-14
+## [v3.7.6](https://github.com/Antiz96/genesi-update/releases/tag/v3.7.6) - 2025-03-14
 
 ### Features
 
-- *(i18n)* Add zh_CN - Chinese (simplified) translation ([#330](https://github.com/Antiz96/arch-update/pull/330)) - ([4c75406](https://github.com/Antiz96/arch-update/commit/4c754061911550174dfe426410337ec87e23fd05)) by @Carlson24
+- *(i18n)* Add zh_CN - Chinese (simplified) translation ([#330](https://github.com/Antiz96/genesi-update/pull/330)) - ([4c75406](https://github.com/Antiz96/genesi-update/commit/4c754061911550174dfe426410337ec87e23fd05)) by @Carlson24
 
 ### Fixes
 
-- *(Makefile)* Fix incorrect paths in uninstall target and add the missing Swedish translation files ([#332](https://github.com/Antiz96/arch-update/pull/332)) - ([aea604a](https://github.com/Antiz96/arch-update/commit/aea604a34c5bb5022e0fdda889794b8f69132e72)) by @Cardiacman13
+- *(Makefile)* Fix incorrect paths in uninstall target and add the missing Swedish translation files ([#332](https://github.com/Antiz96/genesi-update/pull/332)) - ([aea604a](https://github.com/Antiz96/genesi-update/commit/aea604a34c5bb5022e0fdda889794b8f69132e72)) by @Cardiacman13
 
-## [v3.7.5](https://github.com/Antiz96/arch-update/releases/tag/v3.7.5) - 2025-03-04
+## [v3.7.5](https://github.com/Antiz96/genesi-update/releases/tag/v3.7.5) - 2025-03-04
 
 ### Fixes
 
-- *(kernel_reboot)* Don't source the kernel_reboot lib in WSL ([#328](https://github.com/Antiz96/arch-update/pull/328)) - ([06910e1](https://github.com/Antiz96/arch-update/commit/06910e14ac031295d3473699c517258fc2f6b290)) by @Antiz96
+- *(kernel_reboot)* Don't source the kernel_reboot lib in WSL ([#328](https://github.com/Antiz96/genesi-update/pull/328)) - ([06910e1](https://github.com/Antiz96/genesi-update/commit/06910e14ac031295d3473699c517258fc2f6b290)) by @Antiz96
 
 ### Styling
 
-- Fix typos in comments ([#329](https://github.com/Antiz96/arch-update/pull/329)) - ([d97b98e](https://github.com/Antiz96/arch-update/commit/d97b98e40e36f9d69f038628338b2a4aa5753633)) by @Antiz96
+- Fix typos in comments ([#329](https://github.com/Antiz96/genesi-update/pull/329)) - ([d97b98e](https://github.com/Antiz96/genesi-update/commit/d97b98e40e36f9d69f038628338b2a4aa5753633)) by @Antiz96
 
-## [v3.7.4](https://github.com/Antiz96/arch-update/releases/tag/v3.7.4) - 2025-02-23
+## [v3.7.4](https://github.com/Antiz96/genesi-update/releases/tag/v3.7.4) - 2025-02-23
 
 ### Documentation
 
-- Enhance documentation about race condition ([#326](https://github.com/Antiz96/arch-update/pull/326)) - ([ab028d1](https://github.com/Antiz96/arch-update/commit/ab028d107368136ac842dc9b2ad17e00492d1d96)) by @Antiz96
+- Enhance documentation about race condition ([#326](https://github.com/Antiz96/genesi-update/pull/326)) - ([ab028d1](https://github.com/Antiz96/genesi-update/commit/ab028d107368136ac842dc9b2ad17e00492d1d96)) by @Antiz96
 
 ### Miscellaneous
 
-- *(i18n)* Update po files ([#325](https://github.com/Antiz96/arch-update/pull/325)) - ([6c1b665](https://github.com/Antiz96/arch-update/commit/6c1b665e9bb628cf4113fb309b22000297b792fd)) by @Antiz96
+- *(i18n)* Update po files ([#325](https://github.com/Antiz96/genesi-update/pull/325)) - ([6c1b665](https://github.com/Antiz96/genesi-update/commit/6c1b665e9bb628cf4113fb309b22000297b792fd)) by @Antiz96
 
-## [v3.7.3](https://github.com/Antiz96/arch-update/releases/tag/v3.7.3) - 2025-02-20
+## [v3.7.3](https://github.com/Antiz96/genesi-update/releases/tag/v3.7.3) - 2025-02-20
 
 ### Styling
 
-- Fix typos in systray python script ([#323](https://github.com/Antiz96/arch-update/pull/323)) - ([d322020](https://github.com/Antiz96/arch-update/commit/d3220209537a26327af55c961f18079fd16cf6e6)) by @Antiz96
+- Fix typos in systray python script ([#323](https://github.com/Antiz96/genesi-update/pull/323)) - ([d322020](https://github.com/Antiz96/genesi-update/commit/d3220209537a26327af55c961f18079fd16cf6e6)) by @Antiz96
 
 ### Miscellaneous
 
-- Little rework of the systray applet python script ([#322](https://github.com/Antiz96/arch-update/pull/322)) - ([169e00e](https://github.com/Antiz96/arch-update/commit/169e00e262d8b3782d33aeaaae22e8772c44a715)) by @Antiz96
-- Remove the list of pending updates from the systray's tooltip ([#321](https://github.com/Antiz96/arch-update/pull/321)) - ([f51cf89](https://github.com/Antiz96/arch-update/commit/f51cf897774bd82fec939b7733e15fc9161ff47f)) by @Antiz96
-- Make scripts more robust when using `mkdir` ([#320](https://github.com/Antiz96/arch-update/pull/320)) - ([b2af443](https://github.com/Antiz96/arch-update/commit/b2af443f59de987d43114efb86dc1537219e6210)) by @Antiz96
+- Little rework of the systray applet python script ([#322](https://github.com/Antiz96/genesi-update/pull/322)) - ([169e00e](https://github.com/Antiz96/genesi-update/commit/169e00e262d8b3782d33aeaaae22e8772c44a715)) by @Antiz96
+- Remove the list of pending updates from the systray's tooltip ([#321](https://github.com/Antiz96/genesi-update/pull/321)) - ([f51cf89](https://github.com/Antiz96/genesi-update/commit/f51cf897774bd82fec939b7733e15fc9161ff47f)) by @Antiz96
+- Make scripts more robust when using `mkdir` ([#320](https://github.com/Antiz96/genesi-update/pull/320)) - ([b2af443](https://github.com/Antiz96/genesi-update/commit/b2af443f59de987d43114efb86dc1537219e6210)) by @Antiz96
 
-## [v3.7.2](https://github.com/Antiz96/arch-update/releases/tag/v3.7.2) - 2025-02-17
+## [v3.7.2](https://github.com/Antiz96/genesi-update/releases/tag/v3.7.2) - 2025-02-17
 
 ### Styling
 
-- Remove unconventional dots from output ([#318](https://github.com/Antiz96/arch-update/pull/318)) - ([1201252](https://github.com/Antiz96/arch-update/commit/12012527b4da0b70e584d9eb13be48e968609a29)) by @Antiz96
+- Remove unconventional dots from output ([#318](https://github.com/Antiz96/genesi-update/pull/318)) - ([1201252](https://github.com/Antiz96/genesi-update/commit/12012527b4da0b70e584d9eb13be48e968609a29)) by @Antiz96
 
 ### Miscellaneous
 
-- *(man)* Don't compress man pages during build ([#317](https://github.com/Antiz96/arch-update/pull/317)) - ([b60600e](https://github.com/Antiz96/arch-update/commit/b60600e6c3fd17de4f37c8f5855d6dca744ac0c6)) by @Antiz96
+- *(man)* Don't compress man pages during build ([#317](https://github.com/Antiz96/genesi-update/pull/317)) - ([b60600e](https://github.com/Antiz96/genesi-update/commit/b60600e6c3fd17de4f37c8f5855d6dca744ac0c6)) by @Antiz96
 
-## [v3.7.1](https://github.com/Antiz96/arch-update/releases/tag/v3.7.1) - 2025-02-07
+## [v3.7.1](https://github.com/Antiz96/genesi-update/releases/tag/v3.7.1) - 2025-02-07
 
 ### Documentation
 
-- Update man page link in default / example configuration file ([#312](https://github.com/Antiz96/arch-update/pull/312)) - ([65e24bc](https://github.com/Antiz96/arch-update/commit/65e24bcce95ec6e568cc3d466498cf218ddcacd7)) by @Antiz96
+- Update man page link in default / example configuration file ([#312](https://github.com/Antiz96/genesi-update/pull/312)) - ([65e24bc](https://github.com/Antiz96/genesi-update/commit/65e24bcce95ec6e568cc3d466498cf218ddcacd7)) by @Antiz96
 
 ### Miscellaneous
 
-- Get rid of gzip timestamps during build to make Arch-Update reproducible ([#314](https://github.com/Antiz96/arch-update/pull/314)) - ([905f641](https://github.com/Antiz96/arch-update/commit/905f6413ba629db527a931a866e9f6f55bb211c3)) by @Antiz96
+- Get rid of gzip timestamps during build to make Genesi-Update reproducible ([#314](https://github.com/Antiz96/genesi-update/pull/314)) - ([905f641](https://github.com/Antiz96/genesi-update/commit/905f6413ba629db527a931a866e9f6f55bb211c3)) by @Antiz96
 
-## [v3.7.0](https://github.com/Antiz96/arch-update/releases/tag/v3.7.0) - 2025-01-27
+## [v3.7.0](https://github.com/Antiz96/genesi-update/releases/tag/v3.7.0) - 2025-01-27
 
 ### Features
 
-- Add the `NoAUR` option to `arch-update.conf` ([#309](https://github.com/Antiz96/arch-update/pull/309)) - ([c90b05e](https://github.com/Antiz96/arch-update/commit/c90b05e92e38ea5e2ea46dc4c7d3901890623fdf)) by @Antiz96
-- Add the `NoFlatpak` option to `arch-update.conf` ([#308](https://github.com/Antiz96/arch-update/pull/308)) - ([c56a084](https://github.com/Antiz96/arch-update/commit/c56a084ab382530d8f9da109f317ee6f63574c42)) by @Antiz96
+- Add the `NoAUR` option to `genesi-update.conf` ([#309](https://github.com/Antiz96/genesi-update/pull/309)) - ([c90b05e](https://github.com/Antiz96/genesi-update/commit/c90b05e92e38ea5e2ea46dc4c7d3901890623fdf)) by @Antiz96
+- Add the `NoFlatpak` option to `genesi-update.conf` ([#308](https://github.com/Antiz96/genesi-update/pull/308)) - ([c56a084](https://github.com/Antiz96/genesi-update/commit/c56a084ab382530d8f9da109f317ee6f63574c42)) by @Antiz96
 
 ### Miscellaneous
 
-- Update translation files ([#310](https://github.com/Antiz96/arch-update/pull/310)) - ([98362d1](https://github.com/Antiz96/arch-update/commit/98362d113e9236f5162376b3dbf933243dd3dd8d)) by @Antiz96
-- Improve logic for the 'NoNotification' option ([#307](https://github.com/Antiz96/arch-update/pull/307)) - ([daa9d7a](https://github.com/Antiz96/arch-update/commit/daa9d7a18e2cea52c842942f59f82a24435d1bbb)) by @Antiz96
+- Update translation files ([#310](https://github.com/Antiz96/genesi-update/pull/310)) - ([98362d1](https://github.com/Antiz96/genesi-update/commit/98362d113e9236f5162376b3dbf933243dd3dd8d)) by @Antiz96
+- Improve logic for the 'NoNotification' option ([#307](https://github.com/Antiz96/genesi-update/pull/307)) - ([daa9d7a](https://github.com/Antiz96/genesi-update/commit/daa9d7a18e2cea52c842942f59f82a24435d1bbb)) by @Antiz96
 
-## [v3.6.1](https://github.com/Antiz96/arch-update/releases/tag/v3.6.1) - 2025-01-22
+## [v3.6.1](https://github.com/Antiz96/genesi-update/releases/tag/v3.6.1) - 2025-01-22
 
 ### Fixes
 
-- Filter out ignored packages when checking for AUR packages update with paru ([#305](https://github.com/Antiz96/arch-update/pull/305)) - ([8252253](https://github.com/Antiz96/arch-update/commit/8252253c8048b501b42363ddbe5b324dce8a4cf9)) by @Antiz96
+- Filter out ignored packages when checking for AUR packages update with paru ([#305](https://github.com/Antiz96/genesi-update/pull/305)) - ([8252253](https://github.com/Antiz96/genesi-update/commit/8252253c8048b501b42363ddbe5b324dce8a4cf9)) by @Antiz96
 
 ### Miscellaneous
 
-- Update translations files ([#306](https://github.com/Antiz96/arch-update/pull/306)) - ([bb7a435](https://github.com/Antiz96/arch-update/commit/bb7a4359e34fdaac265e963600e8c44df056e410)) by @Antiz96
+- Update translations files ([#306](https://github.com/Antiz96/genesi-update/pull/306)) - ([bb7a435](https://github.com/Antiz96/genesi-update/commit/bb7a4359e34fdaac265e963600e8c44df056e410)) by @Antiz96
 
-## [v3.6.0](https://github.com/Antiz96/arch-update/releases/tag/v3.6.0) - 2025-01-21
+## [v3.6.0](https://github.com/Antiz96/genesi-update/releases/tag/v3.6.0) - 2025-01-21
 
 ### Features
 
-- Add the `NoNotification` option to `arch-update.conf` ([#302](https://github.com/Antiz96/arch-update/pull/302)) - ([39b0efc](https://github.com/Antiz96/arch-update/commit/39b0efc5dfb3aa3eea9f77104d27f00e384446ec)) by @Antiz96
+- Add the `NoNotification` option to `genesi-update.conf` ([#302](https://github.com/Antiz96/genesi-update/pull/302)) - ([39b0efc](https://github.com/Antiz96/genesi-update/commit/39b0efc5dfb3aa3eea9f77104d27f00e384446ec)) by @Antiz96
 
 ### Documentation
 
-- General rework & simplification of the documentation ([#301](https://github.com/Antiz96/arch-update/pull/301)) - ([c6ed5d8](https://github.com/Antiz96/arch-update/commit/c6ed5d8f334fd7488e409fb61d3b9cb0414836e5)) by @Antiz96
-- Document the usage of `xdg-terminal-exec` to run Arch-Update in a specific terminal emulator ([#300](https://github.com/Antiz96/arch-update/pull/300)) - ([f568955](https://github.com/Antiz96/arch-update/commit/f5689558be3c44a7c39ac4434e7635c623a3ab7f)) by @Antiz96
-- Use `scdoc` to write and generate man pages ([#299](https://github.com/Antiz96/arch-update/pull/299)) - ([6749a94](https://github.com/Antiz96/arch-update/commit/6749a9400819330dbc11819c7d6bfad059cace8d)) by @Antiz96
+- General rework & simplification of the documentation ([#301](https://github.com/Antiz96/genesi-update/pull/301)) - ([c6ed5d8](https://github.com/Antiz96/genesi-update/commit/c6ed5d8f334fd7488e409fb61d3b9cb0414836e5)) by @Antiz96
+- Document the usage of `xdg-terminal-exec` to run Genesi-Update in a specific terminal emulator ([#300](https://github.com/Antiz96/genesi-update/pull/300)) - ([f568955](https://github.com/Antiz96/genesi-update/commit/f5689558be3c44a7c39ac4434e7635c623a3ab7f)) by @Antiz96
+- Use `scdoc` to write and generate man pages ([#299](https://github.com/Antiz96/genesi-update/pull/299)) - ([6749a94](https://github.com/Antiz96/genesi-update/commit/6749a9400819330dbc11819c7d6bfad059cace8d)) by @Antiz96
 
 ### Miscellaneous
 
-- Use more specific names for 'notif' and 'flatpak' variables ([#303](https://github.com/Antiz96/arch-update/pull/303)) - ([d021523](https://github.com/Antiz96/arch-update/commit/d021523844d100a06a1f7d0b67163cb526ebd3ca)) by @Antiz96
+- Use more specific names for 'notif' and 'flatpak' variables ([#303](https://github.com/Antiz96/genesi-update/pull/303)) - ([d021523](https://github.com/Antiz96/genesi-update/commit/d021523844d100a06a1f7d0b67163cb526ebd3ca)) by @Antiz96
 
-## [v3.5.0](https://github.com/Antiz96/arch-update/releases/tag/v3.5.0) - 2025-01-18
+## [v3.5.0](https://github.com/Antiz96/genesi-update/releases/tag/v3.5.0) - 2025-01-18
 
 ### Features
 
-- Add support for the DiffProg option when using doas ([#295](https://github.com/Antiz96/arch-update/pull/295)) - ([0fa90ec](https://github.com/Antiz96/arch-update/commit/0fa90ecb8c56157025edbfaed589c92047335ac1)) by @l-pt
+- Add support for the DiffProg option when using doas ([#295](https://github.com/Antiz96/genesi-update/pull/295)) - ([0fa90ec](https://github.com/Antiz96/genesi-update/commit/0fa90ecb8c56157025edbfaed589c92047335ac1)) by @l-pt
 
 ### Miscellaneous
 
-- Update release workflow ([#294](https://github.com/Antiz96/arch-update/pull/294)) - ([ee4867b](https://github.com/Antiz96/arch-update/commit/ee4867bc2e427502fc092c65cebab6cc53766cb1)) by @Antiz96
+- Update release workflow ([#294](https://github.com/Antiz96/genesi-update/pull/294)) - ([ee4867b](https://github.com/Antiz96/genesi-update/commit/ee4867bc2e427502fc092c65cebab6cc53766cb1)) by @Antiz96
 
-## [v3.4.3](https://github.com/Antiz96/arch-update/releases/tag/v3.4.3) - 2025-01-17
+## [v3.4.3](https://github.com/Antiz96/genesi-update/releases/tag/v3.4.3) - 2025-01-17
 
 ### Fixes
 
-- Update Author and Date tags parsing in news ([#292](https://github.com/Antiz96/arch-update/pull/292)) - ([96b9481](https://github.com/Antiz96/arch-update/commit/96b9481579195407be39796ea9401680b86e4d36)) by @qhorgues
+- Update Author and Date tags parsing in news ([#292](https://github.com/Antiz96/genesi-update/pull/292)) - ([96b9481](https://github.com/Antiz96/genesi-update/commit/96b9481579195407be39796ea9401680b86e4d36)) by @qhorgues
 
 ### Miscellaneous
 
-- Rename LIBDIR env var ([#293](https://github.com/Antiz96/arch-update/pull/293)) - ([6106880](https://github.com/Antiz96/arch-update/commit/610688020cb41f6732e7d872f0840af4fcb00b2c)) by @Antiz96
-- Optimize news path parsing when listing Arch news ([#290](https://github.com/Antiz96/arch-update/pull/290)) - ([4b2f6c5](https://github.com/Antiz96/arch-update/commit/4b2f6c5702d76bb3f6694c66bd61af3af41370fa)) by @Antiz96
+- Rename LIBDIR env var ([#293](https://github.com/Antiz96/genesi-update/pull/293)) - ([6106880](https://github.com/Antiz96/genesi-update/commit/610688020cb41f6732e7d872f0840af4fcb00b2c)) by @Antiz96
+- Optimize news path parsing when listing Arch news ([#290](https://github.com/Antiz96/genesi-update/pull/290)) - ([4b2f6c5](https://github.com/Antiz96/genesi-update/commit/4b2f6c5702d76bb3f6694c66bd61af3af41370fa)) by @Antiz96
 
-## [v3.4.2](https://github.com/Antiz96/arch-update/releases/tag/v3.4.2) - 2024-12-06
+## [v3.4.2](https://github.com/Antiz96/genesi-update/releases/tag/v3.4.2) - 2024-12-06
 
 ### Fixes
 
-- Avoid false positive on unused runtimes for Flatpak with pinned runtimes - ([2dae27b](https://github.com/Antiz96/arch-update/commit/2dae27bca96ecd0d03fa7f578a01af57f5c4ce31)) by @RayJW
+- Avoid false positive on unused runtimes for Flatpak with pinned runtimes - ([2dae27b](https://github.com/Antiz96/genesi-update/commit/2dae27bca96ecd0d03fa7f578a01af57f5c4ce31)) by @RayJW
 
 ### Miscellaneous
 
-- *(CONTRIBUTING.md)* Expand the "Thank you" section ([#287](https://github.com/Antiz96/arch-update/pull/287)) - ([7ea5325](https://github.com/Antiz96/arch-update/commit/7ea5325bcebd8e964aefdc57bc973919788ad6ba)) by @Antiz96
-- *(issues)* Add a dedicated label to the 'Other' issue type ([#283](https://github.com/Antiz96/arch-update/pull/283)) - ([ff81590](https://github.com/Antiz96/arch-update/commit/ff815908a0e54f1cdff5e032ac68c0b060647f26)) by @Antiz96
-- Remove the AlwaysShowNews option ([#288](https://github.com/Antiz96/arch-update/pull/288)) - ([8f5fdee](https://github.com/Antiz96/arch-update/commit/8f5fdeee9477a5a774b4ff95c1a424e09d602567)) by @leyyce
+- *(CONTRIBUTING.md)* Expand the "Thank you" section ([#287](https://github.com/Antiz96/genesi-update/pull/287)) - ([7ea5325](https://github.com/Antiz96/genesi-update/commit/7ea5325bcebd8e964aefdc57bc973919788ad6ba)) by @Antiz96
+- *(issues)* Add a dedicated label to the 'Other' issue type ([#283](https://github.com/Antiz96/genesi-update/pull/283)) - ([ff81590](https://github.com/Antiz96/genesi-update/commit/ff815908a0e54f1cdff5e032ac68c0b060647f26)) by @Antiz96
+- Remove the AlwaysShowNews option ([#288](https://github.com/Antiz96/genesi-update/pull/288)) - ([8f5fdee](https://github.com/Antiz96/genesi-update/commit/8f5fdeee9477a5a774b4ff95c1a424e09d602567)) by @leyyce
 
-## [v3.4.1](https://github.com/Antiz96/arch-update/releases/tag/v3.4.1) - 2024-11-19
-
-### Features
-
-- Add Swedish translation ([#280](https://github.com/Antiz96/arch-update/pull/280)) - ([bad989a](https://github.com/Antiz96/arch-update/commit/bad989aaf5729da28f754f44e8814cdc2d891b01)) by @bittin
-
-### Styling
-
-- *(CONTRIBUTING.md)* Typo fixes ([#279](https://github.com/Antiz96/arch-update/pull/279)) - ([e8f11a0](https://github.com/Antiz96/arch-update/commit/e8f11a0fada1bef8a570dd2a07d9b9785df63d5d)) by @Antiz96
-
-## [v3.4.0](https://github.com/Antiz96/arch-update/releases/tag/v3.4.0) - 2024-11-06
+## [v3.4.1](https://github.com/Antiz96/genesi-update/releases/tag/v3.4.1) - 2024-11-19
 
 ### Features
 
-- Add support for pikaur ([#276](https://github.com/Antiz96/arch-update/pull/276)) - ([7b5d08b](https://github.com/Antiz96/arch-update/commit/7b5d08b1aa7870850fe8cfdcfd23ead3b01e9cd3)) by @Antiz96
+- Add Swedish translation ([#280](https://github.com/Antiz96/genesi-update/pull/280)) - ([bad989a](https://github.com/Antiz96/genesi-update/commit/bad989aaf5729da28f754f44e8814cdc2d891b01)) by @bittin
 
 ### Styling
 
-- Update lines numbers in po files ([#277](https://github.com/Antiz96/arch-update/pull/277)) - ([33f2377](https://github.com/Antiz96/arch-update/commit/33f23773f3e3eab47ceeaf2c3273e669af0e0c76)) by @Antiz96
-- Add spacing to improve wording style ([#274](https://github.com/Antiz96/arch-update/pull/274)) - ([a8cfb27](https://github.com/Antiz96/arch-update/commit/a8cfb2713f7e1ede517b37fe836147bb5b5073ef)) by @Antiz96
+- *(CONTRIBUTING.md)* Typo fixes ([#279](https://github.com/Antiz96/genesi-update/pull/279)) - ([e8f11a0](https://github.com/Antiz96/genesi-update/commit/e8f11a0fada1bef8a570dd2a07d9b9785df63d5d)) by @Antiz96
+
+## [v3.4.0](https://github.com/Antiz96/genesi-update/releases/tag/v3.4.0) - 2024-11-06
+
+### Features
+
+- Add support for pikaur ([#276](https://github.com/Antiz96/genesi-update/pull/276)) - ([7b5d08b](https://github.com/Antiz96/genesi-update/commit/7b5d08b1aa7870850fe8cfdcfd23ead3b01e9cd3)) by @Antiz96
+
+### Styling
+
+- Update lines numbers in po files ([#277](https://github.com/Antiz96/genesi-update/pull/277)) - ([33f2377](https://github.com/Antiz96/genesi-update/commit/33f23773f3e3eab47ceeaf2c3273e669af0e0c76)) by @Antiz96
+- Add spacing to improve wording style ([#274](https://github.com/Antiz96/genesi-update/pull/274)) - ([a8cfb27](https://github.com/Antiz96/genesi-update/commit/a8cfb2713f7e1ede517b37fe836147bb5b5073ef)) by @Antiz96
 
 ### Miscellaneous
 
-- Improve style / wording in internal documentation ([#278](https://github.com/Antiz96/arch-update/pull/278)) - ([d58dcee](https://github.com/Antiz96/arch-update/commit/d58dceef286894f0265bff9e7f3ead66a84f79db)) by @Antiz96
+- Improve style / wording in internal documentation ([#278](https://github.com/Antiz96/genesi-update/pull/278)) - ([d58dcee](https://github.com/Antiz96/genesi-update/commit/d58dceef286894f0265bff9e7f3ead66a84f79db)) by @Antiz96
 
-## [v3.3.0](https://github.com/Antiz96/arch-update/releases/tag/v3.3.0) - 2024-10-06
+## [v3.3.0](https://github.com/Antiz96/genesi-update/releases/tag/v3.3.0) - 2024-10-06
 
 ### Features
 
-- Add a dynamic dropdown menu entry to the systray applet menu containing the list of available updates ([#272](https://github.com/Antiz96/arch-update/pull/272)) - ([af51378](https://github.com/Antiz96/arch-update/commit/af51378cf4e0e7c67722ca9d90be44c26f6f27cc)) by @Antiz96
+- Add a dynamic dropdown menu entry to the systray applet menu containing the list of available updates ([#272](https://github.com/Antiz96/genesi-update/pull/272)) - ([af51378](https://github.com/Antiz96/genesi-update/commit/af51378cf4e0e7c67722ca9d90be44c26f6f27cc)) by @Antiz96
 
 ### Documentation
 
-- Update screenshots in the READMEs with the new systray's dropdown menu ([#273](https://github.com/Antiz96/arch-update/pull/273)) - ([d79ed9b](https://github.com/Antiz96/arch-update/commit/d79ed9b93324add9e926b059be98d38345bbc8ef)) by @Antiz96
-- Document the workaround for the race condition potentially happening when starting the systray applet at boot ([#271](https://github.com/Antiz96/arch-update/pull/271)) - ([64378f1](https://github.com/Antiz96/arch-update/commit/64378f1de372d7768cb53cbb76887babe50170f1)) by @Antiz96
+- Update screenshots in the READMEs with the new systray's dropdown menu ([#273](https://github.com/Antiz96/genesi-update/pull/273)) - ([d79ed9b](https://github.com/Antiz96/genesi-update/commit/d79ed9b93324add9e926b059be98d38345bbc8ef)) by @Antiz96
+- Document the workaround for the race condition potentially happening when starting the systray applet at boot ([#271](https://github.com/Antiz96/genesi-update/pull/271)) - ([64378f1](https://github.com/Antiz96/genesi-update/commit/64378f1de372d7768cb53cbb76887babe50170f1)) by @Antiz96
 
-## [v3.2.3](https://github.com/Antiz96/arch-update/releases/tag/v3.2.3) - 2024-10-05
-
-### Fixes
-
-- Update the "updates" state file on package listing ([#268](https://github.com/Antiz96/arch-update/pull/268)) - ([a1686d9](https://github.com/Antiz96/arch-update/commit/a1686d9e29f878e58b81343abfd0ead5de8068d4)) by @Antiz96
-
-## [v3.2.2](https://github.com/Antiz96/arch-update/releases/tag/v3.2.2) - 2024-10-04
+## [v3.2.3](https://github.com/Antiz96/genesi-update/releases/tag/v3.2.3) - 2024-10-05
 
 ### Fixes
 
-- Fix french translation in the systray applet toolip ([#266](https://github.com/Antiz96/arch-update/pull/266)) - ([3dd3681](https://github.com/Antiz96/arch-update/commit/3dd36818305ea28957df449fbcf52d8eb65c1eb4)) by @Delor3an91
+- Update the "updates" state file on package listing ([#268](https://github.com/Antiz96/genesi-update/pull/268)) - ([a1686d9](https://github.com/Antiz96/genesi-update/commit/a1686d9e29f878e58b81343abfd0ead5de8068d4)) by @Antiz96
 
-## [v3.2.1](https://github.com/Antiz96/arch-update/releases/tag/v3.2.1) - 2024-10-02
+## [v3.2.2](https://github.com/Antiz96/genesi-update/releases/tag/v3.2.2) - 2024-10-04
+
+### Fixes
+
+- Fix french translation in the systray applet toolip ([#266](https://github.com/Antiz96/genesi-update/pull/266)) - ([3dd3681](https://github.com/Antiz96/genesi-update/commit/3dd36818305ea28957df449fbcf52d8eb65c1eb4)) by @Delor3an91
+
+## [v3.2.1](https://github.com/Antiz96/genesi-update/releases/tag/v3.2.1) - 2024-10-02
 
 ### Features
 
-- Add a description to desktop files ([#264](https://github.com/Antiz96/arch-update/pull/264)) - ([0f23547](https://github.com/Antiz96/arch-update/commit/0f235471d57790037a284741f1c3a7378861b199)) by @Antiz96
+- Add a description to desktop files ([#264](https://github.com/Antiz96/genesi-update/pull/264)) - ([0f23547](https://github.com/Antiz96/genesi-update/commit/0f235471d57790037a284741f1c3a7378861b199)) by @Antiz96
 
 ### Fixes
 
-- Fix icons name in desktop files ([#263](https://github.com/Antiz96/arch-update/pull/263)) - ([da1db14](https://github.com/Antiz96/arch-update/commit/da1db14ecdc23a41807a37db9d8ba4c2a628c0f5)) by @Antiz96
+- Fix icons name in desktop files ([#263](https://github.com/Antiz96/genesi-update/pull/263)) - ([da1db14](https://github.com/Antiz96/genesi-update/commit/da1db14ecdc23a41807a37db9d8ba4c2a628c0f5)) by @Antiz96
 
-## [v3.2.0](https://github.com/Antiz96/arch-update/releases/tag/v3.2.0) - 2024-10-01
+## [v3.2.0](https://github.com/Antiz96/genesi-update/releases/tag/v3.2.0) - 2024-10-01
 
 ### Features
 
-- Show the number and the list of pending updates in systray's tooltip ([#257](https://github.com/Antiz96/arch-update/pull/257)) - ([c4d8015](https://github.com/Antiz96/arch-update/commit/c4d80155f302595a9fa9f21e14eb704d53f12955)) by @Antiz96
-- Add a right click menu entry to trigger a check for updates in the systray applet ([#258](https://github.com/Antiz96/arch-update/pull/258)) - ([0f89ad2](https://github.com/Antiz96/arch-update/commit/0f89ad2600750a915878fc3fba01c5e28cc511d5)) by @Antiz96
+- Show the number and the list of pending updates in systray's tooltip ([#257](https://github.com/Antiz96/genesi-update/pull/257)) - ([c4d8015](https://github.com/Antiz96/genesi-update/commit/c4d80155f302595a9fa9f21e14eb704d53f12955)) by @Antiz96
+- Add a right click menu entry to trigger a check for updates in the systray applet ([#258](https://github.com/Antiz96/genesi-update/pull/258)) - ([0f89ad2](https://github.com/Antiz96/genesi-update/commit/0f89ad2600750a915878fc3fba01c5e28cc511d5)) by @Antiz96
 
 ### Documentation
 
-- Update screenshots with the new systray applet features in READMEs ([#259](https://github.com/Antiz96/arch-update/pull/259)) - ([6f793a4](https://github.com/Antiz96/arch-update/commit/6f793a48aca4c95f9e1fe0e39f1bae285a6ec4f2)) by @Antiz96
-- Update man pages about how to start the systray applet at boot ([#256](https://github.com/Antiz96/arch-update/pull/256)) - ([33f8bf1](https://github.com/Antiz96/arch-update/commit/33f8bf1e6f236766eede638fc669f8104ce6c47d)) by @Antiz96
+- Update screenshots with the new systray applet features in READMEs ([#259](https://github.com/Antiz96/genesi-update/pull/259)) - ([6f793a4](https://github.com/Antiz96/genesi-update/commit/6f793a48aca4c95f9e1fe0e39f1bae285a6ec4f2)) by @Antiz96
+- Update man pages about how to start the systray applet at boot ([#256](https://github.com/Antiz96/genesi-update/pull/256)) - ([33f8bf1](https://github.com/Antiz96/genesi-update/commit/33f8bf1e6f236766eede638fc669f8104ce6c47d)) by @Antiz96
 
 ### Styling
 
-- Improve style in documentation, scripts and resources ([#255](https://github.com/Antiz96/arch-update/pull/255)) - ([d598a7a](https://github.com/Antiz96/arch-update/commit/d598a7ad14efa68b12ee1e1ae8370c043969b241)) by @Antiz96
+- Improve style in documentation, scripts and resources ([#255](https://github.com/Antiz96/genesi-update/pull/255)) - ([d598a7a](https://github.com/Antiz96/genesi-update/commit/d598a7ad14efa68b12ee1e1ae8370c043969b241)) by @Antiz96
 
 ### Miscellaneous
 
-- *(icons)* Move icons from the `src` to the `res` directory ([#254](https://github.com/Antiz96/arch-update/pull/254)) - ([6495b29](https://github.com/Antiz96/arch-update/commit/6495b29ce52646e466e793220aed9a6684a19ef7)) by @Antiz96
+- *(icons)* Move icons from the `src` to the `res` directory ([#254](https://github.com/Antiz96/genesi-update/pull/254)) - ([6495b29](https://github.com/Antiz96/genesi-update/commit/6495b29ce52646e466e793220aed9a6684a19ef7)) by @Antiz96
 
-## [v3.1.1](https://github.com/Antiz96/arch-update/releases/tag/v3.1.1) - 2024-09-26
+## [v3.1.1](https://github.com/Antiz96/genesi-update/releases/tag/v3.1.1) - 2024-09-26
 
 ### Fixes
 
-- Fix missing icon on desktop notifications ([#253](https://github.com/Antiz96/arch-update/pull/253)) - ([04913bd](https://github.com/Antiz96/arch-update/commit/04913bd115d21d106524254fc33416c3b26d31f7)) by @Antiz96
+- Fix missing icon on desktop notifications ([#253](https://github.com/Antiz96/genesi-update/pull/253)) - ([04913bd](https://github.com/Antiz96/genesi-update/commit/04913bd115d21d106524254fc33416c3b26d31f7)) by @Antiz96
 
 ### Documentation
 
-- Improve documentation about starting the systray applet at boot ([#252](https://github.com/Antiz96/arch-update/pull/252)) - ([1349ad5](https://github.com/Antiz96/arch-update/commit/1349ad5a70962f5106980abf730d4c618fa825ff)) by @Antiz96
+- Improve documentation about starting the systray applet at boot ([#252](https://github.com/Antiz96/genesi-update/pull/252)) - ([1349ad5](https://github.com/Antiz96/genesi-update/commit/1349ad5a70962f5106980abf730d4c618fa825ff)) by @Antiz96
 
-## [v3.1.0](https://github.com/Antiz96/arch-update/releases/tag/v3.1.0) - 2024-09-25
+## [v3.1.0](https://github.com/Antiz96/genesi-update/releases/tag/v3.1.0) - 2024-09-25
 
 ### Features
 
-- Add the `--force` argument to `arch-update --gen-config` to allow overwriting any existing `arch-update.conf` ([#251](https://github.com/Antiz96/arch-update/pull/251)) - ([8e136c0](https://github.com/Antiz96/arch-update/commit/8e136c02813d85b5c3094b9f02eff04108091000)) by @Antiz96
-- Add dark and blue variants to the systray icon set and add the "TrayIconStyle" option in arch-update.conf ([#242](https://github.com/Antiz96/arch-update/pull/242)) - ([7be96c7](https://github.com/Antiz96/arch-update/commit/7be96c72f4c54afa044f9ee9cd94ba75f4c76dbf)) by @hunabku94
+- Add the `--force` argument to `genesi-update --gen-config` to allow overwriting any existing `genesi-update.conf` ([#251](https://github.com/Antiz96/genesi-update/pull/251)) - ([8e136c0](https://github.com/Antiz96/genesi-update/commit/8e136c02813d85b5c3094b9f02eff04108091000)) by @Antiz96
+- Add dark and blue variants to the systray icon set and add the "TrayIconStyle" option in genesi-update.conf ([#242](https://github.com/Antiz96/genesi-update/pull/242)) - ([7be96c7](https://github.com/Antiz96/genesi-update/commit/7be96c72f4c54afa044f9ee9cd94ba75f4c76dbf)) by @hunabku94
 
 ### Fixes
 
-- Exit if the diff prog editor set in arch-update.conf isn't found ([#250](https://github.com/Antiz96/arch-update/pull/250)) - ([b6c5eca](https://github.com/Antiz96/arch-update/commit/b6c5eca8c940daf66b40858cb26a1f7fe5053319)) by @Antiz96
+- Exit if the diff prog editor set in genesi-update.conf isn't found ([#250](https://github.com/Antiz96/genesi-update/pull/250)) - ([b6c5eca](https://github.com/Antiz96/genesi-update/commit/b6c5eca8c940daf66b40858cb26a1f7fe5053319)) by @Antiz96
 
 ### Styling
 
-- Improve wording in documentation ([#248](https://github.com/Antiz96/arch-update/pull/248)) - ([6cd2ddd](https://github.com/Antiz96/arch-update/commit/6cd2ddddcb9339e509b66a3d77a02ce83f967ab7)) by @Antiz96
+- Improve wording in documentation ([#248](https://github.com/Antiz96/genesi-update/pull/248)) - ([6cd2ddd](https://github.com/Antiz96/genesi-update/commit/6cd2ddddcb9339e509b66a3d77a02ce83f967ab7)) by @Antiz96
 
 ### Miscellaneous
 
-- Use "true" instead of "y" when setting variables ([#249](https://github.com/Antiz96/arch-update/pull/249)) - ([d18742e](https://github.com/Antiz96/arch-update/commit/d18742e5e98fccafb65b42e22045560e0dc8df68)) by @Antiz96
-- Streamline option checking in arch-update.conf ([#247](https://github.com/Antiz96/arch-update/pull/247)) - ([0bd5ee7](https://github.com/Antiz96/arch-update/commit/0bd5ee76e8b25341642359212bbd5636158173c7)) by @Antiz96
-- Add `make test` to the CI ([#246](https://github.com/Antiz96/arch-update/pull/246)) - ([7d43e0a](https://github.com/Antiz96/arch-update/commit/7d43e0a934c23659c4d1841c35313df2024dd738)) by @Antiz96
-- Move example config to the XDG DATA directory ([#245](https://github.com/Antiz96/arch-update/pull/245)) - ([1b76e1c](https://github.com/Antiz96/arch-update/commit/1b76e1cea50a90d06f90854958e338880a01f1f4)) by @Antiz96
-- Update the options order in arch-update.conf ([#244](https://github.com/Antiz96/arch-update/pull/244)) - ([f9781c1](https://github.com/Antiz96/arch-update/commit/f9781c13bdce4e3efd8b085f12d57e9a8c3262ea)) by @Antiz96
-- Make icon installations more dynamic in the Makefile ([#243](https://github.com/Antiz96/arch-update/pull/243)) - ([d9ba070](https://github.com/Antiz96/arch-update/commit/d9ba070174f08c4ef402c786b1cb835bfd12f08b)) by @Antiz96
-- Rename "state" functions & file to "(tray) icon" ([#241](https://github.com/Antiz96/arch-update/pull/241)) - ([90e1f0a](https://github.com/Antiz96/arch-update/commit/90e1f0a8ca0c56348185aa5ffe1390013f192fd6)) by @Antiz96
+- Use "true" instead of "y" when setting variables ([#249](https://github.com/Antiz96/genesi-update/pull/249)) - ([d18742e](https://github.com/Antiz96/genesi-update/commit/d18742e5e98fccafb65b42e22045560e0dc8df68)) by @Antiz96
+- Streamline option checking in genesi-update.conf ([#247](https://github.com/Antiz96/genesi-update/pull/247)) - ([0bd5ee7](https://github.com/Antiz96/genesi-update/commit/0bd5ee76e8b25341642359212bbd5636158173c7)) by @Antiz96
+- Add `make test` to the CI ([#246](https://github.com/Antiz96/genesi-update/pull/246)) - ([7d43e0a](https://github.com/Antiz96/genesi-update/commit/7d43e0a934c23659c4d1841c35313df2024dd738)) by @Antiz96
+- Move example config to the XDG DATA directory ([#245](https://github.com/Antiz96/genesi-update/pull/245)) - ([1b76e1c](https://github.com/Antiz96/genesi-update/commit/1b76e1cea50a90d06f90854958e338880a01f1f4)) by @Antiz96
+- Update the options order in genesi-update.conf ([#244](https://github.com/Antiz96/genesi-update/pull/244)) - ([f9781c1](https://github.com/Antiz96/genesi-update/commit/f9781c13bdce4e3efd8b085f12d57e9a8c3262ea)) by @Antiz96
+- Make icon installations more dynamic in the Makefile ([#243](https://github.com/Antiz96/genesi-update/pull/243)) - ([d9ba070](https://github.com/Antiz96/genesi-update/commit/d9ba070174f08c4ef402c786b1cb835bfd12f08b)) by @Antiz96
+- Rename "state" functions & file to "(tray) icon" ([#241](https://github.com/Antiz96/genesi-update/pull/241)) - ([90e1f0a](https://github.com/Antiz96/genesi-update/commit/90e1f0a8ca0c56348185aa5ffe1390013f192fd6)) by @Antiz96
 
-## [v3.0.1](https://github.com/Antiz96/arch-update/releases/tag/v3.0.1) - 2024-09-24
+## [v3.0.1](https://github.com/Antiz96/genesi-update/releases/tag/v3.0.1) - 2024-09-24
 
 ### Fixes
 
-- Add the missing french translation on the "AUR helper not found" warning ([#239](https://github.com/Antiz96/arch-update/pull/239)) - ([c4a86ad](https://github.com/Antiz96/arch-update/commit/c4a86ad987a6d10f9bd6a05e7889baae9c69ff3c)) by @Antiz96
+- Add the missing french translation on the "AUR helper not found" warning ([#239](https://github.com/Antiz96/genesi-update/pull/239)) - ([c4a86ad](https://github.com/Antiz96/genesi-update/commit/c4a86ad987a6d10f9bd6a05e7889baae9c69ff3c)) by @Antiz96
 
-## [v3.0.0](https://github.com/Antiz96/arch-update/releases/tag/v3.0.0) - 2024-09-24
+## [v3.0.0](https://github.com/Antiz96/genesi-update/releases/tag/v3.0.0) - 2024-09-24
 
 ### Features
 
-- Add the "AURHelper" option in arch-update.conf ([#233](https://github.com/Antiz96/arch-update/pull/233)) - ([a1a5c07](https://github.com/Antiz96/arch-update/commit/a1a5c07e500b789547d9d944c4fd07d48643b818)) by @Antiz96
+- Add the "AURHelper" option in genesi-update.conf ([#233](https://github.com/Antiz96/genesi-update/pull/233)) - ([a1a5c07](https://github.com/Antiz96/genesi-update/commit/a1a5c07e500b789547d9d944c4fd07d48643b818)) by @Antiz96
 
 ### Fixes
 
-- Add fakeroot as an explicit dependency ([#237](https://github.com/Antiz96/arch-update/pull/237)) - ([d2e01bf](https://github.com/Antiz96/arch-update/commit/d2e01bf0be663497fc6e4d3b45dad0cd3d229898)) by @Antiz96
+- Add fakeroot as an explicit dependency ([#237](https://github.com/Antiz96/genesi-update/pull/237)) - ([d2e01bf](https://github.com/Antiz96/genesi-update/commit/d2e01bf0be663497fc6e4d3b45dad0cd3d229898)) by @Antiz96
 
 ### Miscellaneous
 
-- Add simple unit tests to check basic functions with `make test` ([#236](https://github.com/Antiz96/arch-update/pull/236)) - ([4978f98](https://github.com/Antiz96/arch-update/commit/4978f987ce8162f562b86731b3439dca6151e986)) by @Antiz96
-- Chore!(code structure): Split the script functions into separate libraries ([#232](https://github.com/Antiz96/arch-update/pull/232)) - ([c89c0dc](https://github.com/Antiz96/arch-update/commit/c89c0dcb241c9b9d7dd3b4b94443d9ef1da4ae1c)) by @Antiz96
+- Add simple unit tests to check basic functions with `make test` ([#236](https://github.com/Antiz96/genesi-update/pull/236)) - ([4978f98](https://github.com/Antiz96/genesi-update/commit/4978f987ce8162f562b86731b3439dca6151e986)) by @Antiz96
+- Chore!(code structure): Split the script functions into separate libraries ([#232](https://github.com/Antiz96/genesi-update/pull/232)) - ([c89c0dc](https://github.com/Antiz96/genesi-update/commit/c89c0dcb241c9b9d7dd3b4b94443d9ef1da4ae1c)) by @Antiz96
 
-## [v2.3.3](https://github.com/Antiz96/arch-update/releases/tag/v2.3.3) - 2024-09-15
+## [v2.3.3](https://github.com/Antiz96/genesi-update/releases/tag/v2.3.3) - 2024-09-15
 
 ### Fixes
 
-- Fix dates parsing on news listing/displaying ([#229](https://github.com/Antiz96/arch-update/pull/229)) - ([ffce839](https://github.com/Antiz96/arch-update/commit/ffce839c682e2286dc846a16ec2f2fa39cfb7ead)) by @Antiz96
+- Fix dates parsing on news listing/displaying ([#229](https://github.com/Antiz96/genesi-update/pull/229)) - ([ffce839](https://github.com/Antiz96/genesi-update/commit/ffce839c682e2286dc846a16ec2f2fa39cfb7ead)) by @Antiz96
 
 ### Documentation
 
-- Add that Arch-Update follows usual system maintenance steps (as described in the Arch Wiki) in documentation ([#228](https://github.com/Antiz96/arch-update/pull/228)) - ([0238738](https://github.com/Antiz96/arch-update/commit/023873897fc5655a3abcd01e2391f57fb507e7b8)) by @Antiz96
+- Add that Genesi-Update follows usual system maintenance steps (as described in the Arch Wiki) in documentation ([#228](https://github.com/Antiz96/genesi-update/pull/228)) - ([0238738](https://github.com/Antiz96/genesi-update/commit/023873897fc5655a3abcd01e2391f57fb507e7b8)) by @Antiz96
 
 ### Styling
 
-- *(CONTRIBUTING)* Improve wording in contributing guidelines ([#226](https://github.com/Antiz96/arch-update/pull/226)) - ([24c4230](https://github.com/Antiz96/arch-update/commit/24c4230c3e39e107efe560a8fefffae13b7b1068)) by @Antiz96
+- *(CONTRIBUTING)* Improve wording in contributing guidelines ([#226](https://github.com/Antiz96/genesi-update/pull/226)) - ([24c4230](https://github.com/Antiz96/genesi-update/commit/24c4230c3e39e107efe560a8fefffae13b7b1068)) by @Antiz96
 
-## [v2.3.2](https://github.com/Antiz96/arch-update/releases/tag/v2.3.2) - 2024-08-16
+## [v2.3.2](https://github.com/Antiz96/genesi-update/releases/tag/v2.3.2) - 2024-08-16
 
 ### Features
 
-- Check for pending kernel update before checking for services to restart ([#225](https://github.com/Antiz96/arch-update/pull/225)) - ([b416969](https://github.com/Antiz96/arch-update/commit/b4169695c5659d17d1e3abd14fb22a712c120e2b)) by @Temet79
+- Check for pending kernel update before checking for services to restart ([#225](https://github.com/Antiz96/genesi-update/pull/225)) - ([b416969](https://github.com/Antiz96/genesi-update/commit/b4169695c5659d17d1e3abd14fb22a712c120e2b)) by @Temet79
 
-## [v2.3.1](https://github.com/Antiz96/arch-update/releases/tag/v2.3.1) - 2024-07-20
+## [v2.3.1](https://github.com/Antiz96/genesi-update/releases/tag/v2.3.1) - 2024-07-20
 
 ### Fixes
 
-- *(news)* Make curl fail on http server errors responses when checking for recent news ([#220](https://github.com/Antiz96/arch-update/pull/220)) - ([384b6bc](https://github.com/Antiz96/arch-update/commit/384b6bcac90cb82bf7082f9ae1e2691fbf0b4e43)) by @Antiz96
-- *(news)* Avoid undesired error message if the last_update_run file is incorrect during news check ([#218](https://github.com/Antiz96/arch-update/pull/218)) - ([408078e](https://github.com/Antiz96/arch-update/commit/408078e969815b4cfed35fbcbea1fc345bf5468a)) by @Antiz96
+- *(news)* Make curl fail on http server errors responses when checking for recent news ([#220](https://github.com/Antiz96/genesi-update/pull/220)) - ([384b6bc](https://github.com/Antiz96/genesi-update/commit/384b6bcac90cb82bf7082f9ae1e2691fbf0b4e43)) by @Antiz96
+- *(news)* Avoid undesired error message if the last_update_run file is incorrect during news check ([#218](https://github.com/Antiz96/genesi-update/pull/218)) - ([408078e](https://github.com/Antiz96/genesi-update/commit/408078e969815b4cfed35fbcbea1fc345bf5468a)) by @Antiz96
 
 ### Miscellaneous
 
-- *(checkservices)* Update the checkservices command that parses the list of services to restart ([#219](https://github.com/Antiz96/arch-update/pull/219)) - ([4a0b4df](https://github.com/Antiz96/arch-update/commit/4a0b4df0f37e6a1be7ad139de6d5bf33d599d7e6)) by @Antiz96
-- *(news)* Simplify warning message in case of request timeout ([#217](https://github.com/Antiz96/arch-update/pull/217)) - ([da04ba1](https://github.com/Antiz96/arch-update/commit/da04ba1345a4c6584f87eed4f74eaf313ba20099)) by @Antiz96
-- Update the news var value in case of error ([#221](https://github.com/Antiz96/arch-update/pull/221)) - ([e123290](https://github.com/Antiz96/arch-update/commit/e1232908910d9d19608a6b583d52a30fba6b4372)) by @Antiz96
-- Add SPDX license identifier header to the tray script ([#216](https://github.com/Antiz96/arch-update/pull/216)) - ([278237f](https://github.com/Antiz96/arch-update/commit/278237faf22f5aa2763b224598ff65682c066fe1)) by @Antiz96
+- *(checkservices)* Update the checkservices command that parses the list of services to restart ([#219](https://github.com/Antiz96/genesi-update/pull/219)) - ([4a0b4df](https://github.com/Antiz96/genesi-update/commit/4a0b4df0f37e6a1be7ad139de6d5bf33d599d7e6)) by @Antiz96
+- *(news)* Simplify warning message in case of request timeout ([#217](https://github.com/Antiz96/genesi-update/pull/217)) - ([da04ba1](https://github.com/Antiz96/genesi-update/commit/da04ba1345a4c6584f87eed4f74eaf313ba20099)) by @Antiz96
+- Update the news var value in case of error ([#221](https://github.com/Antiz96/genesi-update/pull/221)) - ([e123290](https://github.com/Antiz96/genesi-update/commit/e1232908910d9d19608a6b583d52a30fba6b4372)) by @Antiz96
+- Add SPDX license identifier header to the tray script ([#216](https://github.com/Antiz96/genesi-update/pull/216)) - ([278237f](https://github.com/Antiz96/genesi-update/commit/278237faf22f5aa2763b224598ff65682c066fe1)) by @Antiz96
 
-## [v2.3.0](https://github.com/Antiz96/arch-update/releases/tag/v2.3.0) - 2024-07-09
+## [v2.3.0](https://github.com/Antiz96/genesi-update/releases/tag/v2.3.0) - 2024-07-09
 
 ### Features
 
-- Add the `--edit-config` option to edit the `arch-update.conf` configuration file ([#209](https://github.com/Antiz96/arch-update/pull/209)) - ([988ad2d](https://github.com/Antiz96/arch-update/commit/988ad2d51b4bec7ce03ed67f383a59314bc5196f)) by @Antiz96
-- Add the "DiffProg" option in arch-update.conf ([#207](https://github.com/Antiz96/arch-update/pull/207)) - ([7c56d33](https://github.com/Antiz96/arch-update/commit/7c56d33809ee2b93f5fdf3eb9814ea40c3081864)) by @Antiz96
+- Add the `--edit-config` option to edit the `genesi-update.conf` configuration file ([#209](https://github.com/Antiz96/genesi-update/pull/209)) - ([988ad2d](https://github.com/Antiz96/genesi-update/commit/988ad2d51b4bec7ce03ed67f383a59314bc5196f)) by @Antiz96
+- Add the "DiffProg" option in genesi-update.conf ([#207](https://github.com/Antiz96/genesi-update/pull/207)) - ([7c56d33](https://github.com/Antiz96/genesi-update/commit/7c56d33809ee2b93f5fdf3eb9814ea40c3081864)) by @Antiz96
 
 ### Fixes
 
-- Optimize the "News" function and avoid unexpected behaviors ([#213](https://github.com/Antiz96/arch-update/pull/213)) - ([a16a160](https://github.com/Antiz96/arch-update/commit/a16a160f3fe53567cc83f5d6a697c0a3eebcb69d)) by @Antiz96
-- Fix exit status code 7 for the --list option ([#212](https://github.com/Antiz96/arch-update/pull/212)) - ([814c489](https://github.com/Antiz96/arch-update/commit/814c4896e5a7dab26d56b0d76551842b4ae6c2e8)) by @Antiz96
+- Optimize the "News" function and avoid unexpected behaviors ([#213](https://github.com/Antiz96/genesi-update/pull/213)) - ([a16a160](https://github.com/Antiz96/genesi-update/commit/a16a160f3fe53567cc83f5d6a697c0a3eebcb69d)) by @Antiz96
+- Fix exit status code 7 for the --list option ([#212](https://github.com/Antiz96/genesi-update/pull/212)) - ([814c489](https://github.com/Antiz96/genesi-update/commit/814c4896e5a7dab26d56b0d76551842b4ae6c2e8)) by @Antiz96
 
 ### Documentation
 
-- Various documentation improvements ([#210](https://github.com/Antiz96/arch-update/pull/210)) - ([7a4eb4a](https://github.com/Antiz96/arch-update/commit/7a4eb4aaa63a8535e2461fc1c2151314f7353b86)) by @Antiz96
-- Add the exit status 12 documentation in man pages ([#208](https://github.com/Antiz96/arch-update/pull/208)) - ([3df5849](https://github.com/Antiz96/arch-update/commit/3df5849e7b8a8e86fc9e71006895fd12fec145b3)) by @Antiz96
+- Various documentation improvements ([#210](https://github.com/Antiz96/genesi-update/pull/210)) - ([7a4eb4a](https://github.com/Antiz96/genesi-update/commit/7a4eb4aaa63a8535e2461fc1c2151314f7353b86)) by @Antiz96
+- Add the exit status 12 documentation in man pages ([#208](https://github.com/Antiz96/genesi-update/pull/208)) - ([3df5849](https://github.com/Antiz96/genesi-update/commit/3df5849e7b8a8e86fc9e71006895fd12fec145b3)) by @Antiz96
 
-## [v2.2.0](https://github.com/Antiz96/arch-update/releases/tag/v2.2.0) - 2024-07-07
+## [v2.2.0](https://github.com/Antiz96/genesi-update/releases/tag/v2.2.0) - 2024-07-07
 
 ### Features
 
-- Check for services that require a post upgrade restart on packages upgrade ([#203](https://github.com/Antiz96/arch-update/pull/203)) - ([d2af4a8](https://github.com/Antiz96/arch-update/commit/d2af4a8a843b25227dc329522dd9880660666a9c)) by @Antiz96
-- Allow to read multiple news at once ([#200](https://github.com/Antiz96/arch-update/pull/200)) - ([8cb822a](https://github.com/Antiz96/arch-update/commit/8cb822a8375960dd85cbd79e38dee0561cabaf03)) by @Antiz96
-- Add the `--tray --enable` option to automatically set the systray applet in autostart apps ([#197](https://github.com/Antiz96/arch-update/pull/197)) - ([2b3857f](https://github.com/Antiz96/arch-update/commit/2b3857f74df9b36a75a2bab02dfe7092c53c4bf7)) by @Antiz96
+- Check for services that require a post upgrade restart on packages upgrade ([#203](https://github.com/Antiz96/genesi-update/pull/203)) - ([d2af4a8](https://github.com/Antiz96/genesi-update/commit/d2af4a8a843b25227dc329522dd9880660666a9c)) by @Antiz96
+- Allow to read multiple news at once ([#200](https://github.com/Antiz96/genesi-update/pull/200)) - ([8cb822a](https://github.com/Antiz96/genesi-update/commit/8cb822a8375960dd85cbd79e38dee0561cabaf03)) by @Antiz96
+- Add the `--tray --enable` option to automatically set the systray applet in autostart apps ([#197](https://github.com/Antiz96/genesi-update/pull/197)) - ([2b3857f](https://github.com/Antiz96/genesi-update/commit/2b3857f74df9b36a75a2bab02dfe7092c53c4bf7)) by @Antiz96
 
 ### Fixes
 
-- *(systray)* Prevent multiple instances of the systray applet to be able to run at the same time ([#199](https://github.com/Antiz96/arch-update/pull/199)) - ([fa92a61](https://github.com/Antiz96/arch-update/commit/fa92a617f0438a80bf0422cacff28bf1a68054f9)) by @Antiz96
-- *(translation)* Add missing translations for WARNING and ERROR ([#194](https://github.com/Antiz96/arch-update/pull/194)) - ([3e5c8f6](https://github.com/Antiz96/arch-update/commit/3e5c8f6116db38797e806e78a2bdf1d0e4c043f7)) by @Antiz96
-- *(systray)* Set QApplication class in systray's python script - ([3683b4a](https://github.com/Antiz96/arch-update/commit/3683b4a143f4d92abac8f056d73b4977a48c68d5)) by @starscaledragon
-- Add a category to the desktop file ([#179](https://github.com/Antiz96/arch-update/pull/179)) - ([5bbb86e](https://github.com/Antiz96/arch-update/commit/5bbb86e6c8b8d029e25fef8ebf71c5a8dfb82a8c)) by @max276
+- *(systray)* Prevent multiple instances of the systray applet to be able to run at the same time ([#199](https://github.com/Antiz96/genesi-update/pull/199)) - ([fa92a61](https://github.com/Antiz96/genesi-update/commit/fa92a617f0438a80bf0422cacff28bf1a68054f9)) by @Antiz96
+- *(translation)* Add missing translations for WARNING and ERROR ([#194](https://github.com/Antiz96/genesi-update/pull/194)) - ([3e5c8f6](https://github.com/Antiz96/genesi-update/commit/3e5c8f6116db38797e806e78a2bdf1d0e4c043f7)) by @Antiz96
+- *(systray)* Set QApplication class in systray's python script - ([3683b4a](https://github.com/Antiz96/genesi-update/commit/3683b4a143f4d92abac8f056d73b4977a48c68d5)) by @starscaledragon
+- Add a category to the desktop file ([#179](https://github.com/Antiz96/genesi-update/pull/179)) - ([5bbb86e](https://github.com/Antiz96/genesi-update/commit/5bbb86e6c8b8d029e25fef8ebf71c5a8dfb82a8c)) by @max276
 
 ### Styling
 
-- Typo fixes in french resources ([#193](https://github.com/Antiz96/arch-update/pull/193)) - ([a1d264e](https://github.com/Antiz96/arch-update/commit/a1d264e8889f255da3aff2d990c45cc94407b1bb)) by @Antiz96
+- Typo fixes in french resources ([#193](https://github.com/Antiz96/genesi-update/pull/193)) - ([a1d264e](https://github.com/Antiz96/genesi-update/commit/a1d264e8889f255da3aff2d990c45cc94407b1bb)) by @Antiz96
 
 ### Miscellaneous
 
-- *(CONTRIBUTING)* Update contributing guidelines ([#189](https://github.com/Antiz96/arch-update/pull/189)) - ([7bf057d](https://github.com/Antiz96/arch-update/commit/7bf057d7a2ed8ec952f8a236fc41b29088ce50f6)) by @Antiz96
-- *(changelog)* Add a changelog file ([#190](https://github.com/Antiz96/arch-update/pull/190)) - ([f55bbbf](https://github.com/Antiz96/arch-update/commit/f55bbbfb9fce07feb3f91476cfee5f6ca5c67e90)) by @Antiz96
-- *(main script)* Add a proper SPDX license header ([#195](https://github.com/Antiz96/arch-update/pull/195)) - ([8531c29](https://github.com/Antiz96/arch-update/commit/8531c291808524f7988c655d5b8f47c4c67df844)) by @Antiz96
-- *(release)* Update RELEASE.md ([#192](https://github.com/Antiz96/arch-update/pull/192)) - ([6fb7dc2](https://github.com/Antiz96/arch-update/commit/6fb7dc2e10aa0992eb049d7c41707313272de49d)) by @Antiz96
-- *(release)* Add release steps ([#191](https://github.com/Antiz96/arch-update/pull/191)) - ([1cb2427](https://github.com/Antiz96/arch-update/commit/1cb2427276d4dc66d04151ddd109b5f2f07162ef)) by @Antiz96
-- Add contributing guidelines (CONTRIBUTING.md) ([#188](https://github.com/Antiz96/arch-update/pull/188)) - ([9307079](https://github.com/Antiz96/arch-update/commit/930707987b401ec200fac1778d5faea97f07428f)) by @Antiz96
-- Add a link to sponsor page ([#187](https://github.com/Antiz96/arch-update/pull/187)) - ([8ebab0a](https://github.com/Antiz96/arch-update/commit/8ebab0a74018a3926cdfa076495b94ba9f3fcc88)) by @Antiz96
-- Add a config for issue templates ([#186](https://github.com/Antiz96/arch-update/pull/186)) - ([2062fdd](https://github.com/Antiz96/arch-update/commit/2062fdd58ae6951051b2677d1635a82a2bb1bc86)) by @Antiz96
-- Update issue templates ([#185](https://github.com/Antiz96/arch-update/pull/185)) - ([658a3ae](https://github.com/Antiz96/arch-update/commit/658a3aebd0fa0de1cd786668aae972b7be7ac669)) by @Antiz96
-- Add templates for issues and pull requests ([#184](https://github.com/Antiz96/arch-update/pull/184)) - ([7cf1245](https://github.com/Antiz96/arch-update/commit/7cf1245a305db8b1b00c9d2f8441b5cfb3b29455)) by @Antiz96
+- *(CONTRIBUTING)* Update contributing guidelines ([#189](https://github.com/Antiz96/genesi-update/pull/189)) - ([7bf057d](https://github.com/Antiz96/genesi-update/commit/7bf057d7a2ed8ec952f8a236fc41b29088ce50f6)) by @Antiz96
+- *(changelog)* Add a changelog file ([#190](https://github.com/Antiz96/genesi-update/pull/190)) - ([f55bbbf](https://github.com/Antiz96/genesi-update/commit/f55bbbfb9fce07feb3f91476cfee5f6ca5c67e90)) by @Antiz96
+- *(main script)* Add a proper SPDX license header ([#195](https://github.com/Antiz96/genesi-update/pull/195)) - ([8531c29](https://github.com/Antiz96/genesi-update/commit/8531c291808524f7988c655d5b8f47c4c67df844)) by @Antiz96
+- *(release)* Update RELEASE.md ([#192](https://github.com/Antiz96/genesi-update/pull/192)) - ([6fb7dc2](https://github.com/Antiz96/genesi-update/commit/6fb7dc2e10aa0992eb049d7c41707313272de49d)) by @Antiz96
+- *(release)* Add release steps ([#191](https://github.com/Antiz96/genesi-update/pull/191)) - ([1cb2427](https://github.com/Antiz96/genesi-update/commit/1cb2427276d4dc66d04151ddd109b5f2f07162ef)) by @Antiz96
+- Add contributing guidelines (CONTRIBUTING.md) ([#188](https://github.com/Antiz96/genesi-update/pull/188)) - ([9307079](https://github.com/Antiz96/genesi-update/commit/930707987b401ec200fac1778d5faea97f07428f)) by @Antiz96
+- Add a link to sponsor page ([#187](https://github.com/Antiz96/genesi-update/pull/187)) - ([8ebab0a](https://github.com/Antiz96/genesi-update/commit/8ebab0a74018a3926cdfa076495b94ba9f3fcc88)) by @Antiz96
+- Add a config for issue templates ([#186](https://github.com/Antiz96/genesi-update/pull/186)) - ([2062fdd](https://github.com/Antiz96/genesi-update/commit/2062fdd58ae6951051b2677d1635a82a2bb1bc86)) by @Antiz96
+- Update issue templates ([#185](https://github.com/Antiz96/genesi-update/pull/185)) - ([658a3ae](https://github.com/Antiz96/genesi-update/commit/658a3aebd0fa0de1cd786668aae972b7be7ac669)) by @Antiz96
+- Add templates for issues and pull requests ([#184](https://github.com/Antiz96/genesi-update/pull/184)) - ([7cf1245](https://github.com/Antiz96/genesi-update/commit/7cf1245a305db8b1b00c9d2f8441b5cfb3b29455)) by @Antiz96
 
-## [v2.1.0](https://github.com/Antiz96/arch-update/releases/tag/v2.1.0) - 2024-06-20
+## [v2.1.0](https://github.com/Antiz96/genesi-update/releases/tag/v2.1.0) - 2024-06-20
 
 ### Features
 
-- Add support for systemd run0 by @Antiz96 in <https://github.com/Antiz96/arch-update/pull/172>
-- Add an option in the configuration file to explicitly set which command to use for privilege elevation (`sudo`, `doas` or `run0`) by @Antiz96 in <https://github.com/Antiz96/arch-update/pull/175>
-- Add the `--show-config` option that displays the current configuration file by @Antiz96 in <https://github.com/Antiz96/arch-update/pull/177>
+- Add support for systemd run0 by @Antiz96 in <https://github.com/Antiz96/genesi-update/pull/172>
+- Add an option in the configuration file to explicitly set which command to use for privilege elevation (`sudo`, `doas` or `run0`) by @Antiz96 in <https://github.com/Antiz96/genesi-update/pull/175>
+- Add the `--show-config` option that displays the current configuration file by @Antiz96 in <https://github.com/Antiz96/genesi-update/pull/177>
 
 ### Fixes
 
-- Assign the STATE_FILE var before it is accessed in arch-update-tray.py script by @Antiz96 in <https://github.com/Antiz96/arch-update/pull/174>
+- Assign the STATE_FILE var before it is accessed in genesi-update-tray.py script by @Antiz96 in <https://github.com/Antiz96/genesi-update/pull/174>
 
-## [v2.0.2](https://github.com/Antiz96/arch-update/releases/tag/v2.0.2) - 2024-05-19
+## [v2.0.2](https://github.com/Antiz96/genesi-update/releases/tag/v2.0.2) - 2024-05-19
 
 ### Features
 
-- Add a right click context menu to the systray applet (to "quit/exit" it and run arch-update) by @trigg in <https://github.com/Antiz96/arch-update/pull/165>
-- Make the reboot countdown after a kernel upgrade showing remaining seconds in real time by @Antiz96 in <https://github.com/Antiz96/arch-update/pull/169>
+- Add a right click context menu to the systray applet (to "quit/exit" it and run genesi-update) by @trigg in <https://github.com/Antiz96/genesi-update/pull/165>
+- Make the reboot countdown after a kernel upgrade showing remaining seconds in real time by @Antiz96 in <https://github.com/Antiz96/genesi-update/pull/169>
 
 ### Improvements/Fixes
 
-- Add the method to force `arch-update` to run in a specific terminal emulator via the desktop file to the documentation (as workaround for people using a terminal emulator not [known/supported](https://gitlab.gnome.org/GNOME/glib/-/blob/main/gio/gdesktopappinfo.c#L2694) by `gio` for whom cliking on the systray applet icon does nothing) by @Antiz96 in <https://github.com/Antiz96/arch-update/pull/168>
-- Improve documentation regarding the check function and how to modify the check cycle by @Antiz96 in <https://github.com/Antiz96/arch-update/pull/167>
-- Use the 'state_up_to_date' function to initialize the state file if it does not exists by @Antiz96 in <https://github.com/Antiz96/arch-update/pull/159>
-- Make Arch-Update also look in XDG_DATA_HOME/XDG_DATA_DIRS for translation files and example config by @Antiz96 in <https://github.com/Antiz96/arch-update/pull/170>
-- Fix wording in Makefile by @Antiz96 in <https://github.com/Antiz96/arch-update/pull/158>
-- Fix typos in READMEs by @Antiz96 in <https://github.com/Antiz96/arch-update/pull/161>
+- Add the method to force `genesi-update` to run in a specific terminal emulator via the desktop file to the documentation (as workaround for people using a terminal emulator not [known/supported](https://gitlab.gnome.org/GNOME/glib/-/blob/main/gio/gdesktopappinfo.c#L2694) by `gio` for whom cliking on the systray applet icon does nothing) by @Antiz96 in <https://github.com/Antiz96/genesi-update/pull/168>
+- Improve documentation regarding the check function and how to modify the check cycle by @Antiz96 in <https://github.com/Antiz96/genesi-update/pull/167>
+- Use the 'state_up_to_date' function to initialize the state file if it does not exists by @Antiz96 in <https://github.com/Antiz96/genesi-update/pull/159>
+- Make Genesi-Update also look in XDG_DATA_HOME/XDG_DATA_DIRS for translation files and example config by @Antiz96 in <https://github.com/Antiz96/genesi-update/pull/170>
+- Fix wording in Makefile by @Antiz96 in <https://github.com/Antiz96/genesi-update/pull/158>
+- Fix typos in READMEs by @Antiz96 in <https://github.com/Antiz96/genesi-update/pull/161>
 
-## [v2.0.1](https://github.com/Antiz96/arch-update/releases/tag/v2.0.1) - 2024-05-13
+## [v2.0.1](https://github.com/Antiz96/genesi-update/releases/tag/v2.0.1) - 2024-05-13
 
 ### Improvements/Fixes
 
-- Fix a typo in the FR documentation by @Antiz96 in <https://github.com/Antiz96/arch-update/pull/155>
-- Make systray applet also searching in XDG_DATA_HOME & XDG_DATA_DIRS when looking for the .desktop file by @Antiz96 and @trigg in <https://github.com/Antiz96/arch-update/pull/156>
+- Fix a typo in the FR documentation by @Antiz96 in <https://github.com/Antiz96/genesi-update/pull/155>
+- Make systray applet also searching in XDG_DATA_HOME & XDG_DATA_DIRS when looking for the .desktop file by @Antiz96 and @trigg in <https://github.com/Antiz96/genesi-update/pull/156>
 
-## [v2.0.0](https://github.com/Antiz96/arch-update/releases/tag/v2.0.0) - 2024-05-10
+## [v2.0.0](https://github.com/Antiz96/genesi-update/releases/tag/v2.0.0) - 2024-05-10
 
 ### Features
 
-- Add a systray applet by @trigg in <https://github.com/Antiz96/arch-update/pull/148> and <https://github.com/Antiz96/arch-update/pull/149>
+- Add a systray applet by @trigg in <https://github.com/Antiz96/genesi-update/pull/148> and <https://github.com/Antiz96/genesi-update/pull/149>
 
 ### Improvements
 
-- Move icons into hicolor theme by @trigg in <https://github.com/Antiz96/arch-update/pull/147>
-- Drop icon changing for the .desktop file and remove superfluous icons/states by @Antiz96 in <https://github.com/Antiz96/arch-update/pull/150>
-- New icons set by @Tearling27 in <https://github.com/Antiz96/arch-update/pull/152> and <https://github.com/Antiz96/arch-update/pull/153>
+- Move icons into hicolor theme by @trigg in <https://github.com/Antiz96/genesi-update/pull/147>
+- Drop icon changing for the .desktop file and remove superfluous icons/states by @Antiz96 in <https://github.com/Antiz96/genesi-update/pull/150>
+- New icons set by @Tearling27 in <https://github.com/Antiz96/genesi-update/pull/152> and <https://github.com/Antiz96/genesi-update/pull/153>
 - Simplification of the README for an easier and more fluid reading
 
 ### Important notes
 
 - People running Wayland additionally need the `qt6-wayland` package for the systray applet to work properly.
-- For people using the Arch-Update AUR package :
-        The following error is expected when using `arch-update` to update from v1.X.X to v2.X.X: `cp: cannot stat '/usr/share/icons/arch-update/arch-update_up-to-date.svg': No such file or directory`. It will only happen once during the switch from v1 to v2 and will not happen again after that :)
-- For people installing Arch-Update [from source](https://github.com/Antiz96/arch-update?tab=readme-ov-file#from-source):
-        First uninstall the current version running on your system (via `sudo make uninstall`) before downloading this release's archive (or pulling the repo locally) and re-installing Arch-Update (via `sudo make install`), otherwise you'll keep unnecessary residues of the previous version on your system. Also make sure to install the newly required dependencies listed in the installation instructions.
+- For people using the Genesi-Update AUR package :
+        The following error is expected when using `genesi-update` to update from v1.X.X to v2.X.X: `cp: cannot stat '/usr/share/icons/genesi-update/arch-update_up-to-date.svg': No such file or directory`. It will only happen once during the switch from v1 to v2 and will not happen again after that :)
+- For people installing Genesi-Update [from source](https://github.com/Antiz96/genesi-update?tab=readme-ov-file#from-source):
+        First uninstall the current version running on your system (via `sudo make uninstall`) before downloading this release's archive (or pulling the repo locally) and re-installing Genesi-Update (via `sudo make install`), otherwise you'll keep unnecessary residues of the previous version on your system. Also make sure to install the newly required dependencies listed in the installation instructions.
 
-## [v1.15.0](https://github.com/Antiz96/arch-update/releases/tag/v1.15.0) - 2024-05-01
+## [v1.15.0](https://github.com/Antiz96/genesi-update/releases/tag/v1.15.0) - 2024-05-01
 
 ### Features
 
-- Introduce the `--gen-config` option that allows to generate an example configuration file by @Antiz96 in <https://github.com/Antiz96/arch-update/pull/143>
+- Introduce the `--gen-config` option that allows to generate an example configuration file by @Antiz96 in <https://github.com/Antiz96/genesi-update/pull/143>
 
-## [v1.14.4](https://github.com/Antiz96/arch-update/releases/tag/v1.14.4) - 2024-04-18
+## [v1.14.4](https://github.com/Antiz96/genesi-update/releases/tag/v1.14.4) - 2024-04-18
 
 ### Improvements
 
-- Add an explicit message that the script is looking for updates by @Antiz96 in <https://github.com/Antiz96/arch-update/pull/141>
+- Add an explicit message that the script is looking for updates by @Antiz96 in <https://github.com/Antiz96/genesi-update/pull/141>
 
-## [v1.14.3](https://github.com/Antiz96/arch-update/releases/tag/v1.14.3) - 2024-04-14
+## [v1.14.3](https://github.com/Antiz96/genesi-update/releases/tag/v1.14.3) - 2024-04-14
 
 ### Improvements/Fixes
 
-- Explicitly set color option of wrapped tools in the main script by @Antiz96 in <https://github.com/Antiz96/arch-update/pull/140>
+- Explicitly set color option of wrapped tools in the main script by @Antiz96 in <https://github.com/Antiz96/genesi-update/pull/140>
 
-## [v1.14.2](https://github.com/Antiz96/arch-update/releases/tag/v1.14.2) - 2024-04-13
+## [v1.14.2](https://github.com/Antiz96/genesi-update/releases/tag/v1.14.2) - 2024-04-13
 
 ### Improvements
 
-- Add a trust path for users by @Antiz96 in <https://github.com/Antiz96/arch-update/pull/138>
+- Add a trust path for users by @Antiz96 in <https://github.com/Antiz96/genesi-update/pull/138>
 
 ### Fixes
 
-- Fix a typo in ZSH completions by @Antiz96 in <https://github.com/Antiz96/arch-update/pull/139>
+- Fix a typo in ZSH completions by @Antiz96 in <https://github.com/Antiz96/genesi-update/pull/139>
 
-## [v1.14.1](https://github.com/Antiz96/arch-update/releases/tag/v1.14.1) - 2024-03-24
+## [v1.14.1](https://github.com/Antiz96/genesi-update/releases/tag/v1.14.1) - 2024-03-24
 
 ### Improvement
 
-- Replace the previously sent desktop notification instead of sending a new one during the check function by @Antiz96 in <https://github.com/Antiz96/arch-update/pull/134>
+- Replace the previously sent desktop notification instead of sending a new one during the check function by @Antiz96 in <https://github.com/Antiz96/genesi-update/pull/134>
 
 ### Other
 
-- [Release Prep] v1.14.1 by @Antiz96 in <https://github.com/Antiz96/arch-update/pull/135>
+- [Release Prep] v1.14.1 by @Antiz96 in <https://github.com/Antiz96/genesi-update/pull/135>
 
-## [v1.14.0](https://github.com/Antiz96/arch-update/releases/tag/v1.14.0) - 2024-03-22
+## [v1.14.0](https://github.com/Antiz96/genesi-update/releases/tag/v1.14.0) - 2024-03-22
 
 ### Features
 
-- Add the `-D/--debug` argument to display debug traces by @Antiz96 in <https://github.com/Antiz96/arch-update/pull/131>
+- Add the `-D/--debug` argument to display debug traces by @Antiz96 in <https://github.com/Antiz96/genesi-update/pull/131>
 
 ### Other
 
-- [Release Prep] v1.14.0 by @Antiz96 in <https://github.com/Antiz96/arch-update/pull/132>
+- [Release Prep] v1.14.0 by @Antiz96 in <https://github.com/Antiz96/genesi-update/pull/132>
 
-## [v1.13.0](https://github.com/Antiz96/arch-update/releases/tag/v1.13.0) - 2024-03-21
+## [v1.13.0](https://github.com/Antiz96/genesi-update/releases/tag/v1.13.0) - 2024-03-21
 
 ### Features
 
-- Add the new `-d/--devel` option to include AUR development packages updates by @derethil in <https://github.com/Antiz96/arch-update/pull/125>
+- Add the new `-d/--devel` option to include AUR development packages updates by @derethil in <https://github.com/Antiz96/genesi-update/pull/125>
 
 ### Improvements/Fixes
 
-- Add the `-l/--list` option to shell completions by @Sparkway in <https://github.com/Antiz96/arch-update/pull/127>
-- Make the pending kernel update detection more robust (for EndeavourOS) by @Antiz96 in <https://github.com/Antiz96/arch-update/pull/129>
-- Fix a small typo in the main script by @Antiz96 in <https://github.com/Antiz96/arch-update/pull/128>
+- Add the `-l/--list` option to shell completions by @Sparkway in <https://github.com/Antiz96/genesi-update/pull/127>
+- Make the pending kernel update detection more robust (for EndeavourOS) by @Antiz96 in <https://github.com/Antiz96/genesi-update/pull/129>
+- Fix a small typo in the main script by @Antiz96 in <https://github.com/Antiz96/genesi-update/pull/128>
 
 ### Other
 
-- [Release Prep] v1.13.0 by @Antiz96 in <https://github.com/Antiz96/arch-update/pull/130>
+- [Release Prep] v1.13.0 by @Antiz96 in <https://github.com/Antiz96/genesi-update/pull/130>
 
-## [v1.12.2](https://github.com/Antiz96/arch-update/releases/tag/v1.12.2) - 2024-03-12
+## [v1.12.2](https://github.com/Antiz96/genesi-update/releases/tag/v1.12.2) - 2024-03-12
 
 ### Features
 
-- Add the new `-l/--list` option to simply get the list of pending updates by @Antiz96 in <https://github.com/Antiz96/arch-update/pull/123>
+- Add the new `-l/--list` option to simply get the list of pending updates by @Antiz96 in <https://github.com/Antiz96/genesi-update/pull/123>
 
 ### Other
 
-- [Release Prep] v1.12.2 by @Antiz96 in <https://github.com/Antiz96/arch-update/pull/124>
+- [Release Prep] v1.12.2 by @Antiz96 in <https://github.com/Antiz96/genesi-update/pull/124>
 
-## [v1.12.1](https://github.com/Antiz96/arch-update/releases/tag/v1.12.1) - 2024-02-29
+## [v1.12.1](https://github.com/Antiz96/genesi-update/releases/tag/v1.12.1) - 2024-02-29
 
 ### Features
 
-- Add shell completions for bash, zsh and fish by @Antiz96 in <https://github.com/Antiz96/arch-update/pull/118>
+- Add shell completions for bash, zsh and fish by @Antiz96 in <https://github.com/Antiz96/genesi-update/pull/118>
 
 ### Other
 
-- [Release Prep] v1.12.1 by @Antiz96 in <https://github.com/Antiz96/arch-update/pull/120>
+- [Release Prep] v1.12.1 by @Antiz96 in <https://github.com/Antiz96/genesi-update/pull/120>
 
-## [v1.12.0](https://github.com/Antiz96/arch-update/releases/tag/v1.12.0) - 2024-02-25
+## [v1.12.0](https://github.com/Antiz96/genesi-update/releases/tag/v1.12.0) - 2024-02-25
 
 ### Features
 
-- Introduce the `-n/--news` option that allows to display latest Arch News by @Antiz96 in <https://github.com/Antiz96/arch-update/pull/113>
-- Allow to customize the number of Arch news to display before updating and with the `-n/--news` option by @Antiz96 in <https://github.com/Antiz96/arch-update/pull/114>
-- Only display Arch news if a new one has been published since the last run by @Antiz96 in <https://github.com/Antiz96/arch-update/pull/115>
+- Introduce the `-n/--news` option that allows to display latest Arch News by @Antiz96 in <https://github.com/Antiz96/genesi-update/pull/113>
+- Allow to customize the number of Arch news to display before updating and with the `-n/--news` option by @Antiz96 in <https://github.com/Antiz96/genesi-update/pull/114>
+- Only display Arch news if a new one has been published since the last run by @Antiz96 in <https://github.com/Antiz96/genesi-update/pull/115>
 
 ### Improvements
 
-- Improve documentation by @Antiz96 in <https://github.com/Antiz96/arch-update/pull/112> & <https://github.com/Antiz96/arch-update/pull/116>
+- Improve documentation by @Antiz96 in <https://github.com/Antiz96/genesi-update/pull/112> & <https://github.com/Antiz96/genesi-update/pull/116>
 
 ### Other
 
-- [Release Prep] v1.12.0 by @Antiz96 in <https://github.com/Antiz96/arch-update/pull/117>
+- [Release Prep] v1.12.0 by @Antiz96 in <https://github.com/Antiz96/genesi-update/pull/117>
 
-## [v1.11.0](https://github.com/Antiz96/arch-update/releases/tag/v1.11.0) - 2024-02-09
+## [v1.11.0](https://github.com/Antiz96/genesi-update/releases/tag/v1.11.0) - 2024-02-09
 
 ### Features
 
-- French translation for the main script by @Antiz96 in <https://github.com/Antiz96/arch-update/pull/107>
-- French translation for the documentation (README + Man pages) by @Antiz96 & @jfchadeyron in <https://github.com/Antiz96/arch-update/pull/102>
+- French translation for the main script by @Antiz96 in <https://github.com/Antiz96/genesi-update/pull/107>
+- French translation for the documentation (README + Man pages) by @Antiz96 & @jfchadeyron in <https://github.com/Antiz96/genesi-update/pull/102>
 
 ### Improvements/Fixes
 
-- Make Flatpak packages updates detection more robust to avoid false positives by @Antiz96 in <https://github.com/Antiz96/arch-update/pull/104>
-- Improvement the packaging method by @Antiz96 in <https://github.com/Antiz96/arch-update/pull/107>
+- Make Flatpak packages updates detection more robust to avoid false positives by @Antiz96 in <https://github.com/Antiz96/genesi-update/pull/104>
+- Improvement the packaging method by @Antiz96 in <https://github.com/Antiz96/genesi-update/pull/107>
 
 ### Other
 
-- Licensing: Precise that Arch-Update is licensed under GPL3+ by @Antiz96 in <https://github.com/Antiz96/arch-update/pull/105>
-- [Release Prep] v1.11.0 by @Antiz96 in <https://github.com/Antiz96/arch-update/pull/108>
+- Licensing: Precise that Genesi-Update is licensed under GPL3+ by @Antiz96 in <https://github.com/Antiz96/genesi-update/pull/105>
+- [Release Prep] v1.11.0 by @Antiz96 in <https://github.com/Antiz96/genesi-update/pull/108>
 
-## [v1.10.1](https://github.com/Antiz96/arch-update/releases/tag/v1.10.1) - 2024-01-14
+## [v1.10.1](https://github.com/Antiz96/genesi-update/releases/tag/v1.10.1) - 2024-01-14
 
 ### Fixes
 
-- Correction of documentation regarding how to change the auto-check cycle by @Antiz96 in <https://github.com/Antiz96/arch-update/pull/97>
-- Update url for systemd Time Spans in documentation by @Antiz96 in <https://github.com/Antiz96/arch-update/pull/98>
+- Correction of documentation regarding how to change the auto-check cycle by @Antiz96 in <https://github.com/Antiz96/genesi-update/pull/97>
+- Update url for systemd Time Spans in documentation by @Antiz96 in <https://github.com/Antiz96/genesi-update/pull/98>
 
 ### Other
 
-- Harmonize name as 'Arch-Update' everywhere by @Antiz96 in <https://github.com/Antiz96/arch-update/pull/94>
-- [Release Prep] v1.10.1 by @Antiz96 in <https://github.com/Antiz96/arch-update/pull/99>
+- Harmonize name as 'Genesi-Update' everywhere by @Antiz96 in <https://github.com/Antiz96/genesi-update/pull/94>
+- [Release Prep] v1.10.1 by @Antiz96 in <https://github.com/Antiz96/genesi-update/pull/99>
 
-## [v1.10.0](https://github.com/Antiz96/arch-update/releases/tag/v1.10.0) - 2024-01-06
+## [v1.10.0](https://github.com/Antiz96/genesi-update/releases/tag/v1.10.0) - 2024-01-06
 
 ### Features
 
-- Add colors to the output of the script by @Antiz96 in <https://github.com/Antiz96/arch-update/pull/87>
-- Add an optional configuration file to enable/disable or modify certain options by @Antiz96 in <https://github.com/Antiz96/arch-update/pull/89>
+- Add colors to the output of the script by @Antiz96 in <https://github.com/Antiz96/genesi-update/pull/87>
+- Add an optional configuration file to enable/disable or modify certain options by @Antiz96 in <https://github.com/Antiz96/genesi-update/pull/89>
 
 ### Improvements
 
-- Switch to a self-hosted runner for CI-CD + Add actionlint to CI by @Antiz96 in <https://github.com/Antiz96/arch-update/pull/77>
-- Use complete version ref in man page by @wmemcpy in <https://github.com/Antiz96/arch-update/pull/78>
-- Update documentation to advice using 'systemctl edit' to modify the auto-check cycle by @Antiz96 in <https://github.com/Antiz96/arch-update/pull/84>
+- Switch to a self-hosted runner for CI-CD + Add actionlint to CI by @Antiz96 in <https://github.com/Antiz96/genesi-update/pull/77>
+- Use complete version ref in man page by @wmemcpy in <https://github.com/Antiz96/genesi-update/pull/78>
+- Update documentation to advice using 'systemctl edit' to modify the auto-check cycle by @Antiz96 in <https://github.com/Antiz96/genesi-update/pull/84>
 
 ### Fixes
 
-- Add missing documentation for the old cached packages handling and pending kernel update processing features in the help message by @Antiz96 in <https://github.com/Antiz96/arch-update/pull/88>
+- Add missing documentation for the old cached packages handling and pending kernel update processing features in the help message by @Antiz96 in <https://github.com/Antiz96/genesi-update/pull/88>
 
 ### Other
 
-- [Release Prep] v1.10.0 by @Antiz96 in <https://github.com/Antiz96/arch-update/pull/90>
-- Improve readability of documentation in README by @Antiz96 in <https://github.com/Antiz96/arch-update/pull/91>
+- [Release Prep] v1.10.0 by @Antiz96 in <https://github.com/Antiz96/genesi-update/pull/90>
+- Improve readability of documentation in README by @Antiz96 in <https://github.com/Antiz96/genesi-update/pull/91>
 
-## [v1.9.1](https://github.com/Antiz96/arch-update/releases/tag/v1.9.1) - 2023-12-04
+## [v1.9.1](https://github.com/Antiz96/genesi-update/releases/tag/v1.9.1) - 2023-12-04
 
 ### Fixes
 
-- Fix false positive 'pending kernel update' messages on EndeavourOS with systemd-boot by @Antiz96 in <https://github.com/Antiz96/arch-update/pull/75>
+- Fix false positive 'pending kernel update' messages on EndeavourOS with systemd-boot by @Antiz96 in <https://github.com/Antiz96/genesi-update/pull/75>
 
 ### Other
 
-- [Release Prep] Bump the script to v1.9.1 by @Antiz96 in <https://github.com/Antiz96/arch-update/pull/76>
+- [Release Prep] Bump the script to v1.9.1 by @Antiz96 in <https://github.com/Antiz96/genesi-update/pull/76>
 
-## [v1.9.0](https://github.com/Antiz96/arch-update/releases/tag/v1.9.0) - 2023-12-03
+## [v1.9.0](https://github.com/Antiz96/genesi-update/releases/tag/v1.9.0) - 2023-12-03
 
 ### Features
 
-- Check if there are old or uninstalled cached packages in pacman's cache and offers to remove them if there are by @Antiz96 in <https://github.com/Antiz96/arch-update/pull/71> (suggested by @Temet79 in <https://github.com/Antiz96/arch-update/issues/70)>
+- Check if there are old or uninstalled cached packages in pacman's cache and offers to remove them if there are by @Antiz96 in <https://github.com/Antiz96/genesi-update/pull/71> (suggested by @Temet79 in <https://github.com/Antiz96/genesi-update/issues/70)>
 
 ### Fixes
 
-- Add the missing space in the 'kernel_reboot' function to keep a consistent style by @Antiz96 in <https://github.com/Antiz96/arch-update/pull/72>
+- Add the missing space in the 'kernel_reboot' function to keep a consistent style by @Antiz96 in <https://github.com/Antiz96/genesi-update/pull/72>
 
 ### Other
 
-- [Release Prep] Bump the script to v1.9.0 by @Antiz96 in <https://github.com/Antiz96/arch-update/pull/73>
+- [Release Prep] Bump the script to v1.9.0 by @Antiz96 in <https://github.com/Antiz96/genesi-update/pull/73>
 
-## [v1.8.0](https://github.com/Antiz96/arch-update/releases/tag/v1.8.0) - 2023-12-01
+## [v1.8.0](https://github.com/Antiz96/genesi-update/releases/tag/v1.8.0) - 2023-12-01
 
 ### Features
 
-- If both paru and yay are installed, use paru by default by @Antiz96 in <https://github.com/Antiz96/arch-update/pull/64>
-- Check if a pending kernel update requires a reboot to be applied and, if there's one, offer to reboot by @Antiz96 in <https://github.com/Antiz96/arch-update/pull/65>
+- If both paru and yay are installed, use paru by default by @Antiz96 in <https://github.com/Antiz96/genesi-update/pull/64>
+- Check if a pending kernel update requires a reboot to be applied and, if there's one, offer to reboot by @Antiz96 in <https://github.com/Antiz96/genesi-update/pull/65>
 
 ### Fixes
 
-- Do not keep the `current_check` file in addition to the `last_check` one after the run of the check() function is finished as only the former is interesting/relevant to keep by @Antiz96 in <https://github.com/Antiz96/arch-update/pull/66>
+- Do not keep the `current_check` file in addition to the `last_check` one after the run of the check() function is finished as only the former is interesting/relevant to keep by @Antiz96 in <https://github.com/Antiz96/genesi-update/pull/66>
 
 ### Other
 
-- Add a link to the YouTube review of arch-update we made with @Cardiacman13 to the README (review in french) by @Antiz96 in <https://github.com/Antiz96/arch-update/pull/67>
-- Restructuring the functions' calls in the script to make it more readable and easier to evolve/work with by @Antiz96 in <https://github.com/Antiz96/arch-update/pull/68>
-- [Release Prep] Bump the script to v1.8.0 by @Antiz96 in <https://github.com/Antiz96/arch-update/pull/69>
+- Add a link to the YouTube review of genesi-update we made with @Cardiacman13 to the README (review in french) by @Antiz96 in <https://github.com/Antiz96/genesi-update/pull/67>
+- Restructuring the functions' calls in the script to make it more readable and easier to evolve/work with by @Antiz96 in <https://github.com/Antiz96/genesi-update/pull/68>
+- [Release Prep] Bump the script to v1.8.0 by @Antiz96 in <https://github.com/Antiz96/genesi-update/pull/69>
 
-## [v1.7.0](https://github.com/Antiz96/arch-update/releases/tag/v1.7.0) - 2023-11-24
+## [v1.7.0](https://github.com/Antiz96/genesi-update/releases/tag/v1.7.0) - 2023-11-24
 
-- Only send desktop notification if the list of available updates differs from the last check by @Antiz96 in <https://github.com/Antiz96/arch-update/pull/61>
+- Only send desktop notification if the list of available updates differs from the last check by @Antiz96 in <https://github.com/Antiz96/genesi-update/pull/61>
 
-## [v1.6.2](https://github.com/Antiz96/arch-update/releases/tag/v1.6.2) - 2023-11-21
+## [v1.6.2](https://github.com/Antiz96/genesi-update/releases/tag/v1.6.2) - 2023-11-21
 
-- Make showing the version changes the default behaviour when listing available updates by @Antiz96 in <https://github.com/Antiz96/arch-update/pull/58>
-- Make vim an optional dependency by @Antiz96 in <https://github.com/Antiz96/arch-update/pull/59>
+- Make showing the version changes the default behaviour when listing available updates by @Antiz96 in <https://github.com/Antiz96/genesi-update/pull/58>
+- Make vim an optional dependency by @Antiz96 in <https://github.com/Antiz96/genesi-update/pull/59>
 
-## [v1.6.1](https://github.com/Antiz96/arch-update/releases/tag/v1.6.1) - 2023-11-10
+## [v1.6.1](https://github.com/Antiz96/genesi-update/releases/tag/v1.6.1) - 2023-11-10
 
-- Bugfix: Only print "No Flatpak unused package found" if flatpak is actually installed by @Antiz96 in <https://github.com/Antiz96/arch-update/pull/57>
+- Bugfix: Only print "No Flatpak unused package found" if flatpak is actually installed by @Antiz96 in <https://github.com/Antiz96/genesi-update/pull/57>
 
-## [v1.6.0](https://github.com/Antiz96/arch-update/releases/tag/v1.6.0) - 2023-11-10
+## [v1.6.0](https://github.com/Antiz96/genesi-update/releases/tag/v1.6.0) - 2023-11-10
 
-- Add Flatpak packages support (both for update and remove unused packages) by @Antiz96 in <https://github.com/Antiz96/arch-update/pull/54>
-- Add styling to differentiate each steps of the main script more easily by @Antiz96 in <https://github.com/Antiz96/arch-update/pull/55>
+- Add Flatpak packages support (both for update and remove unused packages) by @Antiz96 in <https://github.com/Antiz96/genesi-update/pull/54>
+- Add styling to differentiate each steps of the main script more easily by @Antiz96 in <https://github.com/Antiz96/genesi-update/pull/55>
 
-## [v1.5.7](https://github.com/Antiz96/arch-update/releases/tag/v1.5.7) - 2023-07-16
+## [v1.5.7](https://github.com/Antiz96/genesi-update/releases/tag/v1.5.7) - 2023-07-16
 
-- Show more relevant info in a more readable way during the print of a news by @Antiz96 in <https://github.com/Antiz96/arch-update/pull/39>
-- Add a '[NEW]' tag to each Arch news that are newer than 15 days by @Antiz96 in <https://github.com/Antiz96/arch-update/pull/40>
-- Update documentation with the recently added features by @Antiz96 in <https://github.com/Antiz96/arch-update/pull/42>
-- Bump the main script's version by @Antiz96 in <https://github.com/Antiz96/arch-update/pull/43>
+- Show more relevant info in a more readable way during the print of a news by @Antiz96 in <https://github.com/Antiz96/genesi-update/pull/39>
+- Add a '[NEW]' tag to each Arch news that are newer than 15 days by @Antiz96 in <https://github.com/Antiz96/genesi-update/pull/40>
+- Update documentation with the recently added features by @Antiz96 in <https://github.com/Antiz96/genesi-update/pull/42>
+- Bump the main script's version by @Antiz96 in <https://github.com/Antiz96/genesi-update/pull/43>
 
-## [v1.5.6](https://github.com/Antiz96/arch-update/releases/tag/v1.5.6) - 2023-06-24
+## [v1.5.6](https://github.com/Antiz96/genesi-update/releases/tag/v1.5.6) - 2023-06-24
 
-- Add codespell to the test suite ran by GH action by @Antiz96 in <https://github.com/Antiz96/arch-update/pull/33>
-- Typo fixes by @Antiz96 in <https://github.com/Antiz96/arch-update/pull/34>
-- Bump the main script version by @Antiz96 in <https://github.com/Antiz96/arch-update/pull/35>
+- Add codespell to the test suite ran by GH action by @Antiz96 in <https://github.com/Antiz96/genesi-update/pull/33>
+- Typo fixes by @Antiz96 in <https://github.com/Antiz96/genesi-update/pull/34>
+- Bump the main script version by @Antiz96 in <https://github.com/Antiz96/genesi-update/pull/35>
 
-## [v1.5.5](https://github.com/Antiz96/arch-update/releases/tag/v1.5.5) - 2023-06-14
+## [v1.5.5](https://github.com/Antiz96/genesi-update/releases/tag/v1.5.5) - 2023-06-14
 
-- Filter all special characters/symbols when parsing the Arch news urls to avoid ending with a wrong url by @Antiz96 in <https://github.com/Antiz96/arch-update/pull/32>
+- Filter all special characters/symbols when parsing the Arch news urls to avoid ending with a wrong url by @Antiz96 in <https://github.com/Antiz96/genesi-update/pull/32>
 
-## [v1.5.4](https://github.com/Antiz96/arch-update/releases/tag/v1.5.4) - 2023-06-13
+## [v1.5.4](https://github.com/Antiz96/genesi-update/releases/tag/v1.5.4) - 2023-06-13
 
-- Add a GitHub action to run shellcheck on pull requests by @Antiz96 in <https://github.com/Antiz96/arch-update/pull/24>
-- Add basic but useful information at the top of the main script by @Antiz96 in <https://github.com/Antiz96/arch-update/pull/25>
-- Refactoring the script with functions by @Antiz96 in <https://github.com/Antiz96/arch-update/pull/26>
-- Add a clear and concise help message (instead of simply printing the man page) for the --help option by @Antiz96 in <https://github.com/Antiz96/arch-update/pull/27>
-- Use separated exit codes for each type of errors by @Antiz96 in <https://github.com/Antiz96/arch-update/pull/28>
-- Switch from hq to htmlq to print Arch news during the update operation by @Antiz96 in <https://github.com/Antiz96/arch-update/pull/29>
-- Bump the script to v1.5.4 by @Antiz96 in <https://github.com/Antiz96/arch-update/pull/30>
+- Add a GitHub action to run shellcheck on pull requests by @Antiz96 in <https://github.com/Antiz96/genesi-update/pull/24>
+- Add basic but useful information at the top of the main script by @Antiz96 in <https://github.com/Antiz96/genesi-update/pull/25>
+- Refactoring the script with functions by @Antiz96 in <https://github.com/Antiz96/genesi-update/pull/26>
+- Add a clear and concise help message (instead of simply printing the man page) for the --help option by @Antiz96 in <https://github.com/Antiz96/genesi-update/pull/27>
+- Use separated exit codes for each type of errors by @Antiz96 in <https://github.com/Antiz96/genesi-update/pull/28>
+- Switch from hq to htmlq to print Arch news during the update operation by @Antiz96 in <https://github.com/Antiz96/genesi-update/pull/29>
+- Bump the script to v1.5.4 by @Antiz96 in <https://github.com/Antiz96/genesi-update/pull/30>
 
-## [v1.5.3](https://github.com/Antiz96/arch-update/releases/tag/v1.5.3) - 2023-04-04
+## [v1.5.3](https://github.com/Antiz96/genesi-update/releases/tag/v1.5.3) - 2023-04-04
 
-- Revert the required fix for the 'checkupdate' issue when using yay (implemented in #22) as it has been fixed/reverted by upstream (<https://github.com/Antiz96/arch-update/pull/23>)
+- Revert the required fix for the 'checkupdate' issue when using yay (implemented in #22) as it has been fixed/reverted by upstream (<https://github.com/Antiz96/genesi-update/pull/23>)
 
-## [v1.5.2](https://github.com/Antiz96/arch-update/releases/tag/v1.5.2) - 2023-04-03
+## [v1.5.2](https://github.com/Antiz96/genesi-update/releases/tag/v1.5.2) - 2023-04-03
 
-- Fix the 'checkupdate' issue when using yay by @Antiz96 in <https://github.com/Antiz96/arch-update/pull/22>
+- Fix the 'checkupdate' issue when using yay by @Antiz96 in <https://github.com/Antiz96/genesi-update/pull/22>
 
-## [v1.5.1](https://github.com/Antiz96/arch-update/releases/tag/v1.5.1) - 2023-02-10
+## [v1.5.1](https://github.com/Antiz96/genesi-update/releases/tag/v1.5.1) - 2023-02-10
 
-- Make use of pacdiff to search for pacnew files by @Antiz96 in <https://github.com/Antiz96/arch-update/pull/20>
+- Make use of pacdiff to search for pacnew files by @Antiz96 in <https://github.com/Antiz96/genesi-update/pull/20>
 
-## [v1.5.0](https://github.com/Antiz96/arch-update/releases/tag/v1.5.0) - 2023-02-09
+## [v1.5.0](https://github.com/Antiz96/genesi-update/releases/tag/v1.5.0) - 2023-02-09
 
-- Add removing orphan packages support by @Antiz96 in <https://github.com/Antiz96/arch-update/pull/15>
-- Make searching and processing orphan packages and pacnew files independent from updates by @Antiz96 in <https://github.com/Antiz96/arch-update/pull/16>
-- Make the pacnew processing feature lists pacnew files before offering to process them by @Antiz96 in <https://github.com/Antiz96/arch-update/pull/17>
-- Various improvements/optimisation to the main script, the README and the documentation by @Antiz96 in <https://github.com/Antiz96/arch-update/pull/18>
-- Bump the script to v1.5.0 by @Antiz96 in <https://github.com/Antiz96/arch-update/pull/19>
+- Add removing orphan packages support by @Antiz96 in <https://github.com/Antiz96/genesi-update/pull/15>
+- Make searching and processing orphan packages and pacnew files independent from updates by @Antiz96 in <https://github.com/Antiz96/genesi-update/pull/16>
+- Make the pacnew processing feature lists pacnew files before offering to process them by @Antiz96 in <https://github.com/Antiz96/genesi-update/pull/17>
+- Various improvements/optimisation to the main script, the README and the documentation by @Antiz96 in <https://github.com/Antiz96/genesi-update/pull/18>
+- Bump the script to v1.5.0 by @Antiz96 in <https://github.com/Antiz96/genesi-update/pull/19>
 
-## [v1.4.2](https://github.com/Antiz96/arch-update/releases/tag/v1.4.2) - 2022-11-30
+## [v1.4.2](https://github.com/Antiz96/genesi-update/releases/tag/v1.4.2) - 2022-11-30
 
-- Bump the script's version to v1.4.2 by @Antiz96 in <https://github.com/Antiz96/arch-update/pull/14>
+- Bump the script's version to v1.4.2 by @Antiz96 in <https://github.com/Antiz96/genesi-update/pull/14>
 
-## [v1.4.1](https://github.com/Antiz96/arch-update/releases/tag/v1.4.1) - 2022-11-28
+## [v1.4.1](https://github.com/Antiz96/genesi-update/releases/tag/v1.4.1) - 2022-11-28
 
-- Corrected the arch-update.svg default icon by @Antiz96 in <https://github.com/Antiz96/arch-update/pull/13>
+- Corrected the genesi-update.svg default icon by @Antiz96 in <https://github.com/Antiz96/genesi-update/pull/13>
 
-## [v1.4.0](https://github.com/Antiz96/arch-update/releases/tag/v1.4.0) - 2022-11-26
+## [v1.4.0](https://github.com/Antiz96/genesi-update/releases/tag/v1.4.0) - 2022-11-26
 
-- Add support for doas by @Antiz96 in <https://github.com/Antiz96/arch-update/pull/10>
-- Add support for pacdiff to be able to process pacnew/pacsave files after an update by @Antiz96 in <https://github.com/Antiz96/arch-update/pull/11>
-- Add a feature to read the latest Arch Linux news before updating the system by @Antiz96 in <https://github.com/Antiz96/arch-update/pull/12>
+- Add support for doas by @Antiz96 in <https://github.com/Antiz96/genesi-update/pull/10>
+- Add support for pacdiff to be able to process pacnew/pacsave files after an update by @Antiz96 in <https://github.com/Antiz96/genesi-update/pull/11>
+- Add a feature to read the latest Arch Linux news before updating the system by @Antiz96 in <https://github.com/Antiz96/genesi-update/pull/12>
 
-## [v1.3.2](https://github.com/Antiz96/arch-update/releases/tag/v1.3.2) - 2022-09-15
+## [v1.3.2](https://github.com/Antiz96/genesi-update/releases/tag/v1.3.2) - 2022-09-15
 
 - The repo has been restructured to better suit best practices.
 - New install/uninstall method: The install.sh and uninstall.sh scripts have been removed in favor of a Makefile; which is cleaner, more standard and way easier to maintain.
@@ -1266,48 +1266,48 @@ All notable changes to this project will be documented in this file.
 - The "dependencies" (and overall) documentation has been improved.
 - A LICENSE file has been added to the repo (GLP3).
 
-## [v1.3.1](https://github.com/Antiz96/arch-update/releases/tag/v1.3.1) - 2022-06-29
+## [v1.3.1](https://github.com/Antiz96/genesi-update/releases/tag/v1.3.1) - 2022-06-29
 
 - Added some information to the man page/documentation.
 - Typo fixes.
 
-## [v1.3.0](https://github.com/Antiz96/arch-update/releases/tag/v1.3.0) - 2022-06-27
+## [v1.3.0](https://github.com/Antiz96/genesi-update/releases/tag/v1.3.0) - 2022-06-27
 
 ### New features
 
 - Now also supports [paru](https://aur.archlinux.org/packages/paru) as an optional dependency for the AUR support (in addition to [yay](https://aur.archlinux.org/packages/yay)).
-- New [-v (or --version)](https://github.com/Antiz96/arch-update/wiki/Documentation#-v---version) option to print the current version.
+- New [-v (or --version)](https://github.com/Antiz96/genesi-update/wiki/Documentation#-v---version) option to print the current version.
 
 ### Code changes
 
-- Messages printed by Arch-Update that relates to errors are now printed in the error output (2) instead of the standard output (which is more conventional).
-- The install/update script has been completely re-written in a more elegant way. It now checks the integrity of the Arch-Update archive when performing an install or an update (based on its sha256 sum).
+- Messages printed by Genesi-Update that relates to errors are now printed in the error output (2) instead of the standard output (which is more conventional).
+- The install/update script has been completely re-written in a more elegant way. It now checks the integrity of the Genesi-Update archive when performing an install or an update (based on its sha256 sum).
 - The uninstall script has been completely re-written in a more elegant way.
-- Miscellaneous little changes and fixes to the main Arch-Update script.
+- Miscellaneous little changes and fixes to the main Genesi-Update script.
 
 ### Various changes
 
 - The repository structure and the installation/update method has been modified in order to get cleaner, more conventional and secured, and easier to maintain.
-- The man page is now zipped during the installation process (automatically done by pacman for the [AUR package](https://aur.archlinux.org/packages/arch-update)) instead of being already zipped in the archive.
+- The man page is now zipped during the installation process (automatically done by pacman for the [AUR package](https://aur.archlinux.org/packages/genesi-update)) instead of being already zipped in the archive.
 - The versions number now follows the [semantic versioning principles](https://semver.org/).
 
-## [v1.2.4](https://github.com/Antiz96/arch-update/releases/tag/v1.2.4) - 2022-04-29
+## [v1.2.4](https://github.com/Antiz96/genesi-update/releases/tag/v1.2.4) - 2022-04-29
 
 - Minor fixes
 
-## [v1.2.3](https://github.com/Antiz96/arch-update/releases/tag/v1.2.3) - 2022-04-21
+## [v1.2.3](https://github.com/Antiz96/genesi-update/releases/tag/v1.2.3) - 2022-04-21
 
 - Minor fixes
 
-## [v1.2.2](https://github.com/Antiz96/arch-update/releases/tag/v1.2.2) - 2022-03-31
+## [v1.2.2](https://github.com/Antiz96/genesi-update/releases/tag/v1.2.2) - 2022-03-31
 
 - Corrected and added some info in the man page
 
-## [v1.2.1](https://github.com/Antiz96/arch-update/releases/tag/v1.2.1) - 2022-03-31
+## [v1.2.1](https://github.com/Antiz96/genesi-update/releases/tag/v1.2.1) - 2022-03-31
 
 - Corrected and added some info in the man page
 
-## [v1.2](https://github.com/Antiz96/arch-update/releases/tag/v1.2) - 2022-03-30
+## [v1.2](https://github.com/Antiz96/genesi-update/releases/tag/v1.2) - 2022-03-30
 
 - Added correlation between "pkgver" and "source" in the PKGBUILD
 - The archive is now uploaded as a release and not directly in the git repo

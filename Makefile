@@ -1,5 +1,5 @@
-pkgname=arch-update
-_pkgname=Arch-Update
+pkgname=genesi-update
+_pkgname=Genesi-Update
 locales = be de es eu fr hu ja ka nb nl pt_BR pt_PT ru sv zh_CN zh_TW
 
 PREFIX ?= /usr/local
@@ -28,15 +28,15 @@ install:
 	install -Dm 755 src/lib/* -t "${DESTDIR}${PREFIX}/share/${pkgname}/lib/"
 
 	# Install icons
-	install -Dm 664 "res/icons/cachy-update-blue.svg" "${DESTDIR}${PREFIX}/share/icons/hicolor/scalable/apps/cachy-update-blue.svg"
-	install -Dm 664 "res/icons/cachy-update_updates-available-blue.svg" "${DESTDIR}${PREFIX}/share/icons/hicolor/scalable/apps/cachy-update_updates-available-blue.svg"
-	install -Dm 664 "res/icons/cachy-update_updates-available-blue-cb.svg" "${DESTDIR}${PREFIX}/share/icons/hicolor/scalable/apps/cachy-update_updates-available-blue-cb.svg"
-	install -Dm 664 "res/icons/cachy-update-light.svg" "${DESTDIR}${PREFIX}/share/icons/hicolor/scalable/apps/cachy-update-light.svg"
-	install -Dm 664 "res/icons/cachy-update_updates-available-light.svg" "${DESTDIR}${PREFIX}/share/icons/hicolor/scalable/apps/cachy-update_updates-available-light.svg"
-	install -Dm 664 "res/icons/cachy-update_updates-available-light-cb.svg" "${DESTDIR}${PREFIX}/share/icons/hicolor/scalable/apps/cachy-update_updates-available-light-cb.svg"
-	install -Dm 664 "res/icons/cachy-update-dark.svg" "${DESTDIR}${PREFIX}/share/icons/hicolor/scalable/apps/cachy-update-dark.svg"
-	install -Dm 664 "res/icons/cachy-update_updates-available-dark.svg" "${DESTDIR}${PREFIX}/share/icons/hicolor/scalable/apps/cachy-update_updates-available-dark.svg"
-	install -Dm 664 "res/icons/cachy-update_updates-available-dark-cb.svg" "${DESTDIR}${PREFIX}/share/icons/hicolor/scalable/apps/cachy-update_updates-available-dark-cb.svg"
+	install -Dm 664 "res/icons/genesi-update-blue.svg" "${DESTDIR}${PREFIX}/share/icons/hicolor/scalable/apps/genesi-update-blue.svg"
+	install -Dm 664 "res/icons/genesi-update_updates-available-blue.svg" "${DESTDIR}${PREFIX}/share/icons/hicolor/scalable/apps/genesi-update_updates-available-blue.svg"
+	install -Dm 664 "res/icons/genesi-update_updates-available-blue-cb.svg" "${DESTDIR}${PREFIX}/share/icons/hicolor/scalable/apps/genesi-update_updates-available-blue-cb.svg"
+	install -Dm 664 "res/icons/genesi-update-light.svg" "${DESTDIR}${PREFIX}/share/icons/hicolor/scalable/apps/genesi-update-light.svg"
+	install -Dm 664 "res/icons/genesi-update_updates-available-light.svg" "${DESTDIR}${PREFIX}/share/icons/hicolor/scalable/apps/genesi-update_updates-available-light.svg"
+	install -Dm 664 "res/icons/genesi-update_updates-available-light-cb.svg" "${DESTDIR}${PREFIX}/share/icons/hicolor/scalable/apps/genesi-update_updates-available-light-cb.svg"
+	install -Dm 664 "res/icons/genesi-update-dark.svg" "${DESTDIR}${PREFIX}/share/icons/hicolor/scalable/apps/genesi-update-dark.svg"
+	install -Dm 664 "res/icons/genesi-update_updates-available-dark.svg" "${DESTDIR}${PREFIX}/share/icons/hicolor/scalable/apps/genesi-update_updates-available-dark.svg"
+	install -Dm 664 "res/icons/genesi-update_updates-available-dark-cb.svg" "${DESTDIR}${PREFIX}/share/icons/hicolor/scalable/apps/genesi-update_updates-available-dark-cb.svg"
 
 	# Install .desktop files
 	install -Dm 644 "res/desktop/${pkgname}.desktop" "${DESTDIR}${PREFIX}/share/applications/${pkgname}.desktop"
@@ -57,7 +57,7 @@ install:
 	install -Dm 644 "doc/man/${pkgname}.conf.5" "${DESTDIR}${PREFIX}/share/man/man5/${pkgname}.conf.5"
 
 	# Install translation files
-	# Translation files are installed as "Arch-Update.mo" to avoid conflicting with the "arch-update.mo" files shipped by the arch-update Gnome extension (https://extensions.gnome.org/extension/1010/archlinux-updates-indicator/)
+	# Translation files are installed as "Genesi-Update.mo" to avoid conflicting with the "genesi-update.mo" files shipped by the genesi-update Gnome extension (https://extensions.gnome.org/extension/1010/archlinux-updates-indicator/)
 	for locale in $(locales); do \
 		install -Dm 644 "po/$${locale}.mo" "${DESTDIR}${PREFIX}/share/locale/$${locale}/LC_MESSAGES/${_pkgname}.mo"; \
 	done
@@ -86,15 +86,15 @@ uninstall:
 	rm -rf "${DESTDIR}${PREFIX}/share/${pkgname}/"
 
 	# Delete icons
-	rm -f "${DESTDIR}${PREFIX}/share/icons/hicolor/scalable/apps/cachy-update-blue.svg"
-	rm -f "${DESTDIR}${PREFIX}/share/icons/hicolor/scalable/apps/cachy-update_updates-available-blue.svg"
-	rm -f "${DESTDIR}${PREFIX}/share/icons/hicolor/scalable/apps/cachy-update_updates-available-blue-cb.svg"
-	rm -f "${DESTDIR}${PREFIX}/share/icons/hicolor/scalable/apps/cachy-update-light.svg"
-	rm -f "${DESTDIR}${PREFIX}/share/icons/hicolor/scalable/apps/cachy-update_updates-available-light.svg"
-	rm -f "${DESTDIR}${PREFIX}/share/icons/hicolor/scalable/apps/cachy-update_updates-available-light-cb.svg"
-	rm -f "${DESTDIR}${PREFIX}/share/icons/hicolor/scalable/apps/cachy-update-dark.svg"
-	rm -f "${DESTDIR}${PREFIX}/share/icons/hicolor/scalable/apps/cachy-update_updates-available-dark.svg"
-	rm -f "${DESTDIR}${PREFIX}/share/icons/hicolor/scalable/apps/cachy-update_updates-available-dark-cb.svg"
+	rm -f "${DESTDIR}${PREFIX}/share/icons/hicolor/scalable/apps/genesi-update-blue.svg"
+	rm -f "${DESTDIR}${PREFIX}/share/icons/hicolor/scalable/apps/genesi-update_updates-available-blue.svg"
+	rm -f "${DESTDIR}${PREFIX}/share/icons/hicolor/scalable/apps/genesi-update_updates-available-blue-cb.svg"
+	rm -f "${DESTDIR}${PREFIX}/share/icons/hicolor/scalable/apps/genesi-update-light.svg"
+	rm -f "${DESTDIR}${PREFIX}/share/icons/hicolor/scalable/apps/genesi-update_updates-available-light.svg"
+	rm -f "${DESTDIR}${PREFIX}/share/icons/hicolor/scalable/apps/genesi-update_updates-available-light-cb.svg"
+	rm -f "${DESTDIR}${PREFIX}/share/icons/hicolor/scalable/apps/genesi-update-dark.svg"
+	rm -f "${DESTDIR}${PREFIX}/share/icons/hicolor/scalable/apps/genesi-update_updates-available-dark.svg"
+	rm -f "${DESTDIR}${PREFIX}/share/icons/hicolor/scalable/apps/genesi-update_updates-available-dark-cb.svg"
 
 	# Delete .desktop files
 	rm -f "${DESTDIR}${PREFIX}/share/applications/${pkgname}.desktop"

@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # packages_cache.sh: Search for old packages archives in the pacman cache and offer to remove them
-# https://github.com/Antiz96/arch-update
+# https://github.com/Antiz96/genesi-update
 # SPDX-License-Identifier: GPL-3.0-or-later
 
 # shellcheck disable=SC2154

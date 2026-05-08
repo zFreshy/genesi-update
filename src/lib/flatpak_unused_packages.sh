@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # flatpak_unused_packages.sh: Display flatpak unused packages and offer to remove them
-# https://github.com/Antiz96/arch-update
+# https://github.com/Antiz96/genesi-update
 # SPDX-License-Identifier: GPL-3.0-or-later
 
 flatpak_unused=$(flatpak uninstall --unused | sed -n '/^ 1./,$p' | awk '{print $2}' | grep -v '^$' | sed '$d')

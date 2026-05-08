@@ -1,19 +1,19 @@
-arch-update(1) ["Arch-Update 3.19.4" ["Arch-Update Manual"]]
+genesi-update(1) ["Genesi-Update 3.19.4" ["Genesi-Update Manual"]]
 
 # NAME
 
-Arch-Update - An interactive update notifier & applier for Arch Linux that assists you with important pre / post update tasks.
+Genesi-Update - An interactive update notifier & applier for Arch Linux that assists you with important pre / post update tasks.
 
 # SYNOPSIS
 
-*arch-update* [OPTION]
+*genesi-update* [OPTION]
 
 # DESCRIPTION
 
 An interactive update notifier & applier for Arch Linux that assists you with important pre / post update tasks.
 Includes a dynamic & clickeable systray applet for an easy integration with any Desktop Environment / Window Manager.
 
-Arch-Update is designed to follow usual system maintenance steps, as described in the Arch Wiki at https://wiki.archlinux.org/title/System_maintenance.
+Genesi-Update is designed to follow usual system maintenance steps, as described in the Arch Wiki at https://wiki.archlinux.org/title/System_maintenance.
 
 Features:
 
@@ -49,7 +49,7 @@ If no option is passed, launch the relevant series of functions to perform a com
 
 *-n, --news*
 	Display latest Arch news.
-	You can optionally specify how much Arch news to display as an argument, like so: `arch-update --news 10`. Defaults to 5.
+	You can optionally specify how much Arch news to display as an argument, like so: `genesi-update --news 10`. Defaults to 5.
 
 *-s, --services*
 	Check for services requiring a post upgrade restart.
@@ -58,17 +58,17 @@ If no option is passed, launch the relevant series of functions to perform a com
 	Display debug traces.
 
 *--gen-config*
-	Generate a default / example `arch-update.conf` configuration file (see the *arch-update.conf*(5) man page for more details).
-	You can optionally pass the `--force` argument to overwrite any existing `arch-update.conf` configuration file.
+	Generate a default / example `genesi-update.conf` configuration file (see the *genesi-update.conf*(5) man page for more details).
+	You can optionally pass the `--force` argument to overwrite any existing `genesi-update.conf` configuration file.
 
 *--show-config*
-	Display the content of the `arch-update.conf` configuration file (if it exists).
+	Display the content of the `genesi-update.conf` configuration file (if it exists).
 
 *--edit-config*
-	Edit the `arch-update.conf` configuration file (if it exists).
+	Edit the `genesi-update.conf` configuration file (if it exists).
 
 *--tray*
-	Start the Arch-Update systray applet.
+	Start the Genesi-Update systray applet.
 	To start it automatically at boot, see the *"The systray applet"* chapter in the *"USAGE"* section below.
 
 *-V, --version*
@@ -77,7 +77,7 @@ If no option is passed, launch the relevant series of functions to perform a com
 *-h, --help*
 	Display the help message.
 
-Certain options can be enabled, disabled or modified via the `arch-update.conf` configuration file, see the *arch-update.conf*(5) man page for more details.
+Certain options can be enabled, disabled or modified via the `genesi-update.conf` configuration file, see the *genesi-update.conf*(5) man page for more details.
 
 # USAGE
 
@@ -85,40 +85,40 @@ The usage consist of starting the systray applet and enabling the systemd timer.
 
 ## The systray applet
 
-To start the systray applet, launch the *Arch-Update Systray Applet* application from your app menu.
+To start the systray applet, launch the *Genesi-Update Systray Applet* application from your app menu.
 
 To start it automatically at boot, you can either:
 
 - Run the following command (preferred method for most Desktop Environments, uses XDG Autostart): 
 
 ```
-arch-update --tray --enable
+genesi-update --tray --enable
 ```
 
 - Enable the associated systemd service (in case your Desktop Environment doesn't support XDG Autostart): 
 
 ```
-systemctl --user enable --now arch-update-tray.service
+systemctl --user enable --now genesi-update-tray.service
 ```
 
 - Add the following command to your "auto-start" apps / configuration file (in case you use a Window Manager or a Wayland Compositor):
 
 ```
-arch-update --tray
+genesi-update --tray
 ```
 
 *If the systray applet doesn't start at boot regardless or if it doesn't work as expected* (e.g. the icon is missing or the click actions do not act as they should), please read the *"The systray applet does not start at boot or does not work as expected"* chapter in the *"TIPS AND TRICKS"* section below.
 
-The systray icon dynamically changes to indicate the current state of your system ("up to date" or "updates available"). When clicked, it launches `arch-update` in a terminal window via the `arch-update.desktop` file.
+The systray icon dynamically changes to indicate the current state of your system ("up to date" or "updates available"). When clicked, it launches `genesi-update` in a terminal window via the `genesi-update.desktop` file.
 
-*If clicking the systray applet does nothing*, please read the *"Run Arch-Update in a specific terminal emulator"* chapter in the *"TIPS AND TRICKS"* section below.
+*If clicking the systray applet does nothing*, please read the *"Run Genesi-Update in a specific terminal emulator"* chapter in the *"TIPS AND TRICKS"* section below.
 
 ## The systemd timer
 
 To perform automatic and periodic checks for available updates, enable the associated systemd timer:
 
 ```
-systemctl --user enable --now arch-update.timer
+systemctl --user enable --now genesi-update.timer
 ```
 
 By default, a check is performed at *boot and then once every hour*. The check cycle can be customized, see the *"Modify the check cycle"* chapter in the *"TIPS AND TRICKS"* section below.
@@ -133,19 +133,19 @@ If the systray applet doesn't start at boot regardless or if it doesn't work as 
 
 To prevent that, you can add a small delay to the systray applet startup using the `sleep` command:
 
-- If you used `arch-update --tray --enable`, modify the `Exec=` line in the `arch-update-tray.desktop` file (which is under `~/.config/autostart/` by default), like so: 
+- If you used `genesi-update --tray --enable`, modify the `Exec=` line in the `genesi-update-tray.desktop` file (which is under `~/.config/autostart/` by default), like so: 
 
 ```
 [...]
-Exec=/bin/sh -c "sleep 3 && arch-update --tray"
+Exec=/bin/sh -c "sleep 3 && genesi-update --tray"
 [...]
 ```
 
-- If you used the `arch-update-tray.service` systemd service, run `systemctl --user edit --full arch-update-tray.service` and modify the `ExecStart=` line, like so:
+- If you used the `genesi-update-tray.service` systemd service, run `systemctl --user edit --full genesi-update-tray.service` and modify the `ExecStart=` line, like so:
 
 ```
 [...]
-ExecStart=/bin/sh -c "sleep 3 && arch-update --tray"
+ExecStart=/bin/sh -c "sleep 3 && genesi-update --tray"
 [...]
 ```
 
@@ -153,7 +153,7 @@ ExecStart=/bin/sh -c "sleep 3 && arch-update --tray"
 
 ```
 [...]
-sleep 3 && arch-update --tray
+sleep 3 && genesi-update --tray
 [...]
 ```
 
@@ -163,8 +163,8 @@ If the systray applet still does not start at boot, try to gradually increase th
 
 If you enabled the systemd timer, a check for available updates is automatically launched at boot and then once a day.
 
-If you want to customize the check cycle, run `systemctl --user edit --full arch-update.timer` and modify the `OnUnitActiveSec` value to your liking.
-For instance, if you want `Arch-Update` to check for new updates every hour instead:
+If you want to customize the check cycle, run `systemctl --user edit --full genesi-update.timer` and modify the `OnUnitActiveSec` value to your liking.
+For instance, if you want `Genesi-Update` to check for new updates every hour instead:
 
 ```
 [...]
@@ -178,11 +178,11 @@ OnUnitActiveSec=1h
 Time units are *s* for seconds, *m* for minutes, *h* for hours, *d* for days...
 See https://www.freedesktop.org/software/systemd/man/latest/systemd.time.html#Parsing%20Time%20Spans for more details.
 
-In case you want `Arch-Update` to check for new updates only once at boot, you can simply delete the `OnUnitActiveSec` line completely.
+In case you want `Genesi-Update` to check for new updates only once at boot, you can simply delete the `OnUnitActiveSec` line completely.
 
-## Run Arch-Update in a specific terminal emulator
+## Run Genesi-Update in a specific terminal emulator
 
-"gio" (used to launch the `arch-update` terminal application via the `arch-update.desktop` file when the systray applet is clicked) currently has a default limited list of known terminal emulators.  
+"gio" (used to launch the `genesi-update` terminal application via the `genesi-update.desktop` file when the systray applet is clicked) currently has a default limited list of known terminal emulators.  
 As such, if you don't have any of these "known" terminal emulators installed on your system, you might face an issue where clicking the systray applet does nothing (as `gio` couldn't find a terminal emulator from the said list). Incidentally, you might have multiple terminal emulators installed on your system. In both cases, you can specify which terminal emulator to use.
 
 To do so, install the `xdg-terminal-exec` AUR package (https://aur.archlinux.org/packages/xdg-terminal-exec), create the `~/.config/xdg-terminals.list` file and add the name of the `.desktop` file of your terminal emulator of choice in it (e.g. `Alacritty.desktop`).
@@ -198,10 +198,10 @@ See https://github.com/Vladimir-csp/xdg-terminal-exec?tab=readme-ov-file#configu
 	Invalid option.
 
 *2*
-	No privilege elevation command (`sudo`, `sudo-rs`, `doas` or `run0`) is installed or the one set in the `arch-update.conf` configuration file isn't found.
+	No privilege elevation command (`sudo`, `sudo-rs`, `doas` or `run0`) is installed or the one set in the `genesi-update.conf` configuration file isn't found.
 
 *3*
-	Error when launching the Arch-Update systray applet.
+	Error when launching the Genesi-Update systray applet.
 
 *4*
 	User didn't gave the confirmation to proceed.
@@ -237,16 +237,16 @@ See https://github.com/Vladimir-csp/xdg-terminal-exec?tab=readme-ov-file#configu
 	Libraries directory not found.
 
 *15*
-	The "diff prog" editor set in the `arch-update.conf` configuration file isn't found.
+	The "diff prog" editor set in the `genesi-update.conf` configuration file isn't found.
 
 *16*
 	Error when creating the `statedir` and / or the `tmpdir` directories.
 
 *17*
-	Another instance of Arch-Update is already running.
+	Another instance of Genesi-Update is already running.
 
 *18*
-	Error when running Arch-Update from the desktop notification action.
+	Error when running Genesi-Update from the desktop notification action.
 
 # SEE ALSO
 
@@ -258,11 +258,11 @@ See https://github.com/Vladimir-csp/xdg-terminal-exec?tab=readme-ov-file#configu
 *yay*(8),
 *pikaur*(1),
 *flatpak*(1),
-*arch-update.conf*(5)
+*genesi-update.conf*(5)
 
 # BUGS
 
-Please report bugs to the GitHub page: https://github.com/Antiz96/arch-update/issues
+Please report bugs to the GitHub page: https://github.com/Antiz96/genesi-update/issues
 
 # AUTHOR
 

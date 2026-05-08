@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # restart_services.sh: Display services requiring a post update restart and offer to restart them
-# https://github.com/Antiz96/arch-update
+# https://github.com/Antiz96/genesi-update
 # SPDX-License-Identifier: GPL-3.0-or-later
 
 # shellcheck disable=SC2154

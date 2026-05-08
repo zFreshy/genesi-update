@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # full_upgrade.sh: Execute the series of relevant functions / libraries to perform a complete and proper update of the system
-# https://github.com/Antiz96/arch-update
+# https://github.com/Antiz96/genesi-update
 # SPDX-License-Identifier: GPL-3.0-or-later
 
 # Hold the lockfile to avoid multiple parallel runs

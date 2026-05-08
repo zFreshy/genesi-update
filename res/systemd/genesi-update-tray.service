@@ -1,9 +1,9 @@
 [Unit]
-Description=Launch the Arch-Update systray applet
+Description=Launch the Genesi-Update systray applet
 After=graphical-session.target
 
 [Service]
-ExecStart=arch-update --tray
+ExecStart=genesi-update --tray
 Restart=on-failure
 
 [Install]

@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # list_news.sh: Display the latest Arch news and offer to read them
-# https://github.com/Antiz96/arch-update
+# https://github.com/Antiz96/genesi-update
 # SPDX-License-Identifier: GPL-3.0-or-later
 
 info_msg "$(eval_gettext "Looking for recent Arch News...")"

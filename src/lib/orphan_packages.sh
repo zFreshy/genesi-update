@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # orphan_packages.sh: Display orphan packages and offer to remove them
-# https://github.com/Antiz96/arch-update
+# https://github.com/Antiz96/genesi-update
 # SPDX-License-Identifier: GPL-3.0-or-later
 
 mapfile -t orphan_packages < <(pacman -Qtdq)

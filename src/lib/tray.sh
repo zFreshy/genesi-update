@@ -1,7 +1,7 @@
 #!/bin/bash
 
-# tray.sh: Start the Arch-Update systray applet
-# https://github.com/Antiz96/arch-update
+# tray.sh: Start the Genesi-Update systray applet
+# https://github.com/Antiz96/genesi-update
 # SPDX-License-Identifier: GPL-3.0-or-later
 
 if [ "${2}" == "--enable" ]; then

@@ -17,4 +17,4 @@ _arch-update() {
 	COMPREPLY=( $(compgen -W "${opts[*]}" -- "${arg}") )
 }
 
-complete -F _arch-update arch-update
+complete -F _arch-update genesi-update

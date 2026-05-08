@@ -1,13 +1,13 @@
-# Arch-Update Belarusian translation
+# Genesi-Update Belarusian translation
 # Copyright (C) 2024 Robin Candau <robincandau@protonmail.com>
-# This file is distributed under the same license as the Arch-Update package.
+# This file is distributed under the same license as the Genesi-Update package.
 #
 # Translators:
 # Łasačka <saikinmirai@gmail.com>, 2026
 msgid ""
 msgstr ""
-"Project-Id-Version: Arch-Update 3.19.4\n"
-"Report-Msgid-Bugs-To: https://github.com/Antiz96/arch-update/issues\n"
+"Project-Id-Version: Genesi-Update 3.19.4\n"
+"Report-Msgid-Bugs-To: https://github.com/Antiz96/genesi-update/issues\n"
 "POT-Creation-Date: 2024-03-17 16:22+0100\n"
 "PO-Revision-Date: 2026-05-07 17:32+0300\n"
 "Last-Translator: Łasačka <saikinmirai@gmail.com>\n"
@@ -534,8 +534,8 @@ msgstr "Даступна ${update_number} абнаўленне"
 #: src/lib/notification.sh:16 src/lib/notification.sh:19
 #: src/lib/notification.sh:23 src/lib/notification.sh:25 src/lib/tray.py:385
 #, sh-format
-msgid "Run Cachy-Update"
-msgstr "Запусціць Cachy-Update"
+msgid "Run Genesi-Update"
+msgstr "Запусціць Genesi-Update"
 
 #: src/lib/notification.sh:16 src/lib/notification.sh:19
 #: src/lib/notification.sh:23 src/lib/notification.sh:25
@@ -778,8 +778,8 @@ msgid "Flatpak ({updates})"
 msgstr "Flatpak ({updates})"
 
 #: src/lib/tray.py:377 src/lib/tray.py:382
-msgid "Arch-Update"
-msgstr "Arch-Update"
+msgid "Genesi-Update"
+msgstr "Genesi-Update"
 
 #: src/lib/tray.py:383
 msgid "Last check"
@@ -790,8 +790,8 @@ msgid "Next check"
 msgstr "Наступная праверка"
 
 #: src/lib/tray.py:385
-msgid "Run Arch-Update"
-msgstr "Запусціць Arch-Update"
+msgid "Run Genesi-Update"
+msgstr "Запусціць Genesi-Update"
 
 #: src/lib/tray.py:386
 msgid "Check for updates"

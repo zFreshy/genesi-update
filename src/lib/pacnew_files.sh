@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # pacnew_files.sh: Display pacnew files and offer to process them
-# https://github.com/Antiz96/arch-update
+# https://github.com/Antiz96/genesi-update
 # SPDX-License-Identifier: GPL-3.0-or-later
 
 pacnew_files=$(pacdiff -o)

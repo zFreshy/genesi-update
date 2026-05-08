@@ -1,7 +1,7 @@
 #!/bin/bash
 
-# edit-config.sh: Edit the current "arch-update.conf" configuration file
-# https://github.com/Antiz96/arch-update
+# edit-config.sh: Edit the current "genesi-update.conf" configuration file
+# https://github.com/Antiz96/genesi-update
 # SPDX-License-Identifier: GPL-3.0-or-later
 
 # shellcheck disable=SC2154

@@ -1,7 +1,7 @@
 #!/bin/bash
 
-# common.sh: Set variables, functions and parameters commonly used across the various Arch-Update stages
-# https://github.com/Antiz96/arch-update
+# common.sh: Set variables, functions and parameters commonly used across the various Genesi-Update stages
+# https://github.com/Antiz96/genesi-update
 # SPDX-License-Identifier: GPL-3.0-or-later
 
 # Display debug traces if the -D / --debug argument is passed
@@ -34,7 +34,7 @@ checkupdates_db_tmpdir_prefix="${tmpdir}/checkupdates-"
 # Declare necessary parameters for translations
 # shellcheck disable=SC1091
 . gettext.sh
-# Using "Arch-Update" as TEXTDOMAIN to avoid conflicting with the "arch-update" TEXTDOMAIN used by the "Arch Linux Updates Indicator" Gnome extension (https://extensions.gnome.org/extension/1010/archlinux-updates-indicator/)
+# Using "Genesi-Update" as TEXTDOMAIN to avoid conflicting with the "genesi-update" TEXTDOMAIN used by the "Arch Linux Updates Indicator" Gnome extension (https://extensions.gnome.org/extension/1010/archlinux-updates-indicator/)
 # shellcheck disable=SC2154
 export TEXTDOMAIN="${_name}"
 # Check where the translation files are installed (depending on the PREFIX used during the installation) to see if the default TEXTDOMAINDIR path (/usr/share/locale) should be superseded
@@ -114,7 +114,7 @@ quit_msg() {
 	read -n 1 -r -s -p $"$(info_msg "${msg}")" && echo
 }
 
-# Definition of the AUR helper to use (depending on if / which one is installed on the system and if it's not already defined in arch-update.conf) for the optional AUR packages support
+# Definition of the AUR helper to use (depending on if / which one is installed on the system and if it's not already defined in genesi-update.conf) for the optional AUR packages support
 check_aur_helper() {
 	if [ -z "${no_aur}" ]; then
 		# shellcheck disable=SC2034
@@ -160,7 +160,7 @@ if [ -z "${no_alhp_check}" ]; then
 	alhp_support=$(command -v alhp.utils)
 fi
 
-# Definition of the elevation command to use (depending on which one is installed on the system and if it's not already defined in arch-update.conf)
+# Definition of the elevation command to use (depending on which one is installed on the system and if it's not already defined in genesi-update.conf)
 check_su_cmd () {
 	if [ -z "${su_cmd}" ]; then
 		if command -v sudo > /dev/null; then
@@ -183,7 +183,7 @@ check_su_cmd () {
 	fi
 }
 
-# Definition of the diff program to use (if it is set in the arch-update.conf configuration file)
+# Definition of the diff program to use (if it is set in the genesi-update.conf configuration file)
 check_diff_prog () {
 	[ -n "${DIFFPROG}" ] && diff_prog="${DIFFPROG}"
 
@@ -206,13 +206,13 @@ check_diff_prog () {
 # Definition of the icon_up-to-date function: Change tray icon to "up to date"
 icon_up-to-date() {
 	# shellcheck disable=SC2154
-	echo "cachy-update-${tray_icon_style}" > "${statedir}/tray_icon"
+	echo "genesi-update-${tray_icon_style}" > "${statedir}/tray_icon"
 }
 
 # Definition of the icon_updates-available function: Change tray icon to "updates available"
 icon_updates-available() {
 	# shellcheck disable=SC2154
-	echo "cachy-update_updates-available-${tray_icon_style}${colorblind_mode}" > "${statedir}/tray_icon"
+	echo "genesi-update_updates-available-${tray_icon_style}${colorblind_mode}" > "${statedir}/tray_icon"
 }
 
 # Definition of commands to always run on exit (e.g. cleanup of files / dirs which have no purpose being kept)

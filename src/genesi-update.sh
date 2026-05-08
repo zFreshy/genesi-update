@@ -1,12 +1,12 @@
 #!/bin/bash
 
-# arch-update: An interactive update notifier & applier for Arch Linux that assists you with important pre / post update tasks
-# https://github.com/Antiz96/arch-update
+# genesi-update: An interactive update notifier & applier for Arch Linux that assists you with important pre / post update tasks
+# https://github.com/Antiz96/genesi-update
 # SPDX-License-Identifier: GPL-3.0-or-later
 
 # General variables
-name="arch-update"
-_name="Arch-Update"
+name="genesi-update"
+_name="Genesi-Update"
 version="3.19.4"
 option="${1}"
 
@@ -28,11 +28,11 @@ else
 	exit 14
 fi
 
-# Source the "config" library which checks options set in the arch-update.conf configuration file
+# Source the "config" library which checks options set in the genesi-update.conf configuration file
 # shellcheck source=src/lib/config.sh
 source "${libdir}/config.sh"
 
-# Source the "common" library which sets variables, functions and parameters commonly used across the various Arch-Update stages
+# Source the "common" library which sets variables, functions and parameters commonly used across the various Genesi-Update stages
 # shellcheck source=src/lib/common.sh
 source "${libdir}/common.sh"
 
@@ -103,27 +103,27 @@ case "${option}" in
 		source "${libdir}/restart_services.sh"
 	;;
 	--gen-config)
-		# Check if the user specified to overwrite any existing "arch-update.conf" configuration file
+		# Check if the user specified to overwrite any existing "genesi-update.conf" configuration file
 		if [ "${2}" == "--force" ]; then
 			overwrite_config_file="true"
 		fi
 
-		# Source the "gen-config" library which generates a default "arch-update.conf" configuration file (if it doesn't exists yet)
+		# Source the "gen-config" library which generates a default "genesi-update.conf" configuration file (if it doesn't exists yet)
 		# shellcheck source=src/lib/gen-config.sh
 		source "${libdir}/gen-config.sh"
 	;;
 	--show-config)
-		# Source the "show-config" library which displays the current "arch-update.conf" configuration file
+		# Source the "show-config" library which displays the current "genesi-update.conf" configuration file
 		# shellcheck source=src/lib/show-config.sh
 		source "${libdir}/show-config.sh"
 	;;
 	--edit-config)
-		# Source the "edit-config" library which edits the current "arch-update.conf" configuration file
+		# Source the "edit-config" library which edits the current "genesi-update.conf" configuration file
 		# shellcheck source=src/lib/edit-config.sh
 		source "${libdir}/edit-config.sh"
 	;;
 	--tray)
-		# Source the "tray" library which starts the Arch-Update systray applet
+		# Source the "tray" library which starts the Genesi-Update systray applet
 		# shellcheck source=src/lib/tray.sh
 		source "${libdir}/tray.sh"
 	;;

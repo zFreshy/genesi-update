@@ -1,0 +1,15 @@
+[Desktop Entry]
+Name=Genesi-Update
+Comment=An interactive update notifier & applier for Genesi OS
+Comment[de]=Ein interaktiver Update-Benachrichtiger und -Anwender für Genesi OS
+Comment[eu]=Genesi OSrako eguneraketa-jakinarazle eta aplikatzaile interaktiboa.
+Comment[fr]=Un notificateur & applicateur de mises à jour interactif pour Genesi OS
+Comment[ja]=Genesi OS 用の対話式アップデート通知 & 適用システム
+Comment[ka]=ინტერაქტიური განახლებების შეტყობინება და გადატარება Genesi OS-ისთვის
+Comment[nb]=En interaktiv oppdateringsvarsler og -gjennomfører for Genesi OS
+Comment[be]=Інтэрактыўны апавяшчальнік і ўсталёўшчык абнаўленняў для Genesi OS
+Icon=genesi-update-blue
+Type=Application
+Terminal=true
+Exec=genesi-update
+Categories=Utility

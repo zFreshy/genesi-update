@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # update.sh: Update packages and state files
-# https://github.com/Antiz96/arch-update
+# https://github.com/Antiz96/genesi-update
 # SPDX-License-Identifier: GPL-3.0-or-later
 
 if [ -n "${packages}" ]; then

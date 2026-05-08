@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # list_packages.sh: Display the list of packages available for updates
-# https://github.com/Antiz96/arch-update
+# https://github.com/Antiz96/genesi-update
 # SPDX-License-Identifier: GPL-3.0-or-later
 
 info_msg "$(eval_gettext "Looking for updates...\n")"
