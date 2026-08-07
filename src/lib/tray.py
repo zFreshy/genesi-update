@@ -4,7 +4,26 @@
 # https://github.com/Antiz96/genesi-update
 # SPDX-License-Identifier: GPL-3.0-or-later
 
-"""Genesi-Update System Tray"""
+"""Genesi-Update System Tray
+
+WHY libappindicator (Gtk) AND NOT Qt's QSystemTrayIcon:
+    Qt 6.11's StatusNotifierItem implementation is broken against the caelestia
+    (Quickshell) bar used by the Genesi Hyprland session: it registers the item
+    with the StatusNotifierWatcher but never serves its properties to the host,
+    so the icon simply never appears. Restarting the shell used to make it show
+    up sometimes, then stopped working entirely.
+
+    This is the same failure that already forced genesi-containers-tray and
+    genesi-ai-tray onto libappindicator. Applications using libappindicator
+    (Spotify, Discord, the Genesi trays) render correctly in that same bar, so
+    this applet uses libayatana-appindicator too. The icons were always
+    installed into hicolor, which is what appindicator resolves against.
+
+    One behavioural consequence: appindicator is menu-only, so a LEFT click
+    opens the menu instead of launching Genesi-Update directly. The launch
+    action is the first menu entry, and middle-click still launches it via
+    set_secondary_activate_target.
+"""
 import gettext
 import logging
 import os
@@ -13,12 +32,25 @@ import subprocess
 import time
 import json
 from math import floor
-from PyQt6.QtGui import QIcon, QAction
-from PyQt6.QtWidgets import QApplication, QSystemTrayIcon, QMenu
-from PyQt6.QtCore import QFileSystemWatcher
+
+import gi
+
+gi.require_version("Gtk", "3.0")
+try:
+    gi.require_version("AyatanaAppIndicator3", "0.1")
+    from gi.repository import AyatanaAppIndicator3 as AppIndicator
+except (ValueError, ImportError):       # fall back to the older libappindicator
+    gi.require_version("AppIndicator3", "0.1")
+    from gi.repository import AppIndicator3 as AppIndicator
+from gi.repository import GLib, Gtk
 
 # Create logger
 log = logging.getLogger(__name__)
+
+# How often the icon and menu are refreshed. dbusmenu gives no reliable
+# "about to show" signal through the host, so the menu cannot be built lazily
+# the way the Qt version did — it is rebuilt on a light timer instead.
+REFRESH_SECONDS = 5
 
 # Find Icon statefile
 ICON_STATEFILE = None
@@ -133,289 +165,198 @@ def get_next_check_duration_human_readable(input_json):
                 result = " ".join(parts)
     return result
 
+
+def read_lines(path):
+    """Non-empty lines of a statefile, or None when it isn't there."""
+    try:
+        with open(path, encoding="utf-8") as f:
+            return [line.strip() for line in f.readlines() if line.strip()]
+    except FileNotFoundError:
+        return None
+
+
+def show_update(update):
+    """Open a package's upstream URL in the browser"""
+    package = update.split(' ')[0]
+    if not package:
+        return
+    with subprocess.Popen(["/usr/bin/pacman", "-Qi", package],
+                          stdout=subprocess.PIPE, stderr=subprocess.PIPE) as p:
+        stdout, _stderr = p.communicate()
+    if p.returncode != 0:
+        return
+    for line in stdout.decode().splitlines():
+        if line.startswith("URL"):
+            parts = line.split(":", 1)
+            if len(parts) < 2:
+                return
+            url = parts[1].strip()
+            # Make sure to only send URLs to xdg-open
+            if url.startswith("http://") or url.startswith("https://"):
+                subprocess.run(["xdg-open", url], check=False)
+
+
+def _item(label, enabled=True, on_activate=None):
+    """A Gtk menu row, optionally greyed out or wired to an action."""
+    mi = Gtk.MenuItem(label=label)
+    mi.set_sensitive(enabled)
+    if on_activate:
+        mi.connect("activate", lambda _w: on_activate())
+    return mi
+
+
+def _submenu(parent, title, updates, clickable):
+    """Attach a titled submenu listing `updates` under `parent`."""
+    item = Gtk.MenuItem(label=title)
+    sub = Gtk.Menu()
+    for update in updates:
+        sub.append(_item(
+            update,
+            on_activate=(lambda u=update: show_update(u)) if clickable else None,
+        ))
+    item.set_submenu(sub)
+    parent.append(item)
+
+
 # User Interface
-class ArchUpdateQt6:
-    """System Tray using QT6 library"""
+class GenesiUpdateTray:
+    """System tray applet built on libappindicator (see the module docstring)."""
 
-    # Definition of functions to update the icon and dropdown menus when their respective state files content change
-    def file_changed(self):
-        """Update icon and dropdown menus"""
-        self.update_icon()
-        self.update_dropdown_menus()
-
-    # Update the icon based on the 'tray_icon' statefile content
-    def update_icon(self):
-        """Update icon"""
-        if self.watcher and not self.iconfile in self.watcher.files():
-            self.watcher.addPath(self.iconfile)
-
-        try:
-            with open(self.iconfile, encoding="utf-8") as f:
-                contents = f.readline().strip()
-        except FileNotFoundError:
-            log.error("Statefile Missing")
-            sys.exit(1)
-
-        if contents.startswith("genesi-update"):
-            icon = QIcon.fromTheme(contents)
-            self.tray.setIcon(icon)
-
-    # Open packages upstream URL in browser when clicked
-    def showUpdate(self, update):
-        """Open upstream URL in browser"""
-        package = update.split(' ')[0]
-        if not package:
-            return
-        with subprocess.Popen(["/usr/bin/pacman", "-Qi", package], stdout=subprocess.PIPE, stderr=subprocess.PIPE) as p:
-            stdout, _ = p.communicate()
-        if p.returncode != 0:
-            return
-        outs = stdout.decode()
-        for line in outs.splitlines():
-            if line.startswith("URL"):
-                parts = line.split(":", 1)
-                print(parts)
-                if len(parts) < 2:
-                    return
-                url = parts[1].strip()
-                # Make sure to only send URLs to xdg-open
-                if url.startswith("http://") or url.startswith("https://"):
-                    subprocess.run(["xdg-open", url], check=False)
-
-    # Update dropdown menus based on the state files content
-    def update_dropdown_menus(self):
-        """Update dropdown menus"""
-        # Check presence of state files
-        last_check_time = "never"
-        if self.watcher and not self.updatesfile in self.watcher.files():
-            self.watcher.addPath(self.updatesfile)
-
-        try:
-            with open(self.updatesfile, encoding="utf-8") as f:
-                updates_list = f.readlines()
-                last_check_time = time.strftime("%d %b %H:%M:%S", time.localtime(os.path.getmtime(self.updatesfile)))
-        except FileNotFoundError:
-            log.error("State updates file missing")
-            self.menu_count.setText(_("'updates' state file isn't found"))
-            return
-
-        if self.watcher and not self.updatesfilepkg in self.watcher.files():
-            self.watcher.addPath(self.updatesfilepkg)
-
-        try:
-            with open(self.updatesfilepkg, encoding="utf-8") as f:
-                updates_list_pkg = f.readlines()
-        except FileNotFoundError:
-            log.error("State updatespkg file missing")
-            return
-
-        if self.watcher and not self.updatesfileaur in self.watcher.files():
-            self.watcher.addPath(self.updatesfileaur)
-
-        try:
-            with open(self.updatesfileaur, encoding="utf-8") as f:
-                updates_list_aur = f.readlines()
-        except FileNotFoundError:
-            log.error("State updatesaur file missing")
-            return
-
-        if self.watcher and not self.updatesfileflatpak in self.watcher.files():
-            self.watcher.addPath(self.updatesfileflatpak)
-
-        try:
-            with open(self.updatesfileflatpak, encoding="utf-8") as f:
-                updates_list_flatpak = f.readlines()
-        except FileNotFoundError:
-            log.error("State updatesflatpak file missing")
-            return
-
-        # Remove empty lines from statefiles
-        updates_list = [update.strip() for update in updates_list if update.strip()]
-        updates_list_pkg = [update.strip() for update in updates_list_pkg if update.strip()]
-        updates_list_aur = [update.strip() for update in updates_list_aur if update.strip()]
-        updates_list_flatpak = [update.strip() for update in updates_list_flatpak if update.strip()]
-
-        # Count the number of pending updates (according to the number of lines of statefiles)
-        updates_count = len(updates_list)
-        updates_count_pkg = len(updates_list_pkg)
-        updates_count_aur = len(updates_list_aur)
-        updates_count_flatpak = len(updates_list_flatpak)
-
-        # Update the update main menu title accordingly
-        if updates_count == 0:
-            self.menu_count.setText(_("System is up to date"))
-            self.menu_count.setEnabled(False)
-        elif updates_count == 1:
-            self.menu_count.setText(_("1 update available"))
-            self.menu_count.setEnabled(True)
-        else:
-            self.menu_count.setText(_("{updates} updates available").format(updates=updates_count))
-            self.menu_count.setEnabled(True)
-
-        # Update last check timestamp (always False to not pull unwanted attention)
-        self.menu_last_check.setText(_("Last check:\n{time}").format(time=last_check_time))
-        self.menu_last_check.setEnabled(False)
-
-        # Update next check timestamp (always False to not pull unwanted attention)
-        timer_left = subprocess.run(
-            "/usr/bin/systemctl --user list-timers genesi-update.timer -o json",
-            check=False,
-            shell=True,
-            capture_output=True,
-            text=True,
-            timeout=1,
-        )
-        next_check_output = get_next_check_duration_human_readable(timer_left.stdout.strip())
-
-        if next_check_output:
-            self.menu_next_check = QAction(_("Next check in {time}").format(time=next_check_output))
-            self.menu_next_check.setEnabled(False)
-        else:
-            self.menu_next_check = None
-
-        # Clear the menu (to update entries)
-        self.menu.clear()
-        self.menu.addAction(self.menu_count)
-
-        # Add / update dropdown menus if there's at least one available update, remove it otherwise
-        if (updates_count_pkg >= 1) + (updates_count_aur >=1) + (updates_count_flatpak >=1) >= 2:
-            self.dropdown_menu_all.setTitle(_("All ({updates})").format(updates=updates_count))
-            self.dropdown_menu_all.setEnabled(True)
-            self.dropdown_menu_all.clear()
-            for update in [*updates_list_pkg, *updates_list_aur]:
-                action = self.dropdown_menu_all.addAction(update)
-                action.triggered.connect(lambda x, update=update: self.showUpdate(update))
-            for update in updates_list_flatpak:
-                self.dropdown_menu_all.addAction(update)
-            self.menu.addMenu(self.dropdown_menu_all)
-        else:
-            self.menu.removeAction(self.dropdown_menu_all.menuAction())
-
-        if updates_count_pkg >= 1:
-            self.dropdown_menu_pkg.setTitle(_("Packages ({updates})").format(updates=updates_count_pkg))
-            self.dropdown_menu_pkg.setEnabled(True)
-            self.dropdown_menu_pkg.clear()
-            for update in updates_list_pkg:
-                action = self.dropdown_menu_pkg.addAction(update)
-                action.triggered.connect(lambda x, update=update: self.showUpdate(update))
-            self.menu.addMenu(self.dropdown_menu_pkg)
-        else:
-            self.menu.removeAction(self.dropdown_menu_pkg.menuAction())
-
-        if updates_count_aur >= 1:
-            self.dropdown_menu_aur.setTitle(_("AUR ({updates})").format(updates=updates_count_aur))
-            self.dropdown_menu_aur.setEnabled(True)
-            self.dropdown_menu_aur.clear()
-            for update in updates_list_aur:
-                action = self.dropdown_menu_aur.addAction(update)
-                action.triggered.connect(lambda x, update=update: self.showUpdate(update))
-            self.menu.addMenu(self.dropdown_menu_aur)
-        else:
-            self.menu.removeAction(self.dropdown_menu_aur.menuAction())
-
-        if updates_count_flatpak >= 1:
-            self.dropdown_menu_flatpak.setTitle(_("Flatpak ({updates})").format(updates=updates_count_flatpak))
-            self.dropdown_menu_flatpak.setEnabled(True)
-            self.dropdown_menu_flatpak.clear()
-            for update in updates_list_flatpak:
-                self.dropdown_menu_flatpak.addAction(update)
-            self.menu.addMenu(self.dropdown_menu_flatpak)
-        else:
-            self.menu.removeAction(self.dropdown_menu_flatpak.menuAction())
-
-        # Add check timestamps (after updates list)
-        if updates_count >= 1:
-            self.menu.addSeparator()
-        self.menu.addAction(self.menu_last_check)
-        if self.menu_next_check:
-            self.menu.addAction(self.menu_next_check)
-
-        # Restore static menu entries (after clearing the menu)
-        self.menu.addSeparator()
-        self.menu.addAction(self.menu_launch)
-        self.menu.addAction(self.menu_check)
-        self.menu.addAction(self.menu_exit)
-
-    # Action to run the arch_update function
-    def run(self, reason):
-        """Run genesi-update"""
-        if reason in (QSystemTrayIcon.ActivationReason.Trigger, QSystemTrayIcon.ActivationReason.MiddleClick, "menu_click_action"):
-            arch_update()
-
-    # Action to run `genesi-update --check`
-    def check(self):
-        """Run check for updates"""
-        subprocess.run(["genesi-update", "--check"], check=False)
-
-    # Action to exit the systray
-    def exit(self):
-        """Exit systray"""
-        sys.exit(0)
-
-    # Start the systray
     def __init__(self, iconfile):
-        """Start Qt6 System Tray"""
-
-        # Variables definition
         self.iconfile = iconfile
         self.updatesfile = UPDATES_STATEFILE
         self.updatesfilepkg = UPDATES_STATEFILE_PACKAGES
         self.updatesfileaur = UPDATES_STATEFILE_AUR
         self.updatesfileflatpak = UPDATES_STATEFILE_FLATPAK
-        self.watcher = None
+        self.current_icon = None
 
-        # General application parameters
-        app = QApplication(["Genesi-Update"])
-        app.setQuitOnLastWindowClosed(False)
+        # The icons this package installs live in hicolor, which is the theme
+        # appindicator resolves names against.
+        self.ind = AppIndicator.Indicator.new(
+            "genesi-update", "genesi-update-blue",
+            AppIndicator.IndicatorCategory.APPLICATION_STATUS)
+        self.ind.set_status(AppIndicator.IndicatorStatus.ACTIVE)
+        self.ind.set_title(_("Genesi-Update"))
 
-        # Icon
-        self.tray = QSystemTrayIcon()
-        self.tray.setVisible(True)
-        self.tray.activated.connect(self.run)
+        self.refresh()
+        GLib.timeout_add_seconds(REFRESH_SECONDS, self._tick)
 
-        # Tooltip
-        tooltip = _("Genesi-Update")
-        self.tray.setToolTip(tooltip)
+    def _tick(self):
+        self.refresh()
+        return True  # keep the timer running
 
-        # Definition of menus titles
-        self.menu = QMenu()
-        self.menu_count = QAction(_("Genesi-Update"))
-        self.menu_last_check = QAction(_("Last check"))
-        self.menu_next_check = QAction(_("Next check"))
-        self.menu_launch = QAction(_("Run Genesi-Update"))
-        self.menu_check = QAction(_("Check for updates"))
-        self.menu_exit = QAction(_("Exit"))
+    def refresh(self):
+        """Re-read every statefile and rebuild the icon and the menu."""
+        self.update_icon()
+        self.update_menu()
 
-        # Initialisation of the dynamic dropdown menus
-        self.dropdown_menu_all = QMenu(_("All"))
-        self.dropdown_menu_pkg = QMenu(_("Packages"))
-        self.dropdown_menu_aur = QMenu(_("AUR"))
-        self.dropdown_menu_flatpak = QMenu(_("Flatpak"))
+    def update_icon(self):
+        """Point the indicator at whatever the 'tray_icon' statefile names."""
+        try:
+            with open(self.iconfile, encoding="utf-8") as f:
+                contents = f.readline().strip()
+        except FileNotFoundError:
+            log.error("Statefile Missing")
+            return
 
-        # Link actions to the menu
-        self.menu.addAction(self.menu_count)
-        self.menu.addAction(self.menu_last_check)
-        self.menu.aboutToShow.connect(self.update_dropdown_menus) # Function connector for the menu_next_check entry
-        self.menu.addSeparator()
-        self.menu.addAction(self.menu_launch)
-        self.menu.addAction(self.menu_check)
-        self.menu.addAction(self.menu_exit)
+        if contents.startswith("genesi-update") and contents != self.current_icon:
+            self.current_icon = contents
+            self.ind.set_icon_full(contents, _("Genesi-Update"))
 
-        self.menu_count.triggered.connect(lambda: self.run("menu_click_action"))
-        self.menu_launch.triggered.connect(lambda: self.run("menu_click_action"))
-        self.menu_check.triggered.connect(self.check)
-        self.menu_exit.triggered.connect(self.exit)
+    def update_menu(self):
+        """Rebuild the dropdown from the statefiles."""
+        menu = Gtk.Menu()
 
-        self.tray.setContextMenu(self.menu)
+        updates_list = read_lines(self.updatesfile)
+        if updates_list is None:
+            log.error("State updates file missing")
+            menu.append(_item(_("'updates' state file isn't found"), False))
+            self._append_static(menu)
+            menu.show_all()
+            self.ind.set_menu(menu)
+            return
 
-        # File Watcher (watches for statefiles content changes)
-        self.watcher = QFileSystemWatcher([self.iconfile, self.updatesfile, self.updatesfilepkg, self.updatesfileaur, self.updatesfileflatpak])
-        self.watcher.fileChanged.connect(self.file_changed)
+        last_check_time = time.strftime(
+            "%d %b %H:%M:%S", time.localtime(os.path.getmtime(self.updatesfile)))
+        updates_list_pkg = read_lines(self.updatesfilepkg) or []
+        updates_list_aur = read_lines(self.updatesfileaur) or []
+        updates_list_flatpak = read_lines(self.updatesfileflatpak) or []
 
-        # Initial file check to set the right icon and dynamic menu text
-        self.file_changed()
+        updates_count = len(updates_list)
+        updates_count_pkg = len(updates_list_pkg)
+        updates_count_aur = len(updates_list_aur)
+        updates_count_flatpak = len(updates_list_flatpak)
 
-        app.exec()
+        # Headline row, which doubles as the launch action when there IS
+        # something to install (appindicator has no left-click action of its
+        # own, so the menu has to carry it).
+        if updates_count == 0:
+            menu.append(_item(_("System is up to date"), False))
+        else:
+            title = (_("1 update available") if updates_count == 1
+                     else _("{updates} updates available").format(updates=updates_count))
+            menu.append(_item(title, on_activate=arch_update))
+
+        # Per-source submenus, matching what the Qt build showed.
+        if (updates_count_pkg >= 1) + (updates_count_aur >= 1) + (updates_count_flatpak >= 1) >= 2:
+            _submenu(menu, _("All ({updates})").format(updates=updates_count),
+                     [*updates_list_pkg, *updates_list_aur], True)
+        if updates_count_pkg >= 1:
+            _submenu(menu, _("Packages ({updates})").format(updates=updates_count_pkg),
+                     updates_list_pkg, True)
+        if updates_count_aur >= 1:
+            _submenu(menu, _("AUR ({updates})").format(updates=updates_count_aur),
+                     updates_list_aur, True)
+        if updates_count_flatpak >= 1:
+            _submenu(menu, _("Flatpak ({updates})").format(updates=updates_count_flatpak),
+                     updates_list_flatpak, False)
+
+        if updates_count >= 1:
+            menu.append(Gtk.SeparatorMenuItem())
+        menu.append(_item(_("Last check:\n{time}").format(time=last_check_time), False))
+
+        next_check_output = None
+        try:
+            timer_left = subprocess.run(
+                ["/usr/bin/systemctl", "--user", "list-timers",
+                 "genesi-update.timer", "-o", "json"],
+                check=False, capture_output=True, text=True, timeout=1,
+            )
+            next_check_output = get_next_check_duration_human_readable(
+                timer_left.stdout.strip())
+        except (subprocess.TimeoutExpired, json.JSONDecodeError, OSError):
+            next_check_output = None
+        if next_check_output:
+            menu.append(_item(
+                _("Next check in {time}").format(time=next_check_output), False))
+
+        self._append_static(menu)
+        menu.show_all()
+        self.ind.set_menu(menu)
+
+    def _append_static(self, menu):
+        """The always-present bottom rows."""
+        menu.append(Gtk.SeparatorMenuItem())
+        launch = _item(_("Run Genesi-Update"), on_activate=arch_update)
+        menu.append(launch)
+        menu.append(_item(_("Check for updates"), on_activate=self.check))
+        menu.append(Gtk.SeparatorMenuItem())
+        menu.append(_item(_("Exit"), on_activate=Gtk.main_quit))
+        # Keeps the Qt build's middle-click-to-launch behaviour.
+        self.ind.set_secondary_activate_target(launch)
+
+    def check(self):
+        """Run `genesi-update --check`"""
+        subprocess.Popen(["genesi-update", "--check"],
+                         stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL,
+                         start_new_session=True)
+
+
+def main():
+    """Start the tray."""
+    GenesiUpdateTray(ICON_STATEFILE)
+    Gtk.main()
+
 
 if __name__ == "__main__":
-    ArchUpdateQt6(ICON_STATEFILE)
+    main()

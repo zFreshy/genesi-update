@@ -54,7 +54,7 @@ sudo pacman -S genesi-update
 Install required dependencies:
 
 ```bash
-sudo pacman -S --needed bash systemd pacman pacman-contrib archlinux-contrib curl fakeroot htmlq diffutils hicolor-icon-theme python python-pyqt6 qt6-svg glib2 xdg-utils
+sudo pacman -S --needed bash systemd pacman pacman-contrib archlinux-contrib curl fakeroot htmlq diffutils hicolor-icon-theme python python-gobject gtk3 libayatana-appindicator librsvg glib2 xdg-utils
 ```
 
 Additional optional dependencies you might want or need:
