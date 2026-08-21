@@ -46,8 +46,19 @@ else
 	exec {fd_tray}>"${tmpdir}/tray.lock"
 
 	if ! flock -n "${fd_tray}"; then
-		error_msg "$(eval_gettext "There's already a running instance of the \${_name} systray applet")"
-		exit 3
+		# NOT an error: the applet is deliberately launched from two places, so
+		# it comes up on every desktop Genesi ships. The systemd user service
+		# covers systemd-aware Wayland compositors; /etc/xdg/autostart covers
+		# the classic desktops that never reach graphical-session.target. On any
+		# session that honours BOTH, one of them wins this lock and the other
+		# arrives here.
+		#
+		# Exiting non-zero made that normal outcome look like a failure: the
+		# service retried, hit its start limit, and left "Failed to start Launch
+		# the Genesi-Update systray applet" in every journal, next to a tray
+		# icon that was working fine. The applet is running -- that is success.
+		info_msg "$(eval_gettext "The \${_name} systray applet is already running")"
+		exit 0
 	fi
 
 	# shellcheck disable=SC2154
