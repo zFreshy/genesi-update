@@ -229,6 +229,11 @@ class GenesiUpdateTray:
         self.updatesfileaur = UPDATES_STATEFILE_AUR
         self.updatesfileflatpak = UPDATES_STATEFILE_FLATPAK
         self.current_icon = None
+        # The live menu and its middle-click target. Held so neither is
+        # finalised while the indicator still points at them — see
+        # _install_menu for what happens when they are not.
+        self._menu = None
+        self._launch = None
 
         # The icons this package installs live in hicolor, which is the theme
         # appindicator resolves names against.
@@ -271,9 +276,9 @@ class GenesiUpdateTray:
         if updates_list is None:
             log.error("State updates file missing")
             menu.append(_item(_("'updates' state file isn't found"), False))
-            self._append_static(menu)
+            launch = self._append_static(menu)
             menu.show_all()
-            self.ind.set_menu(menu)
+            self._install_menu(menu, launch)
             return
 
         last_check_time = time.strftime(
@@ -330,20 +335,48 @@ class GenesiUpdateTray:
             menu.append(_item(
                 _("Next check in {time}").format(time=next_check_output), False))
 
-        self._append_static(menu)
+        launch = self._append_static(menu)
         menu.show_all()
-        self.ind.set_menu(menu)
+        self._install_menu(menu, launch)
 
     def _append_static(self, menu):
-        """The always-present bottom rows."""
+        """The always-present bottom rows. Returns the "Run" row, which the
+        caller installs as the middle-click target once the menu is live."""
         menu.append(Gtk.SeparatorMenuItem())
         launch = _item(_("Run Genesi-Update"), on_activate=arch_update)
         menu.append(launch)
         menu.append(_item(_("Check for updates"), on_activate=self.check))
         menu.append(Gtk.SeparatorMenuItem())
         menu.append(_item(_("Exit"), on_activate=Gtk.main_quit))
-        # Keeps the Qt build's middle-click-to-launch behaviour.
+        return launch
+
+    def _install_menu(self, menu, launch):
+        """Hand the rebuilt menu to the indicator, in the one order that is safe.
+
+        This applet rebuilds its whole menu every REFRESH_SECONDS, and
+        app_indicator_set_secondary_activate_target() does NOT take a reference
+        to the widget it is given — it keeps a bare pointer. So the obvious
+        code, setting the target while building the menu and letting the old
+        menu fall out of scope, leaves the indicator pointing into a menu item
+        that Gtk has already finalised. Five seconds later it calls
+        gtk_widget_get_parent() on that address:
+
+            Gtk-CRITICAL: gtk_widget_get_parent: assertion 'GTK_IS_WIDGET
+            (widget)' failed
+
+        and shortly after, a SIGSEGV that greeted people on a fresh install.
+
+        Three things make it safe, and all three are required:
+          1. set_menu() FIRST, so the indicator owns the new menu before it is
+             asked to point inside it.
+          2. set_secondary_activate_target() SECOND, moving the bare pointer off
+             the old widget while the old widget is still alive.
+          3. drop the previous references LAST, so nothing is finalised until
+             the indicator has stopped pointing at it.
+        """
+        self.ind.set_menu(menu)
         self.ind.set_secondary_activate_target(launch)
+        self._menu, self._launch = menu, launch
 
     def check(self):
         """Run `genesi-update --check`"""
